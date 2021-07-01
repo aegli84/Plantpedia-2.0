@@ -8,13 +8,14 @@ import Blog from './pages/Blog';
 import Login from './pages/Login'
 import Register from './pages/Register'
 
+
 function App() {
   return (
     <div className="App">
     <div>
       <h1>hello</h1>
     </div>
-    
+
       <Switch>
 
         <Route exact path="/">
