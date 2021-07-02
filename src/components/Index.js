@@ -3,6 +3,7 @@ import logo from "../assets/logo.png";
 import {
     Nav,
     NavLogo,
+    ImgLogo,
     NavLink,
     Bars,
     NavMenu,
@@ -14,13 +15,13 @@ const Navbar = () => {
     return (
         <>
             <Nav>
-            <NavLogo to="/">
-            <img src={logo}/>
+            <NavLogo to="/Home">
+            <ImgLogo src={logo}/>
             </NavLogo>
             <Bars />
 
             <NavMenu>
-                <NavLink to="/" activeStyle>
+                <NavLink to="/Home" activeStyle>
                     Home
                 </NavLink>
                 <NavLink to="/Plantpedia" activeStyle>

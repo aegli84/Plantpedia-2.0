@@ -4,20 +4,21 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
     background: black;
-    height: 85px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0.2rem calc((100vw - 1000px) / 2);
+    padding: 0.2rem calc((70vw - 1000px) / 2);
     z-index: 12;
 `;
 export const NavLogo = styled(Link)`
   cursor: pointer;
-  color: #fff;
-  font-size: 2rem;
-  text-decoration: none;
-
 `;
+
+export const ImgLogo = styled.img`
+width: 50px;
+height: 50px;
+border-radius: 50%;
+`
 
 export const NavLink = styled(Link)`
 color: #fff;
@@ -31,7 +32,7 @@ cursor: pointer;
   color:black;
 }
 &:hover {
-  color: black;
+  color:  #918EA4;
 }
 `;
 
