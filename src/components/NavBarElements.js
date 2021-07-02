@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
     background: black;
-    height: 60px;
+    height: 62,5px;
     display: flex;
     justify-content: space-between;
     padding: 0.2rem calc((70vw - 1000px) / 2);
@@ -15,14 +15,15 @@ export const NavLogo = styled(Link)`
 `;
 
 export const ImgLogo = styled.img`
-width: 50px;
-height: 50px;
+width: 60px;
+height: 60px;
 border-radius: 50%;
 `
 
 export const NavLink = styled(Link)`
 color: #fff;
 display: flex;
+font-family: 'Monteserrat', sans-serif;
 align-items: center;
 text-decoration: none;
 padding: 0 1rem;
