@@ -22,7 +22,6 @@ margin-top: 1vh;
     width: 100vw; 
     height: 10vh;
 }
-
 `
 
 
