@@ -1,5 +1,6 @@
 import React from 'react';
 import {Switch, Route} from 'react-router-dom';
+import NavBar from './components/NavBar/NavBar';
 import Home from './pages/Home';
 import Plantpedia from './pages/Plantpedia';
 import BoutiqueShops from './pages/BoutiqueShops';
@@ -11,9 +12,7 @@ import Register from './pages/Register'
 function App() {
   return (
     <div className="App">
-    <div>
-      <h1>hello</h1>
-    </div>
+  <NavBar/>
     
       <Switch>
 
