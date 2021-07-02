@@ -1,6 +1,6 @@
 import React from 'react';
-import {Switch, Route} from 'react-router-dom';
-import NavBar from './components/NavBar/NavBar';
+import {Switch, Route, BrowserRouter as Router} from 'react-router-dom';
+import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import Plantpedia from './pages/Plantpedia';
 import BoutiqueShops from './pages/BoutiqueShops';
@@ -14,13 +14,8 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
-<<<<<<< HEAD
-  <NavBar/>
-=======
     <GlobalStyles/>
-    <Navbar/>
->>>>>>> 4b035a7d7a2a81cd209eb7e7b903626ec739733c
-    
+    <NavBar/>
       <Switch>
 
         <Route exact path="/">
