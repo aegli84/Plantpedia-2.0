@@ -13,9 +13,17 @@ const Video = () => {
 const Div = styled.div`
 top: 0; 
 width: 100vw; 
-height: 80vh; 
+height: 70vh; 
 z-index: -1;
 background-color:black;
+@media (max-width: 767px) {
+    width: 100vw; 
+    height: 50vh;
+}
+@media (max-width: 400px) {
+    width: 100vw; 
+    height: 30vh;
+}
 `
 const Video2 = styled.video`
     width:100%; 
