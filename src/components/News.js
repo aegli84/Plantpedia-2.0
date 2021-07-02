@@ -11,9 +11,18 @@ const News = () => {
 
 const Div = styled.div`
 background-color: #918EA4;
-height:10vh;
+height:20vh;
 width: 100vw;
 margin-top: 1vh;
+@media (max-width: 767px) {
+    width: 100vw; 
+    height: 15vh;
+}
+@media (max-width: 400px) {
+    width: 100vw; 
+    height: 10vh;
+}
+
 `
 
 
