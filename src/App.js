@@ -11,9 +11,11 @@ import Register from './pages/Register';
 import GlobalStyles from './GlobalStyles';
 import Footer from './components/Footer';
 
+
 function App() {
   return (
     <div className="App">
+  
     <GlobalStyles/>
     <Index/>
       <Switch>
