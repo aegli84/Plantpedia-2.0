@@ -5,15 +5,17 @@ import Plantpedia from './pages/Plantpedia';
 import BoutiqueShops from './pages/BoutiqueShops';
 import Subscription from './pages/Subscription';
 import Blog from './pages/Blog';
-import Login from './pages/Login'
-import Register from './pages/Register'
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Navbar from './components/NavBar';
+import GlobalStyles from './GlobalStyles';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-    <div>
-      <h1>hello</h1>
-    </div>
+    <GlobalStyles/>
+    <Navbar/>
     
       <Switch>
 
@@ -46,6 +48,7 @@ function App() {
         </Route> 
 
     </Switch>
+    <Footer/>
     </div>
   );
 }
