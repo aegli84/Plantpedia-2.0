@@ -1,5 +1,6 @@
 import React from 'react';
-import {Switch, Route} from 'react-router-dom';
+import {Switch, Route, BrowserRouter as Router} from 'react-router-dom';
+import Index from './components/Index';
 import Home from './pages/Home';
 import Plantpedia from './pages/Plantpedia';
 import BoutiqueShops from './pages/BoutiqueShops';
@@ -7,7 +8,6 @@ import Subscription from './pages/Subscription';
 import Blog from './pages/Blog';
 import Login from './pages/Login';
 import Register from './pages/Register';
-import Navbar from './components/NavBar';
 import GlobalStyles from './GlobalStyles';
 import Footer from './components/Footer';
 
@@ -17,8 +17,7 @@ function App() {
     <div className="App">
   
     <GlobalStyles/>
-    <Navbar/>
-    
+    <Index/>
       <Switch>
 
         <Route exact path="/">
