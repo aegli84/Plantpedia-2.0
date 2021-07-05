@@ -1,5 +1,7 @@
 import React from "react";
+
 import { FiInstagram, FiGithub, FiFacebook } from "react-icons/fi";
+
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -64,13 +66,13 @@ const Footer = () => {
         <FooterBar>
             <FooterContainer>
                 <LeftDiv>
-                    <FooterLink to="/Home" activeStyle>
+                    <FooterLink to="/Contact" activeStyle>
                         Contact
                     </FooterLink>
-                    <FooterLink to="/Plantpedia" activeStyle>
+                    <FooterLink to="/AboutUs" activeStyle>
                         About Us
                     </FooterLink>
-                    <FooterLink to="/BouttiqueShops" activeStyle>
+                    <FooterLink to="/TC" activeStyle>
                         Terms & Conditions
                     </FooterLink>
                 </LeftDiv>
@@ -91,13 +93,13 @@ const Footer = () => {
                 </IconsDiv>
 
                 <RightDiv>
-                    <FooterLink to="/Subscription" activeStyle>
+                    <FooterLink to="/Impressum" activeStyle>
                         Impressum
                     </FooterLink>
-                    <FooterLink to="/Blog" activeStyle>
+                    <FooterLink to="/Faq" activeStyle>
                         FAQ
                     </FooterLink>
-                    <FooterLink to="/Blog" activeStyle>
+                    <FooterLink to="/Privacy" activeStyle>
                         Privacy
                     </FooterLink>
                 </RightDiv>

@@ -64,7 +64,6 @@ const NavMenu = styled.div`
     display: flex;
     align-items: center;
     margin-right: -24px;
-
     @media screen and (max-width: 768px) {
     display: none;
     }
@@ -74,7 +73,6 @@ const NavBtn = styled.nav`
     display: flex;
     align-items: center;
     margin-right: 24px;
-
     @media screen and (max-width: 768px) {
         display: none;
     }
@@ -103,15 +101,17 @@ const Navbar = () => {
 
     return (
         <>
-            <Nav >
-            <NavLogo to="/Home">
+
+            <Nav>
+            <NavLogo to="/">
+
             <ImgLogo src={logo}/>
             </NavLogo>
             <Bars onClick={() => setOpen(!open)}
             />
 
             <NavMenu>
-                <NavLink to="/Home" activeStyle>
+                <NavLink to="/" activeStyle>
                     Home
                 </NavLink>
                 <NavLink to="/Plantpedia" activeStyle>
