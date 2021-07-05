@@ -5,8 +5,6 @@ import styled from "styled-components";
 import InstagramLogo from "../assets/instagram.png";
 
 const FooterBar = styled.div`
-margin-left:auto;
-margin-right:auto;
 height:25vh; 
 width:100vw;
 background-color: black;
@@ -15,22 +13,19 @@ background-color: black;
 const LeftDiv = styled.div`
 height:100px;
 width: 200px;
-float: left;
-margin-top: 8vh;
+display: flex-box;
+justify-content: space-between;
 `;
 
 const RightDiv = styled.div`
 height:100px;
 width: 200px;
-float:right;
-margin-top: 8vh;
 `;
 
 const IconsDiv = styled.div`
 height:100px;
 width: 200px;
-margin-top: 8vh;
-position-items: center;
+margin-left:10px;
 `;
 
 const FooterLink = styled(Link)`
@@ -48,38 +43,56 @@ const InstaLogo = styled.img`
     width:30px;
     height: 30px;
     background-color: white;
+    border-radius: 90%;
+    margin: 10px;
+`
+const FooterContainer = styled.div`
+display: flex;
+padding-top: 8vh;
+justify-content: space-around;
+`
+
+const Copyright = styled.h3 `
+color: white;
+margin-left: -3vw;
+padding: 10px;
 `
 
 const Footer = () => {
     return (
         <FooterBar>
-            <LeftDiv>
-                <FooterLink to="/Home" activeStyle>
-                    Contact
-                </FooterLink>
-                <FooterLink to="/Plantpedia" activeStyle>
-                    About Us
-                </FooterLink>
-                <FooterLink to="/BouttiqueShops" activeStyle>
-                    Terms & Conditions
-                </FooterLink>
-            </LeftDiv>
-            <RightDiv>
-                <FooterLink to="/Subscription" activeStyle>
-                    Impressum
-                </FooterLink>
-                <FooterLink to="/Blog" activeStyle>
-                    FAQ
-                </FooterLink>
-                <FooterLink to="/Blog" activeStyle>
-                    Privacy
-                </FooterLink>
-            </RightDiv>
-            <IconsDiv>
-                <InstaLogo src={InstagramLogo} alt="Instagram Logo"/>
-                <InstaLogo src={InstagramLogo} alt="Instagram Logo"/>
-                <InstaLogo src={InstagramLogo} alt="Instagram Logo"/>
-            </IconsDiv>
+            <FooterContainer>
+                <LeftDiv>
+                    <FooterLink to="/Home" activeStyle>
+                        Contact
+                    </FooterLink>
+                    <FooterLink to="/Plantpedia" activeStyle>
+                        About Us
+                    </FooterLink>
+                    <FooterLink to="/BouttiqueShops" activeStyle>
+                        Terms & Conditions
+                    </FooterLink>
+                </LeftDiv>
+
+                <IconsDiv>
+                    <InstaLogo src={InstagramLogo} alt="Instagram Logo"/>
+                    <InstaLogo src={InstagramLogo} alt="Instagram Logo"/>
+                    <InstaLogo src={InstagramLogo} alt="Instagram Logo"/>
+                    <Copyright> Copyright @ PlantPedia</Copyright>
+                </IconsDiv>
+
+                <RightDiv>
+                    <FooterLink to="/Subscription" activeStyle>
+                        Impressum
+                    </FooterLink>
+                    <FooterLink to="/Blog" activeStyle>
+                        FAQ
+                    </FooterLink>
+                    <FooterLink to="/Blog" activeStyle>
+                        Privacy
+                    </FooterLink>
+                </RightDiv>
+            </FooterContainer>
             </FooterBar>
     );
 };
