@@ -98,13 +98,13 @@ const Navbar = () => {
     return (
         <>
             <Nav>
-            <NavLogo to="/Home">
+            <NavLogo to="/">
             <ImgLogo src={logo}/>
             </NavLogo>
             <Bars />
 
             <NavMenu>
-                <NavLink to="/Home" activeStyle>
+                <NavLink to="/" activeStyle>
                     Home
                 </NavLink>
                 <NavLink to="/Plantpedia" activeStyle>
