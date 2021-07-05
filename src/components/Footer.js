@@ -1,62 +1,86 @@
-import React, { useState } from 'react';
-//import { FiMenu, FiX } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { FaBars } from "react-icons/fa";
+import { NavLink as Link } from "react-router-dom";
+import styled from "styled-components";
+import InstagramLogo from "../assets/instagram.png";
 
+const FooterBar = styled.div`
+margin-left:auto;
+margin-right:auto;
+height:25vh; 
+width:100vw;
+background-color: black;
+`;
+
+const LeftDiv = styled.div`
+height:100px;
+width: 200px;
+float: left;
+margin-top: 8vh;
+`;
+
+const RightDiv = styled.div`
+height:100px;
+width: 200px;
+float:right;
+margin-top: 8vh;
+`;
+
+const IconsDiv = styled.div`
+height:100px;
+width: 200px;
+margin-top: 8vh;
+position-items: center;
+`;
+
+const FooterLink = styled(Link)`
+    font-family: 'Monteserrat', sans-serif;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    color: white;
+    margin-top: 1vh;
+`;
+
+
+const InstaLogo = styled.img`
+    width:30px;
+    height: 30px;
+    background-color: white;
+`
 
 const Footer = () => {
-    const [open, setOpen] = useState(false);
-    const handleClick = () => {
-        setOpen(!open);
-    };
-    const closeMenu = () => {
-        setOpen(false);
-    };
     return (
-        <nav className="navbar">
-            <Link to="/" className="nav-logo">
-                Logo
-            </Link>
-            <div onClick={handleClick} className="nav-icon">
-                {/* {open ? <FiX /> : <FiMenu />} */}
-            </div>
-            <ul className={open ? 'nav-links active' : 'nav-links'}>
-                <li className="nav-item">
-                    <Link to="/" className="nav-link" onClick={closeMenu}>
-                        Home
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link to="/Plantpedia" className="nav-link" onClick={closeMenu}>
-                        Plantpedia
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link to="/Boutique-Shops" className="nav-link" onClick={closeMenu}>
-                        Boutique Shops
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link to="/Subscription" className="nav-link" onClick={closeMenu}>
-                        Subscription
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link to="/Blog" className="nav-link" onClick={closeMenu}>
-                        Blog
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link to="/Login" className="nav-link" onClick={closeMenu}>
-                        Login
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link to="/Register" className="nav-link" onClick={closeMenu}>
-                        Register
-                    </Link>
-                </li>
-            </ul>
-        </nav>
+        <FooterBar>
+            <LeftDiv>
+                <FooterLink to="/Home" activeStyle>
+                    Contact
+                </FooterLink>
+                <FooterLink to="/Plantpedia" activeStyle>
+                    About Us
+                </FooterLink>
+                <FooterLink to="/BouttiqueShops" activeStyle>
+                    Terms & Conditions
+                </FooterLink>
+            </LeftDiv>
+            <RightDiv>
+                <FooterLink to="/Subscription" activeStyle>
+                    Impressum
+                </FooterLink>
+                <FooterLink to="/Blog" activeStyle>
+                    FAQ
+                </FooterLink>
+                <FooterLink to="/Blog" activeStyle>
+                    Privacy
+                </FooterLink>
+            </RightDiv>
+            <IconsDiv>
+                <InstaLogo src={InstagramLogo} alt="Instagram Logo"/>
+                <InstaLogo src={InstagramLogo} alt="Instagram Logo"/>
+                <InstaLogo src={InstagramLogo} alt="Instagram Logo"/>
+            </IconsDiv>
+            </FooterBar>
     );
 };
 export default Footer;
