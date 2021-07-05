@@ -21,6 +21,7 @@ const GlobalStyles = createGlobalStyle`
         width: 100%;
         overflow-x: hidden;
         background-color: #323144;
+        overflow: ;
     }
 `
 export default GlobalStyles;
