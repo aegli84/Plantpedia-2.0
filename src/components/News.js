@@ -4,6 +4,7 @@ import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css"
 import "swiper/components/navigation/navigation.min.css"
 import SwiperCore, { Autoplay,Pagination,Navigation } from 'swiper/core';
+import { BsArrowReturnRight } from 'react-icons/bs'
 
 SwiperCore.use([Autoplay,Pagination,Navigation]);
 
@@ -34,7 +35,8 @@ const News = () => {
                             href="https://www.thespruce.com/the-5-it-plants-of-2021-according-to-plant-pros-5094273" 
                             target="_blank" 
                             rel="noopener noreferrer"> 
-                            - Read more 
+                            <BsArrowReturnRight size = '1.5rem'/>
+                            Read more 
                         </a>
                     </p>
                     </P>
@@ -49,7 +51,8 @@ const News = () => {
                             href="https://www.houseplantjournal.com/tips-for-moving-with-plants/" 
                             target="_blank" 
                             rel="noopener noreferrer"> 
-                            - Read more 
+                            <BsArrowReturnRight size = '1.5rem'/>
+                            Read more 
                         </a>
                     </p>
                     </P>
@@ -64,7 +67,8 @@ const News = () => {
                             href="https://invinciblehouseplants.com/blog/how-to-get-new-leaves-ficus-lyrata-fiddle-leaf-fig-plant" 
                             target="_blank" 
                             rel="noopener noreferrer"> 
-                            - Read more 
+                            <BsArrowReturnRight size = '1.5rem'/>
+                            Read more 
                         </a>
                     </p>
                     </P>
@@ -78,8 +82,9 @@ const News = () => {
                         <a 
                             href="https://www.greenobsessions.com/my-diy-propagation-wall/" 
                             target="_blank" 
-                            rel="noopener noreferrer"> 
-                            - Read more 
+                            rel="noopener noreferrer">
+                            <BsArrowReturnRight size = '1.5rem'/> 
+                            Read more
                         </a>
                     </p>
                     </P>
@@ -107,6 +112,7 @@ const Div = styled.div`
     }
     .swiper-button-prev{
         color: #323144;
+        
     }
     .swiper-pagination > .swiper-pagination-bullet {
     opacity: 0.9;
@@ -134,16 +140,16 @@ const Div = styled.div`
 const H2 = styled.h2 `
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 4rem;
     color: whitesmoke; 
     padding: 0 4rem 1rem;
-/* 
+
 @media (min-width: 767px) {
     font-size: 2rem;
     padding: 5rem;
-} */
+}
 @media (min-width: 340px) {
-    padding: .1rem 1.8rem 1rem 2rem;
+    padding: .1rem 1.8rem 0rem 2rem;
     margin-top: 1rem;
     font-size: 1.9rem;
 }
@@ -158,6 +164,7 @@ const P = styled.p `
     padding: 0 4rem 2rem;
     p{
         margin-top: 1rem;
+        
     }
     a{
         color: #323144;
