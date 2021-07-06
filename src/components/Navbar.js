@@ -3,16 +3,20 @@ import logo from "../assets/logo.png";
 //import { FaBars } from "react-icons/fa";
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
+import { useState } from "react";
 
 
 const Nav = styled.nav`
     background: black;
     height: 62,5px;
+    width: 100vw;
+    top: 0;
     display: flex;
     justify-content: space-between;
     /* padding: 0.2rem calc((70vw - 1000px) / 2); */
     z-index: 12;
     padding-right: 50px;
+    position: sticky;
 `;
 const NavLogo = styled(Link)`
     cursor: pointer;
@@ -97,16 +101,16 @@ const NavBtnLink = styled(Link)`
 `;
 
 const Navbar = () => {
+
     
     return (
         <>
-        {/* <Bars /> */}
+        
             <Nav>
             <NavLogo to="/">
                 <ImgLogo src={logo}/>
             </NavLogo>
-            
-
+           
             <NavMenu>
                 <NavLink to="/" activeStyle>
                     Home
