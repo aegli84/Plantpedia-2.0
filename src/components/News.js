@@ -123,17 +123,19 @@ const Div = styled.div`
         background-color: #323144;
     }
 
-@media (min-width: 767px) {
+@media (max-width: 767px) {
     width: 100vw; 
     height: 45vh;
     padding: 4rem;
     margin-top: .1rem;
+    background-color:  blue;
     }
 
-@media (min-width: 340px) {
-    height: 40vh;
+@media (max-width: 340px) {
+    height: 35vh;
     padding: 0.6rem;
     margin-top: .1rem;
+    background-color:  red;
 }
 `
 
