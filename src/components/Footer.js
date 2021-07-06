@@ -6,7 +6,7 @@ import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 
 const FooterBar = styled.div`
-height:25vh; 
+height:26vh; 
 width:100vw;
 background-color: black;
 `;
