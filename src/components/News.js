@@ -174,10 +174,10 @@ const P = styled.p `
         
     
     }
-/* 
+
 @media (min-width: 767px) {
     font-size: 1.5rem;
-} */
+} 
 @media (min-width: 340px) {
     padding: .5rem 1.8rem 1rem 2rem;
     font-size: 1.1rem;
