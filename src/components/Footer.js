@@ -1,10 +1,12 @@
 import React from "react";
+
+import { FiInstagram, FiGithub, FiFacebook } from "react-icons/fi";
+
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
-import InstagramLogo from "../assets/instagram.png";
 
 const FooterBar = styled.div`
-height:25vh; 
+height:26vh; 
 width:100vw;
 background-color: black;
 `;
@@ -14,21 +16,25 @@ height:100px;
 width: 200px;
 display: flex-box;
 justify-content: space-between;
+margin-top: 20px;
 `;
 
 const RightDiv = styled.div`
 height:100px;
 width: 200px;
+margin-top: 20px;
 `;
 
 const IconsDiv = styled.div`
-height:100px;
-width: 200px;
-margin-left:10px;
+padding: 2rem;
+justify-content : space-between;
+text-align: center;
+align-content: center;
+display: inline-block;
 `;
 
 const FooterLink = styled(Link)`
-    font-family: 'Monteserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     align-items: center;
     justify-content: space-around;
@@ -37,24 +43,22 @@ const FooterLink = styled(Link)`
     margin-top: 1vh;
 `;
 
-
-const InstaLogo = styled.img`
-    width:30px;
-    height: 30px;
-    background-color: white;
-    border-radius: 90%;
-    margin: 10px;
-`
 const FooterContainer = styled.div`
 display: flex;
-padding-top: 8vh;
+padding-top: 4vh;
 justify-content: space-around;
 `
 
 const Copyright = styled.h3 `
 color: white;
-margin-left: -3vw;
-padding: 10px;
+margin-top: 45px;
+font-weight: 300;
+font-size: 1rem;
+`
+const SocialMedia = styled.div `
+display:flex;
+justify-content: space-between;
+
 `
 
 const Footer = () => {
@@ -74,10 +78,18 @@ const Footer = () => {
                 </LeftDiv>
 
                 <IconsDiv>
-                    <InstaLogo src={InstagramLogo} alt="Instagram Logo"/>
-                    <InstaLogo src={InstagramLogo} alt="Instagram Logo"/>
-                    <InstaLogo src={InstagramLogo} alt="Instagram Logo"/>
-                    <Copyright> Copyright @ PlantPedia</Copyright>
+                    <SocialMedia>
+                        <a href="https://github.com/aegli84/Plantpedia" target = "_blank" rel="noreferrer">
+                            <FiInstagram color= "white" size= "1.5rem"/>
+                        </a>
+                        <a href="https://github.com/aegli84/Plantpedia" target = "_blank" rel="noreferrer">
+                        <FiGithub color= "white" size= "1.5rem"/>
+                        </a>
+                        <a href="https://github.com/aegli84/Plantpedia" target = "_blank" rel="noreferrer">
+                        <FiFacebook color= "white" size= "1.5rem"/>
+                        </a>
+                    </SocialMedia>
+                    <Copyright> Copyright @Plantpedia 2021</Copyright>
                 </IconsDiv>
 
                 <RightDiv>
