@@ -173,6 +173,7 @@ const P = styled.p `
         text-decoration: none;
         border-bottom: .5rem solid #83a46f;
         
+    
     }
 /* 
 @media (min-width: 767px) {

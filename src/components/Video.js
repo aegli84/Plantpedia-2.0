@@ -20,8 +20,8 @@ const Div = styled.div`
     height: 50vh;
 }
 @media (max-width: 400px) {
-    width: 100vw; 
-    height: 30vh;
+    width: 100%; 
+    height: 40vh;
 }
 `
 const Video2 = styled.video`
