@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/logo.png";
-import { FaBars } from "react-icons/fa";
+//import { FaBars } from "react-icons/fa";
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 import { useState } from "react";
@@ -13,7 +13,7 @@ const Nav = styled.nav`
     top: 0;
     display: flex;
     justify-content: space-between;
-    padding: 0.2rem calc((70vw - 1000px) / 2);
+    /* padding: 0.2rem calc((70vw - 1000px) / 2); */
     z-index: 12;
     padding-right: 50px;
     position: sticky;
@@ -27,6 +27,10 @@ const ImgLogo = styled.img`
     height: 60px;
     border-radius: 50%;
     margin-left: 50px;
+    
+@media screen and (max-width: 768px) { 
+    display: none;
+    }
 `
 
 const NavLink = styled(Link)`
@@ -46,19 +50,19 @@ const NavLink = styled(Link)`
     }
 `;
 
-const Bars = styled(FaBars)`
-    display: none;
-    color: #fff;
-    @media screen and (max-width: 768px) {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(-100%, 75%);
-        font-size: 1.8rem;
-        cursor: pointer;
-    }
-`;
+// const Bars = styled(FaBars)`
+//     display: none;
+//     color: #fff;
+//     @media screen and (max-width: 768px) {
+//         display: block;
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//         transform: translate(-100%, 75%);
+//         font-size: 1.8rem;
+//         cursor: pointer;
+//     }
+// `;
 
 const NavMenu = styled.div`
     display: flex;
@@ -97,19 +101,16 @@ const NavBtnLink = styled(Link)`
 `;
 
 const Navbar = () => {
-    const [open, setOpen] = useState(false)
 
+    
     return (
         <>
-
+        
             <Nav>
             <NavLogo to="/">
-
-            <ImgLogo src={logo}/>
+                <ImgLogo src={logo}/>
             </NavLogo>
-            <Bars onClick={() => setOpen(!open)}
-            />
-
+           
             <NavMenu>
                 <NavLink to="/" activeStyle>
                     Home
