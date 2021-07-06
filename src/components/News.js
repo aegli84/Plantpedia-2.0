@@ -127,13 +127,13 @@ const Div = styled.div`
     height: 45vh;
     padding: 4rem;
     margin-top: .1rem;
-    background-color:  blue;
+    
     }
 @media (min-width: 340px) {
     height: 40vh;
     padding: 0.6rem;
     margin-top: .1rem;
-    background-color:  red;
+    
 }
 `
 

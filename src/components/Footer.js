@@ -29,7 +29,7 @@ margin-top: 20px;
 `;
 
 const IconsDiv = styled.div`
-padding: 2rem 0 0rem 0✓rem;
+padding:2rem 0 0 0rem;
 justify-content : space-between;
 text-align: center;
 align-content: center;
