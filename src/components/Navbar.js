@@ -23,8 +23,8 @@ const NavLogo = styled(Link)`
 `;
 
 const ImgLogo = styled.img`
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
     margin-left: 50px;
     

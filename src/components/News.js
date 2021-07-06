@@ -122,14 +122,12 @@ const Div = styled.div`
     .swiper-pagination > .swiper-pagination-bullet-active {
         background-color: #323144;
     }
-
 @media (min-width: 767px) {
     width: 100vw; 
     height: 45vh;
     padding: 4rem;
     margin-top: .1rem;
     }
-
 @media (min-width: 340px) {
     height: 40vh;
     padding: 0.6rem;
@@ -143,7 +141,6 @@ const H2 = styled.h2 `
     font-size: 4rem;
     color: whitesmoke; 
     padding: 0 4rem 1rem;
-
 @media (min-width: 767px) {
     font-size: 2rem;
     padding: 5rem;
