@@ -58,6 +58,7 @@ font-size: 1rem;
 const SocialMedia = styled.div `
 display:flex;
 justify-content: space-between;
+
 `
 
 const Footer = () => {

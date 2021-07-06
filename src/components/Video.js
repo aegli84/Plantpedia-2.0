@@ -10,7 +10,6 @@ const Video = () => {
 }
 
 const Div = styled.div`
-    top: 0; 
     width: 100vw; 
     height: 80vh; 
     z-index: -1;
@@ -20,12 +19,13 @@ const Div = styled.div`
     height: 50vh;
 }
 @media (max-width: 400px) {
-    width: 100vw; 
-    height: 30vh;
+    width: 100%; 
+    height: 40vh;
 }
 `
 const Video2 = styled.video`
     width:100%; 
+    margin: 0;
     height:100%;
     object-fit: fill;
 `

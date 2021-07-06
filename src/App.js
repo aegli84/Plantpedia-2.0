@@ -10,7 +10,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import GlobalStyles from './GlobalStyles';
 import Footer from './components/Footer';
-
+import NavBurgerMenu from './components/NavBurgerMenu'
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
   
     <GlobalStyles/>
     <Navbar/>
+    <NavBurgerMenu/> 
       <Switch>
 
         <Route exact path="/">
