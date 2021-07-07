@@ -4,13 +4,14 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Plantpedia from './pages/Plantpedia';
 import BoutiqueShops from './pages/BoutiqueShops';
-import Subscription from './pages/Subscription';
+//import Subscription from './pages/Subscription';
 import Blog from './pages/Blog';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import GlobalStyles from './GlobalStyles';
 import Footer from './components/Footer';
 import NavBurgerMenu from './components/NavBurgerMenu'
+import Chat from './pages/Chat';
 
 function App() {
   return (
@@ -33,8 +34,8 @@ function App() {
           <BoutiqueShops />
         </Route>
 
-        <Route path="/Subscription">
-          <Subscription />
+        <Route path="/Chat">
+          <Chat />
         </Route>
 
         <Route path="/Blog">
