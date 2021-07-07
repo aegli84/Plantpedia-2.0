@@ -1,7 +1,5 @@
 import React from "react";
-
-import { FiInstagram, FiGithub, FiFacebook } from "react-icons/fi";
-
+import { FiInstagram, FiGithub, FiFacebook } from "react-icons/fi"
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -9,6 +7,7 @@ const FooterBar = styled.div`
 height:26vh; 
 width:100vw;
 background-color: black;
+
 `;
 
 const LeftDiv = styled.div`
@@ -34,6 +33,9 @@ justify-content : space-between;
 text-align: center;
 align-content: center;
 display: inline-block;
+&:hover  {
+    fill: red;
+}
 `;
 
 const FooterLink = styled(Link)`
@@ -44,6 +46,11 @@ const FooterLink = styled(Link)`
     display: flex;
     color: white;
     margin-top: 1vh;
+    text-decoration: none;
+    &:hover {
+        color: #83a46f;
+    }
+    /* border-bottom: 1px solid whitesmoke; */
 `;
 
 const FooterContainer = styled.div`
@@ -61,6 +68,9 @@ font-size: 1rem;
 const SocialMedia = styled.div `
 display:flex;
 justify-content: space-between;
+.icon:hover  {
+    stroke: #83a46f;
+}
 
 `
 
@@ -80,16 +90,16 @@ const Footer = () => {
                     </FooterLink>
                 </LeftDiv>
 
-                <IconsDiv>
-                    <SocialMedia>
+                <IconsDiv >
+                    <SocialMedia >
                         <a href="https://github.com/aegli84/Plantpedia" target = "_blank" rel="noreferrer">
-                            <FiInstagram color= "white" size= "1.5rem"/>
+                            <FiInstagram  className='icon' color= "whitesmoke" size= "1.5rem" />
                         </a>
                         <a href="https://github.com/aegli84/Plantpedia" target = "_blank" rel="noreferrer">
-                        <FiGithub color= "white" size= "1.5rem"/>
+                        <FiGithub  className='icon' color= "whitesmoke" size= "1.5rem"/>
                         </a>
                         <a href="https://github.com/aegli84/Plantpedia" target = "_blank" rel="noreferrer">
-                        <FiFacebook color= "white" size= "1.5rem"/>
+                        <FiFacebook className='icon'  color= "whitesmoke" size= "1.5rem"/>
                         </a>
                     </SocialMedia>
                     <Copyright> Copyright @Plantpedia 2021</Copyright>
