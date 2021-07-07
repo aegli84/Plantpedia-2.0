@@ -43,7 +43,7 @@ const NavLink = styled(Link)`
     height: 100%;
     cursor: pointer;
     &.active {
-    color:black;
+    color:white;
     }
     &:hover {
     color:  #918EA4;
