@@ -16,7 +16,7 @@ const News = () => {
             spaceBetween={40} 
             centeredSlides={true} 
             autoplay={{
-                "delay": 4500,
+                "delay": 9500,
                 "disableOnInteraction": false
             }} 
             pagination={{
@@ -107,6 +107,7 @@ const Div = styled.div`
     text-align: center;
     padding: 7rem;
     margin-top: .2rem;
+    
     .swiper-button-next{
         color: #323144;
     }
@@ -127,11 +128,13 @@ const Div = styled.div`
     height: 45vh;
     padding: 4rem;
     margin-top: .1rem;
+    
     }
 @media (min-width: 340px) {
     height: 40vh;
     padding: 0.6rem;
     margin-top: .1rem;
+    
 }
 `
 
