@@ -17,6 +17,9 @@ width: 200px;
 display: flex-box;
 justify-content: space-between;
 margin-top: 20px;
+@media (min-width: 340px) {
+    margin-left: 10px;
+}
 `;
 
 const RightDiv = styled.div`
@@ -26,7 +29,7 @@ margin-top: 20px;
 `;
 
 const IconsDiv = styled.div`
-padding: 2rem;
+padding:2rem 0 0 0rem;
 justify-content : space-between;
 text-align: center;
 align-content: center;
