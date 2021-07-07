@@ -3,7 +3,7 @@ import logo from "../assets/logo.png";
 //import { FaBars } from "react-icons/fa";
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
-import { useState } from "react";
+//import { useState } from "react";
 
 
 const Nav = styled.nav`
