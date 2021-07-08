@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 const WateringCard=styled.div`
-width:14vw;
+width:12vw;
 height:18vh;
 background-color: #725490;
 margin: auto;
@@ -25,7 +25,7 @@ display: flex;
 
 const InnerBlackFrame=styled.div`
 height:6vh;
-width: 14vw;
+width: 12vw;
 background-color: #323144;
 border-radius: 0 0 2rem 2rem;
 margin-top:15vh;
