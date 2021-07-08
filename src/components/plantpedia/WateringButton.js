@@ -28,19 +28,19 @@ height:6vh;
 width: 12vw;
 background-color: #323144;
 border-radius: 0 0 2rem 2rem;
-margin-top:14vh;
+margin-top:15vh;
 @media (max-width: 770px) {
     grid-template-columns: auto auto;
-    width:22vw;
-    margin-top:12vh;
+    width:180px;
+    margin-top:130px;
 
 
 }
 @media (max-width: 375px) {
     grid-template-columns: auto auto;
-    width:30vw;
-    height:5vh;
-    margin-top: 10vh;
+    width:120px;
+    height:40px;
+    margin-top: 80px;
     z-index: 1;
 }
 
