@@ -1,71 +1,42 @@
 import styled from "styled-components";
+import { ChatEngine } from 'react-chat-engine';
 
 const ChatBox = () => {
     return(
-        <>
-            <Div>
-                <div>
-                    <h1>Welcome to our live chat! </h1>
+        <Div>
+            <div>
+                <ChatEngine
+                height='70vh'
+                userName='aegli'
+                userSecret='123'
+                projectID='cf898989-697a-41cf-a92e-fa5161403740'
+                />
                 </div>
-                <Chat>
-
-                </Chat>
-                
-        {/* <ul id = "user-channel-list">
-            <li id="switch-btn" class = "btn btn-pink" onclick="switchHandler()">
-                
-            </li>
-            <ul id= "active-list">
-            </ul>
-        </ul> */}
-                <section id="chat-view">
-                    <ul id="chat-box"></ul>
-                        <section>
-                            <input id = 'msg-box' placeholder="Say something"></input>
-                            <button id = "send-btn" onclick="clickHandler()">Send</button>
-                        </section>
-                </section>
-            </Div>
-        </>
+        </Div>
     )
 }
 
 const Div = styled.div`
-    height: 100vh;
-    width: 100vw;
-    display: inline;
+    width: 70vw;
+    /* height: 71vh; */
+    display: inline-block;
     align-content: center;
     justify-content: center;
-    text-align: center;
-    margin-top: 100vh;
+    background: #918ea4;
+    border-radius: .7rem;
+    /* box-shadow: 0 8px 32px 10px rgba( 31, 38, 135, 0.37 ); */
+    border: 8px solid rgba( 255, 255, 255, 0.18 );
+    margin: 5rem 15rem 15rem;
+    opacity: 0.85;
+    font-weight: 600;
     
-    /* h1{
-        width: 50vw;
-        height: 5vh;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: whitesmoke;
-        background: rgba( 197, 197, 196, 0.25 );
-        box-shadow: 0 8px 102px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 30px );
-        -webkit-backdrop-filter: blur( 30px );
-        border-radius: 10px;
-        border: 2px solid rgba( 255, 255, 255, 0.18 );
+    div {
+        border-radius: .4rem;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        color: #5b5a5c;
+        font-family: 'Raleway', sans-serif;
         
-    } */
-    
-`
-const Chat = styled.div `
-    width: 70vw;
-    height: 64vh;
-    background: rgba( 197, 197, 196, 0.25 );
-    box-shadow: 0 8px 102px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 20px );
-    -webkit-backdrop-filter: blur( 20px );
-    border-radius: 30px;
-    border: 2px solid rgba( 255, 255, 255, 0.18 );
-    margin: 4rem 0rem 0rem 15rem;
+    }
 `
 
 export default ChatBox;
