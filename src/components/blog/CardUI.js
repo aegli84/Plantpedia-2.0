@@ -22,7 +22,7 @@ const Card = (props) =>{
     return (
             <ContainerBox>
                 <CardBox>
-                    <img src={image1} alt="image1"/>
+                    <ImgBlog src={image1} alt="image1"/>
                     <TextDiv>
                         <h3>Article title</h3>
                         <h4>

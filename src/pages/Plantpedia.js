@@ -6,7 +6,7 @@ import WateringButton from "../components/plantpedia/WateringButton";
 
 const ExternalFrame = styled.div`
 width:100vw;
-height: 74vh;
+height: 100vh;
 padding-top: 7vh;
 padding-bottom: 7vh;
 background-image:url(${bg});
@@ -21,7 +21,7 @@ background-repeat:no-repeat;
 `
 const InternalFrame = styled.div`
 width:80vw;
-height: 60vh;
+height: 70vh;
 margin: auto ;
 border-radius: 5rem;
 box-shadow: 0 0 20px black;
