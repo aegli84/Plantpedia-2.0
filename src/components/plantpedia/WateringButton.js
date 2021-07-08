@@ -15,7 +15,7 @@ display: flex;
     height:18vh;
 
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     grid-template-columns: auto auto ;
     width:30vw;
     height:14vh;
