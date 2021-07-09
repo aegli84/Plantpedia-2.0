@@ -10,7 +10,8 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import GlobalStyles from './GlobalStyles';
 import Footer from './components/Footer';
-import NavBurgerMenu from './components/NavBurgerMenu'
+import NavBurgerMenu from './components/NavBurgerMenu';
+import Watering from './pages/Watering';
 
 function App() {
   return (
@@ -44,6 +45,11 @@ function App() {
         <Route path="/Login">
           <Login />
         </Route> 
+
+        <Route path="/Watering">
+          <Watering />
+        </Route> 
+
 
         <Route path="/Register">
           <Register />
