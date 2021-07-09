@@ -6,13 +6,12 @@ const Chat = () => {
     return (
         <Div>
             <ChatBox/>
-            
         </Div>
     )
 }
 
 const Div = styled.div `
-    height: 90vh;   
+    height: 95vh;   
     width: 100vw;
     background-image: url(${chatpage});
     background-repeat: no-repeat;
