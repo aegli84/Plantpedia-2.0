@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import WateringIcon from "../plantpedia/icons/watering.png";
+import ChatIcon from "../plantpedia/icons/chat.png";
 
 
 const WateringCard=styled.div`
@@ -35,6 +35,7 @@ font-size: 1.5rem;
     width:22vw;
 	font-size: 1.3rem;
 
+    
 
 
 }
@@ -71,6 +72,8 @@ margin-left: 6vh;
 
 `
 
+
+
 const Section1=styled.div`
 display: flex;
 `
@@ -90,25 +93,23 @@ text-align: center;
 margin-top: 20px;
 
 `
-
-const ImageWatering = styled.img`
-width:100px;
-height: 11vh;
+const ImageChat = styled.img`
+width:80px;
+margin-left: 9px;
+margin-top: 9px;
+height: 9vh;
 background-color: white;
 border-radius: 50%;
 @media (max-width: 770px) {
-    width:14vw;
-    height: 10vh;
+    width:13vw;
     
 }
 @media (max-width: 377px) {
-    width:15vw;
-    height: 7vh;
+    width:12vw;
+    height: 5vh;
 
 }
-
 `
-
 
 
 const WateringButton = () => {
@@ -116,17 +117,16 @@ const WateringButton = () => {
         <WateringCard>
             <Section1>
             <Thumbnail>
-            <ImageWatering src={WateringIcon}>
+            <ImageChat src={ChatIcon}>
 
-            </ImageWatering>
-
+            </ImageChat>
 
             </Thumbnail>
             </Section1>
             <Section2>
-			<LinkButton href="/Watering">
+			<LinkButton href="/Chat">
 				<InnerBlackFrame>
-					<TextBox>Watering Tips</TextBox>
+					<TextBox>Live Chat</TextBox>
 				</InnerBlackFrame>
 			</LinkButton>
             </Section2>

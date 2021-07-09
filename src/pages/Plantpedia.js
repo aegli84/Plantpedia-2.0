@@ -2,11 +2,20 @@ import React from "react";
 import styled from "styled-components";
 import bg from "../assets/bgimg/plantpediapage.png";
 import WateringButton from "../components/plantpedia/WateringButton";
+import SoilTypes from "../components/plantpedia/SoilTypes";
+import PestControl from "../components/plantpedia/PestControl";
+import LiveChat from "../components/plantpedia/LiveChat";
+import LightTips from "../components/plantpedia/LightTips";
+import HumidityTips from "../components/plantpedia/HumidityTips";
+
+
+
+
 
 
 const ExternalFrame = styled.div`
 width:100vw;
-height: 74vh;
+height: 100vh;
 padding-top: 7vh;
 padding-bottom: 7vh;
 background-image:url(${bg});
@@ -21,7 +30,7 @@ background-repeat:no-repeat;
 `
 const InternalFrame = styled.div`
 width:80vw;
-height: 60vh;
+height: 70vh;
 margin: auto ;
 border-radius: 5rem;
 box-shadow: 0 0 20px black;
@@ -54,11 +63,11 @@ const Plantpedia = () => {
         <ExternalFrame>
             <InternalFrame>
                 <WateringButton/>
-                <WateringButton/>
-                <WateringButton/>
-                <WateringButton/>
-                <WateringButton/>
-                <WateringButton/>
+                <LightTips/>
+                <PestControl/>
+                <SoilTypes/>
+                <HumidityTips/>
+                <LiveChat/>
             </InternalFrame>
         </ExternalFrame>
     )

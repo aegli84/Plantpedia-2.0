@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import WateringIcon from "../plantpedia/icons/watering.png";
-
+import HumidityIcon from "../plantpedia/icons/humidity.png";
 
 const WateringCard=styled.div`
 width:200px;
@@ -90,15 +89,13 @@ text-align: center;
 margin-top: 20px;
 
 `
-
-const ImageWatering = styled.img`
+const ImageHumidity= styled.img`
 width:100px;
 height: 11vh;
 background-color: white;
 border-radius: 50%;
 @media (max-width: 770px) {
     width:14vw;
-    height: 10vh;
     
 }
 @media (max-width: 377px) {
@@ -110,23 +107,20 @@ border-radius: 50%;
 `
 
 
-
 const WateringButton = () => {
     return (
         <WateringCard>
             <Section1>
             <Thumbnail>
-            <ImageWatering src={WateringIcon}>
+                <ImageHumidity src={HumidityIcon}>
 
-            </ImageWatering>
-
-
+                </ImageHumidity>
             </Thumbnail>
             </Section1>
             <Section2>
-			<LinkButton href="/Watering">
+			<LinkButton href="/Humidity">
 				<InnerBlackFrame>
-					<TextBox>Watering Tips</TextBox>
+					<TextBox>Humidity Tips</TextBox>
 				</InnerBlackFrame>
 			</LinkButton>
             </Section2>

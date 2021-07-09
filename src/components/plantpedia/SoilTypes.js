@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import WateringIcon from "../plantpedia/icons/watering.png";
+import SoilIcon from "../plantpedia/icons/soil.png";
 
 
 const WateringCard=styled.div`
@@ -48,6 +48,9 @@ font-size: 1.5rem;
 }
 `
 
+
+
+
 const Thumbnail = styled.div`
 width:100px;
 height: 11vh;
@@ -90,15 +93,13 @@ text-align: center;
 margin-top: 20px;
 
 `
-
-const ImageWatering = styled.img`
+const ImageSoil= styled.img`
 width:100px;
 height: 11vh;
 background-color: white;
 border-radius: 50%;
 @media (max-width: 770px) {
     width:14vw;
-    height: 10vh;
     
 }
 @media (max-width: 377px) {
@@ -111,22 +112,22 @@ border-radius: 50%;
 
 
 
+
+
 const WateringButton = () => {
     return (
         <WateringCard>
             <Section1>
             <Thumbnail>
-            <ImageWatering src={WateringIcon}>
+            <ImageSoil src={SoilIcon}>
 
-            </ImageWatering>
-
-
+            </ImageSoil>
             </Thumbnail>
             </Section1>
             <Section2>
-			<LinkButton href="/Watering">
+			<LinkButton href="Soil">
 				<InnerBlackFrame>
-					<TextBox>Watering Tips</TextBox>
+					<TextBox>Soil Tips</TextBox>
 				</InnerBlackFrame>
 			</LinkButton>
             </Section2>

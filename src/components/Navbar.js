@@ -118,7 +118,7 @@ const Navbar = () => {
                 <NavLink to="/Plantpedia" activeStyle>
                     Plantpedia
                 </NavLink>
-                <NavLink to="/BouttiqueShops" activeStyle>
+                <NavLink to="/BoutiqueShops" activeStyle>
                     Boutique Shops
                 </NavLink>
                 <NavLink to="/Subscription" activeStyle>
