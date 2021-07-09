@@ -118,6 +118,10 @@ const Navbar = () => {
                 <NavLink to="/Plantpedia" activeStyle>
                     Plantpedia
                 </NavLink>
+                <NavLink to="/Guides" activeStyle>
+                    Guides
+                </NavLink>
+
                 <NavLink to="/BoutiqueShops" activeStyle>
                     Boutique Shops
                 </NavLink>
