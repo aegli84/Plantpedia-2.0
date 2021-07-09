@@ -4,10 +4,9 @@ import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 
 const FooterBar = styled.div`
-height:26vh; 
+height:25%; 
 width:100vw;
 background-color: black;
-margin-top: auto;
 `;
 
 const LeftDiv = styled.div`
@@ -61,7 +60,7 @@ justify-content: space-around;
 
 const Copyright = styled.h3 `
 color: white;
-margin-top: 45px;
+margin-top: 35px;
 font-weight: 300;
 font-size: 1rem;
 `
