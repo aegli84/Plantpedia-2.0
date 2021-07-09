@@ -99,7 +99,7 @@ const WateringButton = () => {
             </Thumbnail>
             </Section1>
             <Section2>
-            <Link to="/Soil ">
+            <Link to="/Soil">
                     <Button 
                             className = "button"
                             id = "submit" 

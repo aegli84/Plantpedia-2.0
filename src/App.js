@@ -58,19 +58,18 @@ function App() {
           <Login />
         </Route> 
 
+        <Route path="/Soil">
+          <Soil />
+        </Route>
+
         <Route path="/Watering">
           <Watering />
         </Route> 
 
-
         <Route path="/Light">
           <Light />
         </Route> 
-
-        <Route path="/Soil">
-          <Soil />
-        </Route> 
-
+        
         <Route path="/Pest">
           <Pest />
         </Route> 
