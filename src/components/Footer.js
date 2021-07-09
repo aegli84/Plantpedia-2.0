@@ -7,7 +7,6 @@ const FooterBar = styled.div`
 height:25%; 
 width:100vw;
 background-color: black;
-position: bottom: 0;
 `;
 
 const LeftDiv = styled.div`
