@@ -29,12 +29,19 @@ const Div = styled.div`
     margin: 5rem 13rem 15rem;
     opacity: 0.85;
     font-weight: 600;
-    
+    /* @media (max-width: 770px ){
+        width: 60vw;
+        
+    } */
     div {
         border-radius: .4rem;
         border: 1px solid rgba( 255, 255, 255, 0.18 );
         color: #5b5a5c;
         font-family: 'Raleway', sans-serif;
+        /* @media (max-width: 770px ){
+        
+    
+    } */
         
     }
 `
