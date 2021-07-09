@@ -12,6 +12,7 @@ import GlobalStyles from './GlobalStyles';
 import Footer from './components/Footer';
 import NavBurgerMenu from './components/NavBurgerMenu'
 
+
 function App() {
   return (
     <div className="App">

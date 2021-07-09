@@ -17,10 +17,13 @@ const GlobalStyles = createGlobalStyle`
     }
     body {
         ${'' /* background: #343A40; */}
+        margin: 0;
+        padding: 0;
         height: 100vh;
         width: 100%;
         overflow-x: hidden;
         background-color: #323144;
+        
         
     }
 `
