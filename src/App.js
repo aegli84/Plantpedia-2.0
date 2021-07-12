@@ -17,6 +17,7 @@ import Pest from './pages/Pest'
 import Humidity from './pages/Humidity'
 import Chat from './pages/Chat'
 import NavBurgerMenu from './components/NavBurgerMenu'
+import AboutUs from './pages/AboutUs'
 
 
 function App() {
@@ -36,7 +37,7 @@ function App() {
           <Plantpedia />
         </Route>
 
-        <Route path="/Boutique-Shops">
+        <Route path="/BoutiqueShops">
           <BoutiqueShops />
         </Route>
 
@@ -70,6 +71,10 @@ function App() {
         <Route path="/Chat">
           <Chat />
         </Route> 
+        <Route path="/AboutUs">
+          <AboutUs />
+        </Route> 
+        
         <Route path="/Register">
           <Register />
         </Route> 

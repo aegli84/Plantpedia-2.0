@@ -5,6 +5,7 @@ import chatpage from '../assets/bgimg/chatpage.png'
 const Chat = () => {
     return (
         <Div>
+        {/* <h1>Live Chat</h1> */}
             <ChatBox/>
         </Div>
     )
