@@ -32,8 +32,7 @@ margin-top:15vh;
     grid-template-columns: auto auto;
     width:30vw;
     height:5vh;
-    margin-top: 10vh;
-    z-index: 1;
+	font-size: 1.2rem;
 }
 `
 const WateringButton = () => {
