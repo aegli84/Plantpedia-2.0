@@ -1,9 +1,9 @@
 import React from 'react';
-import Card from '../components/blog/CardUI';
+import Cards from '../components/blog/Card';
 
 const Blog = () => {
     return(
-        <Card/>
+        <Cards/>
     )
 } ;
 
