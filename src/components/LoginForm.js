@@ -1,61 +1,29 @@
-import { useState } from 'react'
-import axios from 'axios'
+import { FaFacebook, FaGoogle } from "react-icons/fa"
+import 'firebase/app'
+import { auth } from './firebase'
+import firebase from 'firebase/app'
 
 const LoginForm = () => {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
-    const [error, setError] = useState('');
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-
-        const authObject = { 'Project-ID':'cf898989-697a-41cf-a92e-fa5161403740', 'User-Name': username, 'User-Secret': password }
-
-        try {
-            // request username & password -> chatengine -> give message
-            await axios.get('https://api.chatengine.io/chats', {headers: authObject})
-            //worked out -> logged in and never have to login again as the credentials are saved in 
-            localStorage.setItem('username', username)
-            localStorage.setItem('password', password)
-
-            // once the above is successful we want to reload the page
-            window.location.reload();
-        } catch (error) {
-            // error -> try with new username...
-            setError('Oops, incorrect credentials')
-        }
-    }
-
-    return(
-        <div className='wrapper'>
-            <div className='form'>
-                <h1 className='title'>Welcome to our Live Chat App!</h1>
-                <form onSubmit={handleSubmit} >
-                    <input 
-                        type="text" 
-                        value={username} 
-                        onChange={(e) => setUsername(e.target.value)} 
-                        className='input' 
-                        placeholder='Username' 
-                        required
-                        />
-                        <input 
-                        type="password" 
-                        value={password} 
-                        onChange={(e) => setPassword(e.target.value)} 
-                        className='input' 
-                        placeholder='Password' 
-                        required
-                        />
-                        <div align='center'>
-                            <button type = 'submit' className='button'>
-                                <span>Start Chatting</span>
-                            </button>
-                        </div>
-                        <h4 style={{color: 'red'}}>{error}</h4>
-                </form>
+    return (
+        <div id='login-page'>
+            <div id='login-card'>
+                <h2>Welcome to our Live Chat!</h2>
+                <div
+                    className='login-button google'
+                    onClick={() => auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())}
+                >
+                    <FaGoogle/> Sign in with Google
+                </div>
+                <br /> <br />
+                <div
+                    className='login-button facebook'
+                    onClick={() => auth.signInWithRedirect(new firebase.auth.FacebookAuthProvider())}
+                >
+                    <FaFacebook/> Sign in with Facebook
+                </div>
             </div>
         </div>
+
     )
 }
 export default LoginForm;
