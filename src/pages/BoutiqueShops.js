@@ -45,6 +45,7 @@ const Maps = styled.iframe`
 width: 80vw;
 height: 100%;
 border-radius: 1rem;
+background-color: red;
 
 `
 
