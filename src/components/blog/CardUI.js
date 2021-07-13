@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const ContainerBox = styled.div `
 
     width: 22vw;
-    height: 100vh;
+    height: 71vh;
     margin: auto;
     padding: 40px;
 `
@@ -26,11 +26,11 @@ const ImgBlog = styled.img `
     border-radius: 17px;
 `
  const TextDiv = styled.div `
-    height: 100vh
 `
 
 const ArtTitle = styled.p `
-    width: 100%;
+    min-width: 100%;
+    margin-left: 5px;
     padding: 0.2vw;
     word-wrap: break-word;
     color: black;
@@ -38,7 +38,8 @@ const ArtTitle = styled.p `
     font-weight: 500;
 `
 const ArtText = styled.p `
-    width: 100%;
+    min-width: 50%;
+    margin-left: 5px;
     padding: 0.5vw;
     word-wrap: break-word;
     font-family: 'Montserrat' , Sans serif;

@@ -9,14 +9,13 @@ import image3 from '../../assets/image3.jpg';
 const MainCon = styled.div `
     padding:0;
     display: flex;
-    height: 100%;
+    height: 100vh;
 `
 
 const OneBox = styled.div `
     display: flex;
     width: 100vw; 
-    height: 100%;
-`
+    height: 100vh;`
 const TagsCom = styled.div `
     width: 25vw;
     margin-left: 100px;
