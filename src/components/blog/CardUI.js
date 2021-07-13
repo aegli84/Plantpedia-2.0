@@ -31,7 +31,7 @@ const ImgBlog = styled.img `
 const ArtTitle = styled.p `
     min-width: 100%;
     margin-left: 5px;
-    padding: 0.2vw;
+    padding: 1vw;
     word-wrap: break-word;
     color: black;
     font-family: 'Montserrat' , Sans serif;
@@ -40,7 +40,7 @@ const ArtTitle = styled.p `
 const ArtText = styled.p `
     min-width: 50%;
     margin-left: 5px;
-    padding: 0.5vw;
+    padding: 1vw;
     word-wrap: break-word;
     font-family: 'Montserrat' , Sans serif;
     font-weight: 300;
