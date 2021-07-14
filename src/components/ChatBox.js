@@ -1,5 +1,5 @@
 //import styled from "styled-components";
-import { useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { ChatEngine } from 'react-chat-engine';
 import './Chat.css';
 import { useHistory } from 'react-router-dom';
@@ -8,8 +8,9 @@ import { auth } from '../components/firebase'
 import { useAuth } from '../context/AuthContext'
 import axios from 'axios'
 
+
 const ChatBox = () => {
-    
+    const didMountRef = useRef(false)
     const history = useHistory()
     const { user } = useAuth()
     const [loading, setLoading] =useState(true)
@@ -26,10 +27,13 @@ const ChatBox = () => {
         return new File([data], 'userPhoto.jpeg', {type: 'image/jpeg'})
     }
     useEffect (() => {
-        if(!user) {
-            history.push("/")
-
-            return;
+        if (!didMountRef.current) {
+            didMountRef.current = true
+    
+            if (!user || user === null) {
+                history.push("/")
+                return
+            }
         }
                 //trying to get the exisiting user
         axios.get('https://api.chatengine.io/users/me/', {
@@ -57,7 +61,7 @@ const ChatBox = () => {
                         { headers: {'private-key': process.env.REACT_APP_CHAT_ENGINE_KEY}}
                     )
                         .then(() => setLoading(false))
-                        .catch((error) => console.log(error))
+                        .catch(e => console.log('e', e.response))
                 })
         })
     }, [user, history])

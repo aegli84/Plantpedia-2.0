@@ -1,6 +1,7 @@
 import firebase from 'firebase/app'
 import 'firebase/auth'
 
+
 export const auth = firebase.initializeApp({
     apiKey: "AIzaSyAo00oM3hv9RaPCGmVu5gIkXF6Vl9bshf8",
     authDomain: "plantpedia-chat.firebaseapp.com",
