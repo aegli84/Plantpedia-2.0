@@ -4,7 +4,7 @@ import { ChatEngine } from 'react-chat-engine';
 import './Chat.css';
 import { useHistory } from 'react-router-dom';
 import { auth } from '../components/firebase'
-//import { AuthProvider } from '../context/AuthContext'
+ //import { AuthProvider } from '../context/AuthContext'
 import { useAuth } from '../context/AuthContext'
 import axios from 'axios'
 
