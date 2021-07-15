@@ -73,7 +73,8 @@ justify-content: space-between;
 
 `
 
-const Footer = () => {
+const Footer = (props) => {
+    console.log(props);
     return (
         <FooterBar>
             <FooterContainer>

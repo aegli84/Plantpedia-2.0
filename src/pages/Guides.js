@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import bg from "../assets/bgimg/plantpediapage.png";
+import bg from "../assets/bgimg/guidepage.png";
 import WateringButton from "../components/plantpedia/WateringButton";
 import SoilTypes from "../components/plantpedia/SoilTypes";
 import PestControl from "../components/plantpedia/PestControl";
