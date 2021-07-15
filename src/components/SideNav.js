@@ -64,7 +64,7 @@ const Ul = styled.ul`
     width: 100vw;
     padding-top: 5rem;
     transition: transform 0.3s ease-in-out;
-    z-index: 1;
+    z-index: 2;
     a {
         font-weight: 900;
         font-size: 3rem;

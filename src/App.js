@@ -18,6 +18,7 @@ import Humidity from './pages/Humidity'
 import Chat from './pages/Chat'
 import NavBurgerMenu from './components/NavBurgerMenu'
 import AboutUs from './pages/AboutUs'
+//import LoginForm from './components/LoginForm';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
     <GlobalStyles/>
     <Navbar/>
     <NavBurgerMenu/> 
+
       <Switch>
 
         <Route exact path="/">
@@ -68,7 +70,8 @@ function App() {
         <Route path="/Humidity">
           <Humidity />
         </Route> 
-        <Route path="/Chat">
+        
+        <Route path="/" >
           <Chat />
         </Route> 
         <Route path="/AboutUs">
