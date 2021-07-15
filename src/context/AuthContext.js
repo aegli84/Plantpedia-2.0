@@ -16,7 +16,7 @@ export function AuthProvider({ children }) {
         auth.onAuthStateChanged(user => {
         setUser(user)
         setLoading(false)
-        history.push('/chat')
+        if (user) history.push('/chats') // this will re-navigate to the chat application/ uses react-router-dom
         })
     }, [user, history])
 

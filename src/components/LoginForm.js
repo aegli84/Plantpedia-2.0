@@ -2,12 +2,14 @@ import { FaFacebook, FaGoogle } from "react-icons/fa"
 import 'firebase/app'
 import { auth } from './firebase'
 import firebase from 'firebase/app'
+import './Chat.css'; //styiling for form will be done with styled-components
 
 const LoginForm = () => {
     return (
         <div id='login-page'>
             <div id='login-card'>
                 <h2>Welcome to our Live Chat!</h2>
+                <h3>Members Only!</h3>
                 <div
                     className='login-button google'
                     onClick={() => auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())}

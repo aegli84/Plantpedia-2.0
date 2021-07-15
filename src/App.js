@@ -18,7 +18,7 @@ import Humidity from './pages/Humidity'
 import Chat from './pages/Chat'
 import NavBurgerMenu from './components/NavBurgerMenu'
 import AboutUs from './pages/AboutUs'
-import LoginForm from './components/LoginForm';
+//import LoginForm from './components/LoginForm';
 
 
 function App() {
@@ -71,7 +71,7 @@ function App() {
           <Humidity />
         </Route> 
         
-        <Route path="/Chat" component={LoginForm}>
+        <Route path="/" >
           <Chat />
         </Route> 
         <Route path="/AboutUs">
