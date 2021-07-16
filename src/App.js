@@ -86,13 +86,6 @@ function App() {
         <Route path="/Chat">
           <Chat />
         </Route> 
-
-        
-   
-        <Route path="/AboutUs">
-          <AboutUs />
-        </Route> 
-
         
         <Route path="/Register">
           <Register />
