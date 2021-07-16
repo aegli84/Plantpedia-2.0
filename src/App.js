@@ -98,10 +98,6 @@ function App() {
           <Register />
         </Route> 
 
-        <Route path="/AboutUs">
-          <AboutUs/>
-        </Route> 
-
     </Switch>
     <Footer/>
     </div>
