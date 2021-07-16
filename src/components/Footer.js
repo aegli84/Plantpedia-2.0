@@ -103,6 +103,7 @@ const Footer = (props) => {
                         </a>
                     </SocialMedia>
                     <Copyright> Copyright @Plantpedia 2021</Copyright>
+                    
                 </IconsDiv>
 
                 <RightDiv>
@@ -116,7 +117,9 @@ const Footer = (props) => {
                         Privacy
                     </FooterLink>
                 </RightDiv>
+                
             </FooterContainer>
+            
             </FooterBar>
     );
 };

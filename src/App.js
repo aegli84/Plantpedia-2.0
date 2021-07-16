@@ -20,6 +20,7 @@ import Chat from './pages/Chat';
 import Soil from "./pages/Soil";
 
 
+
 function App() {
   return (
     <div className="App">
@@ -27,6 +28,7 @@ function App() {
     <GlobalStyles/>
     <Navbar/>
     <NavBurgerMenu/> 
+
       <Switch>
 
         <Route exact path="/">
@@ -36,6 +38,7 @@ function App() {
         <Route path="/Plantpedia">
           <Plantpedia />
         </Route>
+
 
         <Route path="/Guides">
           <Guides />
@@ -78,9 +81,17 @@ function App() {
           <Humidity />
         </Route> 
 
+
         <Route path="/Chat">
           <Chat />
         </Route> 
+
+        
+   
+        <Route path="/AboutUs">
+          <AboutUs />
+        </Route> 
+
         
         <Route path="/Register">
           <Register />
