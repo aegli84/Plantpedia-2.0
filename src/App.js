@@ -19,6 +19,7 @@ import Humidity from './pages/Humidity';
 import Chat from './pages/Chat';
 import Soil from "./pages/Soil";
 import AboutUs from './pages/AboutUs';
+import AboutPage from './components/About';
 
 
 
@@ -89,6 +90,10 @@ function App() {
         
         <Route path="/Register">
           <Register />
+        </Route> 
+
+        <Route path="/AboutUs">
+          <AboutPage />
         </Route> 
 
     </Switch>
