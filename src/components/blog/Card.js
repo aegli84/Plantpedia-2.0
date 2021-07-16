@@ -7,22 +7,28 @@ import image3 from '../../assets/image3.jpg';
 
 
 const MainCon = styled.div `
-    padding:0;
+    margin: auto;
+    padding:0.5vw;
     display: flex;
     height: 100vh;
+    @media (max-width: 770px) {
+        display:flex;
+    @media (max-width: 377px) {
+        
+        }
 `
 
 const OneBox = styled.div `
-    display: flex;
-    width: 100vw; 
+    width: 90vw; 
     height: 100vh;`
 const TagsCom = styled.div `
-    width: 25vw;
-    margin-left: 100px;
+    width: 20vw;
     margin-top: 48px;
-/*  border: 1px solid #c5c5c4;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px 0 #c5c5c4; */
+    @media (max-width: 770px) {
+    
+    @media (max-width: 377px) {
+    
+        }
 
 `
 const TagsStyle = styled.h3 `
@@ -46,22 +52,9 @@ const TagsCon = styled.div `
     margin-left: 35px;
     padding: 5px;
 `
-const BlogHeader = styled.div `
-    width: 0;
-    height:0;
-    padding: 0.5vw;
-    margin-left: 50vw;
-    text-align-center;
-    font-family: 'Montserrat', Sans serif;
-    font-weight: bold;
-    font-size: larger;
-`
 function Cards() {
     return(
         <div>
-                            <BlogHeader>BLOG</BlogHeader>
-
-        
         <OneBox>
             <MainCon> 
                 <div>
@@ -83,7 +76,7 @@ function Cards() {
                 </div>
                 <div>
                     <Card imgsrc= {image3}
-                        title="21 Best Plant Accessories"
+                        title="The 21 Best Plant Accessories "
                         text= "Whether you’re a beginner or an expert, finding the perfect plant-savvy accessories for your modern living space is a daunting task..."
                         button = "Read more.."
                         link = "https://hiconsumption.com/best-plant-accessories/"
