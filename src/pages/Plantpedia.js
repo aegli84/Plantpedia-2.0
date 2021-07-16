@@ -3,6 +3,7 @@ import styled from "styled-components";
 import bg from "../assets/bgimg/plantpediapage.png";
 import PlantCards from "../components/PlantCards/PlantCards";
 
+
 const ExternalFrame = styled.div`
 width:100vw;
 height: 100vh;
@@ -25,9 +26,11 @@ height: 70vh;
 margin: auto ;
 border-radius: 5rem;
 box-shadow: 0 0 20px black;
+
 background-color: #918EA4;
 padding: 10px;
 display: flex;
+
 
 
 
@@ -43,6 +46,7 @@ display: flex;
 
 }
 `
+
 
 const LeftDiv = styled.div`
 width: 50%;
@@ -64,18 +68,23 @@ border-radius: 0 5rem 5rem 0rem;
 
 const Plantpedia = () => {
 
+
     return(
         <ExternalFrame>
             <InternalFrame>
+
                 <LeftDiv>
                 </LeftDiv>
                 <RightDiv>
                     <PlantCards/>
                 </RightDiv>
+
             </InternalFrame>
         </ExternalFrame>
     )
 
 }
 
+
 export default Plantpedia;
+

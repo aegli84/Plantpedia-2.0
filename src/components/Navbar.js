@@ -101,34 +101,33 @@ const NavBtnLink = styled(Link)`
 `;
 
 const Navbar = () => {
+    const activeStyle = { color: ' #918EA4' };
 
     
     return (
         <>
-        
             <Nav>
             <NavLogo to="/">
                 <ImgLogo src={logo}/>
             </NavLogo>
-           
             <NavMenu>
-                <NavLink to="/" activeStyle>
+                <NavLink to="/">
                     Home
                 </NavLink>
-                <NavLink to="/Plantpedia" activeStyle>
+                <NavLink to="/Plantpedia" activeStyle={activeStyle}>
                     Plantpedia
                 </NavLink>
-                <NavLink to="/Guides" activeStyle>
+                <NavLink to="/Guides" activeStyle={activeStyle}>
                     Guides
                 </NavLink>
 
-                <NavLink to="/BoutiqueShops" activeStyle>
+                <NavLink to="/BoutiqueShops" activeStyle={activeStyle}>
                     Boutique Shops
                 </NavLink>
-                <NavLink to="/Subscription" activeStyle>
+                <NavLink to="/Subscription" activeStyle={activeStyle}>
                     Subscription
                 </NavLink>
-                <NavLink to="/Blog" activeStyle>
+                <NavLink to="/Blog" activeStyle={activeStyle}>
                     Blog
                 </NavLink>
                 <NavBtn>

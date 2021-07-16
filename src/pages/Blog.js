@@ -1,14 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
-import BlogCards from '../components/BlogCards';
+import Cards from '../components/blog/Card';
 
 const Blog = () => {
     return(
-        <BlogCards/>
+        <Cards/>
     )
 } ;
 
-export default Blog; 
-
-
+export default Blog;
 
