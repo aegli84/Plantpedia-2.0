@@ -65,7 +65,10 @@ justify-content: space-between;
     stroke: #83A46F;
 }
 `
-const Footer = () => {
+
+
+const Footer = (props) => {
+    console.log(props);
     return (
         <FooterBar>
             <FooterContainer>
@@ -93,6 +96,7 @@ const Footer = () => {
                         </a>
                     </SocialMedia>
                     <Copyright> Copyright @Plantpedia 2021</Copyright>
+                    
                 </IconsDiv>
                 <RightDiv>
                     <FooterLink to="/Impressum" activeStyle>
@@ -105,7 +109,9 @@ const Footer = () => {
                         Privacy
                     </FooterLink>
                 </RightDiv>
+                
             </FooterContainer>
+            
             </FooterBar>
     );
 };

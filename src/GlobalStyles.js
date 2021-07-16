@@ -6,15 +6,18 @@ const GlobalStyles = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         scroll-margin-top: 25vh;
-    }
+}
+
+    
     html {
-        ${'' /* height: 100vh; */}
-        overflow: hidden;
+        overflow: auto;
         scroll-behavior: smooth;
         @media (max-width: 1200px){
             font-size: 75%;
         }
+        
     }
+    
     body {
         ${'' /* background: #343A40; */}
         margin: 0;
@@ -23,8 +26,7 @@ const GlobalStyles = createGlobalStyle`
         width: 100%;
         overflow-x: hidden;
         background-color: #323144;
-        
-        
     }
+    
 `
 export default GlobalStyles;
