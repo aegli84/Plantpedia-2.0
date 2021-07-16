@@ -93,6 +93,7 @@ const Footer = () => {
                         </a>
                     </SocialMedia>
                     <Copyright> Copyright @Plantpedia 2021</Copyright>
+                    
                 </IconsDiv>
                 <RightDiv>
                     <FooterLink to="/Impressum" activeStyle>
@@ -105,7 +106,9 @@ const Footer = () => {
                         Privacy
                     </FooterLink>
                 </RightDiv>
+                
             </FooterContainer>
+            
             </FooterBar>
     );
 };

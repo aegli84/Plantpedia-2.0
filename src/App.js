@@ -28,6 +28,7 @@ function App() {
     <GlobalStyles/>
     <Navbar/>
     <NavBurgerMenu/> 
+
       <Switch>
 
         <Route exact path="/">

@@ -25,7 +25,7 @@ const TagsCom = styled.div `
     width: 20vw;
     margin-top: 48px;
     @media (max-width: 770px) {
-    
+        
     @media (max-width: 377px) {
     
         }

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import ChatIcon from "../plantpedia/icons/chat.png";
 import {Link } from "react-router-dom";
+// import LoginForm from './components/LoginForm';
 
 const WateringCard=styled.div`
     width:200px;
