@@ -1,7 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import bg from "../assets/bgimg/plantpediapage.png";
-import PlantCards from "../components/PlantCards/PlantCards";
+import bg from "../assets/bgimg/guidepage.png";
+import WateringButton from "../components/plantpedia/WateringButton";
+import SoilTypes from "../components/plantpedia/SoilTypes";
+import PestControl from "../components/plantpedia/PestControl";
+import LiveChat from "../components/plantpedia/LiveChat";
+import LightTips from "../components/plantpedia/LightTips";
+import HumidityTips from "../components/plantpedia/HumidityTips";
 
 const ExternalFrame = styled.div`
 width:100vw;
@@ -18,17 +23,17 @@ background-repeat:no-repeat;
     height: 80vh;
 }
 `
-
 const InternalFrame = styled.div`
 width:80vw;
 height: 70vh;
 margin: auto ;
 border-radius: 5rem;
 box-shadow: 0 0 20px black;
+justify-content: space-around; 
+display: grid;
+grid-template-columns: auto auto auto;
 background-color: #918EA4;
 padding: 10px;
-display: flex;
-
 
 
 @media (max-width: 770px) {
@@ -44,38 +49,21 @@ display: flex;
 }
 `
 
-const LeftDiv = styled.div`
-width: 50%;
-background-color: blue;
-height: 100%;
-border-radius: 5rem 0 0 5rem;
-
-
-`
-
-const RightDiv = styled.div`
-width: 50%;
-height: 100%;
-border-radius: 0 5rem 5rem 0rem;
-
-`
-
-
-
-const Plantpedia = () => {
+const Guides = () => {
 
     return(
         <ExternalFrame>
             <InternalFrame>
-                <LeftDiv>
-                </LeftDiv>
-                <RightDiv>
-                    <PlantCards/>
-                </RightDiv>
+                <WateringButton/>
+                <LightTips/>
+                <PestControl/>
+                <SoilTypes/>
+                <HumidityTips/>
+                <LiveChat/>
             </InternalFrame>
         </ExternalFrame>
     )
 
 }
 
-export default Plantpedia;
+export default Guides;
