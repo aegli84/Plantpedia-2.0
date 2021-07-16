@@ -22,7 +22,6 @@ import AboutUs from './pages/AboutUs';
 import AboutPage from './components/About';
 
 
-
 function App() {
   return (
     <div className="App">
@@ -40,7 +39,6 @@ function App() {
         <Route path="/Plantpedia">
           <Plantpedia />
         </Route>
-
 
         <Route path="/Guides">
           <Guides />
@@ -82,7 +80,6 @@ function App() {
         <Route path="/Humidity">
           <Humidity />
         </Route> 
-
 
         <Route path="/Chat">
           <Chat />
