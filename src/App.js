@@ -18,7 +18,6 @@ import Pest from './pages/Pest';
 import Humidity from './pages/Humidity';
 import Chat from './pages/Chat';
 import Soil from "./pages/Soil";
-import AboutUs from './pages/AboutUs';
 import AboutPage from './components/About';
 
 

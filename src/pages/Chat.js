@@ -9,24 +9,29 @@ const Chat = () => {
     return (
         <Div>
             <Router>
-        <AuthProvider>
-            <Switch>
-                <Route path="/chats" component={ChatBox} />
-                <Route path="/" component={LoginForm} />
-
-            </Switch>
-        </AuthProvider>
+                <AuthProvider>
+                    <Switch>
+                        <Route path="/chats" component={ChatBox} />
+                        <Route path="/" component={LoginForm} />
+                    </Switch>
+                </AuthProvider>
         </Router>
         </Div>
     )
 }
 
 const Div = styled.div `
-    height: 85vh;   
+    height: 95vh;   
     width: 100vw;
     background-image: url(${chatpage});
     background-repeat: no-repeat;
     background-size: cover;
+@media (max-width: 768px) {
+    height: 75vh;
+}
 
+@media (max-width: 480px) {
+    height: 83vh;
+}
 `
 export default Chat;

@@ -23,6 +23,9 @@ const SideNav = (props) => {
                     <Link to="/Plantpedia" onClick={() => setOpen(!open)}>Plantpedia</Link>
                 </motion.li>
                 <motion.li whileTap={{scale: 1.1}} >
+                    <Link to="/Guides" onClick={() => setOpen(!open)}>Guides</Link>
+                </motion.li>
+                <motion.li whileTap={{scale: 1.1}} >
                     <Link to="/BoutiqueShops" onClick={() => setOpen(!open)}>Boutique Shops</Link>
                 </motion.li>
                 <motion.li whileTap={{scale: 1.1}} >

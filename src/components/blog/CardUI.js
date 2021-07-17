@@ -132,7 +132,7 @@ const Card = (props) =>{
                             </ArtText>
                         </TextDiv>
                 </CardBox>
-                <a href= {props.link} target="_blank" style={{textDecoration: "none"}}><ButtonStyle>{props.button}</ButtonStyle></a>
+                <a href= {props.link} target="_blank" rel="noreferrer" style={{textDecoration: "none"}}><ButtonStyle>{props.button}</ButtonStyle></a>
             </ContainerBox>  
         )
 };

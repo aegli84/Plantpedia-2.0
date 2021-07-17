@@ -77,37 +77,27 @@ const ChatBox = () => {
 
 
 
-    if(!user || loading)  return <div className='tracking-in-expand' style = {{textAlign: 'center', color: 'whitesmoke', display: 'block', fontSize: '1.5rem'}}>Chat Loading, please wait...</div>
+    if(!user || loading)  return <div className='tracking-in-expand' style = {{textAlign: 'center', color: 'whitesmoke', display: 'block', fontSize: '1.8rem'}}>Chat loading, please wait...</div>
 
     return(
         <div id='wrapper'>
-            <div onClick={handleLogout} className='logout-tab'>
-                    <FiLogOut size = '2rem'/>
+            <div className='chats-page'>
+                <div className='nav-bar'>
+                    <div onClick={handleLogout} className='logout-tab'>
+                            <FiLogOut size = '2rem'/>
+                    </div>
+                    <div className='logo-tab'>
+                        Plantpedia Chat
+                    </div>
             </div>
-        <div className='chats-page'>
-    
-            <div className='nav-bar'>
-            <div onClick={handleLogout} className='logout-tab'>
-                    <FiLogOut size = '2rem'/>
-            </div>
-                <div className='logo-tab'>
-                    Plantpedia Chat
-            </div>
-            {/* <div onClick={handleLogout} className='logout-tab'>
-                    <FiLogOut size = '2rem'/>
-            </div> */}
-        </div>
-        
                 <ChatEngine 
-                height='78vh'
+                height='75vh'
                 projectID={process.env.REACT_APP_CHAT_ENGINE_ID}
                 userName={user.email}
                 userSecret={user.uid}
                 onNewMessage={() => new Audio('https://chat-engine-assets.s3.amazonaws.com/click.mp3').play()}
-                
                 />
-        </div>
-        
+            </div>
         </div>
     )
 }
