@@ -265,7 +265,7 @@ navbar on the chat feed */
 /* LOGIN PAGE */
   
 #login-page {
-    height: 90vh;
+    height: 80vh;
     width: 100vw;
     opacity: 0.9;
     display: flex;
@@ -277,18 +277,18 @@ navbar on the chat feed */
   padding-top: 36px;
   padding-bottom: 46px;
   width: 50vw;
+  opacity: 0.9;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.603);
-  border-radius: 22px;
+  border-radius: 18px;
 }
 
 .login-button {
   cursor: pointer;
   color: white;
   padding: 12px;
-  border-radius: 8px;
-  display: inline-block; 
-  width: 40vw;
+  border-radius: 7px;
+  display: inline-block;
   font-family: 'Montserrat', sans-serif !important;
 }
 
