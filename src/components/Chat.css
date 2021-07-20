@@ -265,7 +265,7 @@ navbar on the chat feed */
 /* LOGIN PAGE */
   
 #login-page {
-    height: 80vh;
+    height: 90vh;
     width: 100vw;
     opacity: 0.9;
     display: flex;
@@ -277,10 +277,20 @@ navbar on the chat feed */
   padding-top: 36px;
   padding-bottom: 46px;
   width: 50vw;
-  opacity: 0.9;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.603);
-  border-radius: 18px;
+  border: 1px solid whitesmoke;
+  border-radius: 15px;
+  background: #7554a065;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 6px );
+  -webkit-backdrop-filter: blur( 6px );
+}
+
+.text-chat {
+  font-family: 'Montserrat', sans-serif !important;
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .login-button {

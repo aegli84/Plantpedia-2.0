@@ -8,7 +8,7 @@ const LoginForm = () => {
     return (
         <div id='login-page'>
             <div id='login-card'>
-                <h2>Welcome to our Live Chat!</h2>
+                <h2 className='text-chat'>Welcome to our Live Chat!</h2>
                 <br /> <br />
                 <div
                     className='login-button google'
