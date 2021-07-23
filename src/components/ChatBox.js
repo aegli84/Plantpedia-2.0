@@ -82,8 +82,9 @@ const ChatBox = () => {
         
             <div className='chats-page'>
             <div className='nav-bar-main' >
-                    <div onClick={handleLogout} className='logout-tab'>
-                            <FiLogOut size = '2rem'/>
+            
+                    <div onClick={handleLogout} className='logout-tab'><span className='logout-text'>Logout</span>
+                            <FiLogOut size = '1.7rem'/>
                     </div>
                     <div className='logo-tab'>
                         Plantpedia Chat
@@ -91,7 +92,7 @@ const ChatBox = () => {
             </div>
                 <div className='nav-bar' >
                     <div onClick={handleLogout} className='logout-tab'>
-                            <FiLogOut size = '2rem'/>
+                            <FiLogOut size = '1.7rem'/>
                     </div>
                     <div className='logo-tab'>
                         Plantpedia Chat
