@@ -33,7 +33,7 @@
 .ce-chat-form-container > div > div > div {
   color: #83a46f;
   font-weight: 800 !important;
-  font-size: 2rem !important;
+  font-size: 1.8rem !important;
   font-family: 'Raleyway', sans-serif !important;
 }
 .ce-text-input {
@@ -265,9 +265,8 @@ navbar on the chat feed */
 /* LOGIN PAGE */
   
 #login-page {
-    height: 90vh;
+    height: 80vh;
     width: 100%;
-    opacity: 0.9;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -275,19 +274,22 @@ navbar on the chat feed */
 
 #login-card {
   padding-top: 36px;
-  padding-bottom: 66px;
-  width: 65vw;
+  padding-bottom: 36px;
+  width: 35vw;
+  opacity: 0.9;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.603);
-  border-radius: 22px;
+  border-radius: 18px;
 }
 
 .login-button {
   cursor: pointer;
   color: white;
   padding: 12px;
-  border-radius: 8px;
+  width: 20vw;
+  border-radius: 7px;
   display: inline-block;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .facebook {
