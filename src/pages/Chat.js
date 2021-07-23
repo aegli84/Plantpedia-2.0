@@ -27,11 +27,11 @@ const Div = styled.div `
     background-repeat: no-repeat;
     background-size: cover;
 @media (max-width: 768px) {
-    height: 75vh;
+    height: 83vh;
 }
 
 @media (max-width: 480px) {
-    height: 83vh;
+    height: 85vh;
 }
 `
 export default Chat;

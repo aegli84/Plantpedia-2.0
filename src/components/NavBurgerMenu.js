@@ -61,16 +61,4 @@ const Burger = styled.div`
     }}
 }
 `
-
-// const Logo = styled.div`
-//     display: none;  
-//     @media (max-width: 768px) {
-//         display: block;
-//         font-weight: 800;
-//         font-size: 2.9rem;
-//         color: whitesmoke;
-//         margin-top: 2vh;
-//         margin-left: 4rem;
-//     } 
-// `
 export default BurgerMenu;

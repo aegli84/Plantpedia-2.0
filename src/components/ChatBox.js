@@ -79,25 +79,16 @@ const ChatBox = () => {
 
     return(
         <div>
-        
             <div className='chats-page'>
-            <div className='nav-bar-main' >
-            
-                    <div onClick={handleLogout} className='logout-tab'><span className='logout-text'>Logout</span>
-                            <FiLogOut size = '1.7rem'/>
-                    </div>
-                    <div className='logo-tab'>
-                        Plantpedia Chat
-                    </div>
-            </div>
-                <div className='nav-bar' >
+                <div className='nav-bar-main'>
                     <div onClick={handleLogout} className='logout-tab'>
+                        <span className='logout-text'>Logout</span>
                             <FiLogOut size = '1.7rem'/>
                     </div>
                     <div className='logo-tab'>
                         Plantpedia Chat
                     </div>
-            </div>
+                </div>
                 <ChatEngine 
                 height='75vh'
                 projectID={process.env.REACT_APP_CHAT_ENGINE_ID}

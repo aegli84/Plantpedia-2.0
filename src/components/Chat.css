@@ -367,18 +367,14 @@ navbar on the chat feed */
 }
 
   @media (max-width: 768px) {
-    .nav-bar-main{
-      display: none;
-    }
-    .nav-bar {
-      width: 100%;
+    .nav-bar-main {
       height: 85px;
       background-color: #83a46f;
     }
     .chats-page{
       top:0;
       width: 100%;
-      height: 75vh !important;
+      height: 85vh !important;
       margin-left: 0px !important;
     }
     .logo-tab {
@@ -396,6 +392,11 @@ navbar on the chat feed */
       padding: 13px 0 13px 0;
       font-size: 1.3rem;
     }
+    .logout-text{
+      top: 1px;
+      right: 27px;
+      font-size: 1.3rem;
+    }
     .logout-tab {
       top: 12px;
     }
@@ -405,16 +406,15 @@ navbar on the chat feed */
     }
   }
   @media (max-width: 480px) {
-    .nav-bar {
-      width: 100%;
-      height: 75px;
+    .nav-bar-main {
+      height: 90px;
       background-color: #83a46f;
     }
     .chats-page{
       /* top: 75px; */
-      bottom: 0;
+
       width: 100%;
-      height: 100vh !important;
+      height: 105vh !important;
       margin-left: 0px !important;
     }
 
@@ -430,11 +430,14 @@ navbar on the chat feed */
       width: 75%;
       font-size: 1.3rem;
     }
+    .logout-tab {
+      top: 15px;
+    }
     .logo-tab {
       position: absolute;
-      left: 22px;
-      top: 19px;
-      font-size: 32px;
+      left: 20px;
+      top: 30px;
+      font-size: 27px;
       font-weight: 700;
       color: white;
       font-family: 'Raleyway', sans-serif !important;
