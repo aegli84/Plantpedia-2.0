@@ -75,7 +75,7 @@ const ChatBox = () => {
 
 
 
-    if(!user || loading)  return <div className='tracking-in-expand' style = {{textAlign: 'center', color: 'whitesmoke', display: 'block', fontSize: '1.8rem'}}>Chat loading, please wait...</div>
+    if(!user || loading)  return <div className='tracking-in-expand' style = {{textAlign: 'center', color: 'whitesmoke', display: 'block', fontSize: '1.8rem', fontFamily: 'Montserrat'}}>Chat loading, please wait...</div>
 
     return(
         <div>
