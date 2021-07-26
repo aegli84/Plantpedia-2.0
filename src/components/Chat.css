@@ -346,7 +346,7 @@ navbar on the chat feed */
 
 
 .tracking-in-expand {
-  padding-top: 1rem;
+  padding-top: 20rem;
 	-webkit-animation: tracking-in-expand 0.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	animation: tracking-in-expand 0.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
