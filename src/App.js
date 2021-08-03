@@ -19,7 +19,8 @@ import Humidity from './pages/Humidity';
 import Chat from './pages/Chat';
 import Soil from "./pages/Soil";
 import AboutUs from './pages/AboutUs';
-import AboutPage from './components/About';
+import AboutPage from '../src/components/AboutUs/About';
+import AboutUsUi from '../src/components/AboutUs/AboutInfo';
 
 
 function App() {
@@ -90,7 +91,7 @@ function App() {
         </Route> 
 
         <Route path="/AboutUs">
-          <AboutPage />
+          <AboutUsUi />
         </Route> 
 
     </Switch>
