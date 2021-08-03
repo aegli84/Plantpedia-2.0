@@ -19,6 +19,10 @@ import Humidity from './pages/Humidity';
 import Chat from './pages/Chat';
 import Soil from "./pages/Soil";
 import AboutPage from './components/About';
+import PlantBoxOne from './pages/PlantBoxOne';
+import PlantBoxTwo from './pages/PlantBoxTwo';
+import PlantBoxThree from './pages/PlantBoxThree';
+import PlantBoxFour from './pages/PlantBoxFour';
 
 
 function App() {
@@ -52,6 +56,18 @@ function App() {
           <Subscription />
         </Route>
 
+        <Route path="/PlantBoxOne">
+          <PlantBoxOne />
+        </Route> 
+        <Route path="/PlantBoxTwo">
+          <PlantBoxTwo />
+        </Route> 
+        <Route path="/PlantBoxThree">
+          <PlantBoxThree />
+        </Route> 
+        <Route path="/PlantBoxFour">
+          <PlantBoxFour />
+        </Route> 
         <Route path="/Blog">
           <Blog />
         </Route> 

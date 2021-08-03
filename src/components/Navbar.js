@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/logo.png";
-//import { FaBars } from "react-icons/fa";
+import { FiShoppingCart } from "react-icons/fi";
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 //import { useState } from "react";
@@ -49,20 +49,6 @@ const NavLink = styled(Link)`
     color:  #918EA4;
     }
 `;
-
-// const Bars = styled(FaBars)`
-//     display: none;
-//     color: #fff;
-//     @media screen and (max-width: 768px) {
-//         display: block;
-//         position: absolute;
-//         top: 0;
-//         right: 0;
-//         transform: translate(-100%, 75%);
-//         font-size: 1.8rem;
-//         cursor: pointer;
-//     }
-// `;
 
 const NavMenu = styled.div`
     display: flex;
@@ -133,7 +119,9 @@ const Navbar = () => {
                 <NavBtn>
                     <NavBtnLink to="/sign-up">Login or Register</NavBtnLink>                
                 </NavBtn>
+                <FiShoppingCart size ='1.3rem' color='whitesmoke' style ={{marginRight: '1rem'}}/>
             </NavMenu> 
+
             </Nav> 
         </>
     );
