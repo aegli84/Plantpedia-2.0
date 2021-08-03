@@ -53,7 +53,7 @@ const Thumbnail = styled.div`
     background-color: white;
     border-radius: 50%;
     margin-top: 2vh;
-    margin-left: 6.5vh;
+    margin-left: 51px;
 @media (max-width: 770px) {
     width:14vw;
     height: 10vh;
