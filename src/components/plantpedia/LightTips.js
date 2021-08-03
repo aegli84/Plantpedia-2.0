@@ -2,7 +2,7 @@ import styled from "styled-components";
 import LightIcon from "../plantpedia/icons/sun.png";
 import {Link } from "react-router-dom";
 
-const WateringCard=styled.div`
+const LightCard=styled.div`
     width:200px;
     height:22vh;
     background-color: #725490;
@@ -53,7 +53,7 @@ const Thumbnail = styled.div`
     background-color: white;
     border-radius: 50%;
     margin-top: 2vh;
-    margin-left: 6.5vh;
+    margin-left: 51px;
 @media (max-width: 770px) {
     width:14vw;
     height: 10vh;
@@ -96,9 +96,9 @@ const ImageLight= styled.img`
 
 
 
-const WateringButton = () => {
+const LightButton = () => {
     return (
-        <WateringCard>
+        <LightCard>
             <Section1>
             <Thumbnail>
             <ImageLight src={LightIcon}>
@@ -118,7 +118,7 @@ const WateringButton = () => {
                     </Button>
             </Link>
             </Section2>
-        </WateringCard>
+        </LightCard>
     );
 };
-export default WateringButton;
+export default LightButton;
