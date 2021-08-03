@@ -76,7 +76,6 @@ const Plantpedia = () => {
                 <LeftDiv>
                 </LeftDiv>
                 <RightDiv>
-                    <PlantCards/>
                 </RightDiv>
 
             </InternalFrame>
