@@ -1,9 +1,9 @@
 import React from "react";
-import logo from "../assets/logo.png";
-import { FiShoppingCart } from "react-icons/fi";
+import logo from '../../assets/logo.png';
+import { IconButton, Badge } from '@material-ui/core'
+import { ShoppingCart } from '@material-ui/icons'
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
-//import { useState } from "react";
 
 
 const Nav = styled.nav`
@@ -86,9 +86,9 @@ const NavBtnLink = styled(Link)`
     }
 `;
 
-const Navbar = () => {
+const Navbar = ({totalItems}) => {
     const activeStyle = { color: ' #918EA4' };
-
+    
     
     return (
         <>
@@ -119,11 +119,19 @@ const Navbar = () => {
                 <NavBtn>
                     <NavBtnLink to="/sign-up">Login or Register</NavBtnLink>                
                 </NavBtn>
-                <FiShoppingCart size ='1.3rem' color='whitesmoke' style ={{marginRight: '1rem'}}/>
+                
+                        <IconButton component={Link} to='/cart' aria-label='Show cart items' color='inherit' >
+                            <Badge badgeContent={totalItems} color='secondary' >
+                                <ShoppingCart style={{ color: 'whitesmoke' }}/>
+                            </Badge>
+                        </IconButton>
+                
             </NavMenu> 
 
             </Nav> 
         </>
     );
 };
+
+
 export default Navbar;

@@ -1,9 +1,7 @@
 import styled from 'styled-components';
-//import { NavHashLink as Link } from "react-router-hash-link";
-//import ScrollIntoView from 'react-scroll-into-view';
 import { motion } from 'framer-motion';
 import { NavLink as Link } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from '../../assets/logo.png';
 
 const SideNav = (props) => {
     const { open, setOpen } = props;

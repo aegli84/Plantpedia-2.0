@@ -1,6 +1,6 @@
 import React from 'react';
 import {Switch, Route} from 'react-router-dom';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home';
 import Plantpedia from './pages/Plantpedia';
 import Guides from './pages/Guides';
@@ -11,7 +11,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import GlobalStyles from './GlobalStyles';
 import Footer from './components/Footer';
-import NavBurgerMenu from './components/NavBurgerMenu';
+import NavBurgerMenu from './components/Navbar/NavBurgerMenu';
 import Watering from './pages/Watering';
 import Light from './pages/Light';
 import Pest from './pages/Pest';
@@ -19,10 +19,7 @@ import Humidity from './pages/Humidity';
 import Chat from './pages/Chat';
 import Soil from "./pages/Soil";
 import AboutPage from './components/About';
-import PlantBoxOne from './pages/PlantBoxOne';
-import PlantBoxTwo from './pages/PlantBoxTwo';
-import PlantBoxThree from './pages/PlantBoxThree';
-import PlantBoxFour from './pages/PlantBoxFour';
+
 
 
 function App() {
@@ -30,7 +27,7 @@ function App() {
     <div className="App">
   
     <GlobalStyles/>
-    <Navbar/>
+    <Navbar />
     <NavBurgerMenu/> 
 
       <Switch>
@@ -56,18 +53,6 @@ function App() {
           <Subscription />
         </Route>
 
-        <Route path="/PlantBoxOne">
-          <PlantBoxOne />
-        </Route> 
-        <Route path="/PlantBoxTwo">
-          <PlantBoxTwo />
-        </Route> 
-        <Route path="/PlantBoxThree">
-          <PlantBoxThree />
-        </Route> 
-        <Route path="/PlantBoxFour">
-          <PlantBoxFour />
-        </Route> 
         <Route path="/Blog">
           <Blog />
         </Route> 
