@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 const MainBox = styled.div`
-
+width: 30vw;
+margin: auto;
 `
 const UserBox = styled.div`
-    width: 0;
     height: 0;
     margin-left: 25vw;
 `
