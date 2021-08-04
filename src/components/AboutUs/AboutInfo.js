@@ -9,33 +9,31 @@ import aboutpage from '../../assets/bgimg/aboutpage.png'
 const BgContainer = styled.div `
 background: url(${aboutpage});
 background-repeat: no-repeat;
-height: 90vh;
+height: 100vh;
+background-size: 80vw 100vh;
 `
 
 const Container = styled.div `
-
 `
 
 const Header = styled.h1 `
-    width: 20vw;
-    margin-top: 35px;
-    margin-left: 60vw;
-    // padding: 0.5vw;
+    width: 23vw;
+    margin-top: 10px;
+    padding: 1.8vw;
+    margin-left: 40vw;
     text-align: center;
     color: whitesmoke;
     font-family: 'Montserrat', Sans serif;
     font-size: 3.5rem; 
 `
 const Box = styled.div `
-    height: 100vh;
-    margin-left: 7vw;;
-    padding: 3vw;
-    display: flex;
+    display: flex; 
+    margin-left: -10vw;
 `
 const InfoText = styled.div `
-    width: 72vw;
-    height: 25vh;
-    margin-left: -48vw;
+    width: 60vw;
+    height: 38vh;
+    margin-left: 20vw;
     margin-top: 20vw;
     border: 1px solid black;
     background-color: grey;
@@ -68,11 +66,11 @@ function AboutUsUi () {
                             summ= "-'I always loved nature and green. Along with my passion for coding, we were able to create this platform with everyone!' "
                     />
                 </div>
-                <InfoText>
+            </Box>
+            <InfoText>
                     <Paragraph>asndniducdakslchbsuzgf</Paragraph>
                 </InfoText>
-            </Box>
-    </Container>
+        </Container>
 </BgContainer>
     );
 }
