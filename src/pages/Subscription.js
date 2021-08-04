@@ -20,11 +20,12 @@ const Subscription = () => {
 
 
 const Div =styled.div`
-    height: 110vh;   
+    min-height: 100vh;   
     width: 100vw;
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
     justify-content: center;
-    align-items: center;
     background-image: url(${subspage});
     background-repeat: no-repeat;
     background-size: cover;

@@ -14,7 +14,9 @@ const Cards = () => {
                 <CardTemplate 
                 image={boxone}
                 text = "Only One"
-                button ='GET'
+                price = '€45 - 1 month subscription'
+                button ='Product details'
+                
                 link = '/PlantBoxOne'
                 />
                 
@@ -23,7 +25,9 @@ const Cards = () => {
                 <CardTemplate 
                 image={boxtwo}
                 text = "Three is a crowd"
-                button ='GET'
+                price = '€45 - 3 months subscription'
+                button ='Product details'
+            
                 link = '/PlantBoxTwo'
                 />
             </div>
@@ -31,7 +35,9 @@ const Cards = () => {
                 <CardTemplate 
                 image={boxthree}
                 text = "Give me Six"
-                button ='GET'
+                price = '€45 - 6 months subscription'
+                button ='Product details'
+                
                 link = '/PlantBoxThree'
                 />
             </div>
@@ -39,7 +45,9 @@ const Cards = () => {
                 <CardTemplate 
                 image={boxfour}
                 text = "The One & Only"
-                button ='GET'
+                price = '€45 - 1 year subscription'
+                button ='Product details'
+                
                 link = '/PlantBoxFour'
                 />
             </div>
@@ -48,11 +56,9 @@ const Cards = () => {
 }
 
 const Container = styled.div`
-    margin-top: 1rem;
-    width:100%;
-    height: 70vh; 
+    min-height: 90vh; 
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
 `
 export default Cards
