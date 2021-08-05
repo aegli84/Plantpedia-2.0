@@ -20,7 +20,7 @@ const Product = ({ product, onAddToCart }) => {
                     €{product.price.formatted}
                     </Typography>
                 </div>
-                <Typography dangerouslySetInnerHTML={{__html: product.description}} variant='body2' color='textSecondary'/>
+                <Typography dangerouslySetInnerHTML={{__html: product.description}} variant='body2' color='textSecondary' style = {{fontFamily: 'Montserrat'}}/>
             </CardContent>
             <CardActions disableSpacing className={classes.cardActions}>
                 <IconButton aria-label="Add to Cart" onClick={handleAddToCart}>

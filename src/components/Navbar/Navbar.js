@@ -113,21 +113,21 @@ const Navbar = ({totalItems}) => {
                 <NavLink to="/Subscription" activeStyle={activeStyle}>
                     Subscription
                 </NavLink>
+                <NavLink to="/Chat" activeStyle={activeStyle}>
+                    Chat
+                </NavLink>
                 <NavLink to="/Blog" activeStyle={activeStyle}>
                     Blog
                 </NavLink>
                 <NavBtn>
                     <NavBtnLink to="/sign-up">Login or Register</NavBtnLink>                
                 </NavBtn>
-                
                         <IconButton component={Link} to='/cart' aria-label='Show cart items' color='inherit' >
                             <Badge badgeContent={totalItems} color='secondary' >
                                 <ShoppingCart style={{ color: 'whitesmoke' }}/>
                             </Badge>
                         </IconButton>
-                
             </NavMenu> 
-
             </Nav> 
         </>
     );

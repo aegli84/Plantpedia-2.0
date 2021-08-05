@@ -115,7 +115,7 @@ console.log(cart)
 
 
 const Div =styled.div`
-    height: 140vh;   
+    min-height: 140vh;   
     width: 100vw;
     display: inline-block;
     justify-content: center;

@@ -7,11 +7,11 @@ import useStyles from './styles';
 const Products = ({ products, onAddToCart }) => {
     const classes = useStyles();
 
-    if (!products.length) return <p>Loading...</p>; 
+    if (!products.length) return <div className='tracking-in-expand' style = {{textAlign: 'center', color: 'whitesmoke', display: 'block', fontSize: '2.5rem', fontFamily: 'Montserrat'}}>Loading...</div>; 
     
     return (
         <main className={classes.content}>
-        <div className={classes.toolbar}/>
+        <div className={classes.toolbar} variant='regular'/>
             <Grid container justifyContent="center" spacing={4}>
                 {products.map((product) => (
                     <Grid  key={product.id} item xs={12} sm={6} md={4} lg={3}>
