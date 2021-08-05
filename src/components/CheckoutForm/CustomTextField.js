@@ -22,11 +22,6 @@ const FormInput = ({name, label, required}) => {
                 fullWidth
             />
         )}
-                // render={({ field }) => <TextField {...field} label={label} fullWidth required/>}  
-                // control={control} 
-                // name={name}
-                // error={isError}
-                // defaultValue=''
             />
         </Grid>
     )

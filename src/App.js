@@ -19,7 +19,7 @@ import Humidity from './pages/Humidity';
 import Chat from './pages/Chat';
 import Soil from "./pages/Soil";
 import AboutPage from './components/About';
-
+import Cart from './pages/Cart';
 
 
 function App() {
@@ -51,6 +51,10 @@ function App() {
 
         <Route path="/Subscription">
           <Subscription />
+        </Route>
+
+        <Route path="/Cart">
+          <Cart />
         </Route>
 
         <Route path="/Blog">

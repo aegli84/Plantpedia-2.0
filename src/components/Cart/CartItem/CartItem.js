@@ -5,10 +5,10 @@ const CartItem = ({ item, onUpdateCartQty, onRemoveFromCart }) => {
     const classes = useStyles();
 
     return (
-        <Card>
+        <Card className={classes.root}>
             <CardMedia image={item.media.source} item={item.name} className={classes.media}/>
             <CardContent className={classes.cardContent}>
-                <Typography variant='h4'>{item.name}</Typography>
+                <Typography variant='h5' style={{ fontFamily: 'Montserrat'}}>{item.name}</Typography>
                 <Typography variant='h5'>{item.line_total.formatted_with_symbol}</Typography>
             </CardContent>
             <CardActions className={classes.cardActions}>
@@ -17,7 +17,7 @@ const CartItem = ({ item, onUpdateCartQty, onRemoveFromCart }) => {
                     <Typography>{item.quantity}</Typography>
                     <Button type='button' size='small' onClick={() => onUpdateCartQty(item.id, item.quantity +1)}>+</Button>
                 </div>
-                <Button variant='contained' type='button' color='secondary' onClick={() => onRemoveFromCart(item.id)}>Remove</Button>
+                <Button variant='contained' type='button' style = {{backgroundColor:'#7e66a3', color: 'whitesmoke'}} onClick={() => onRemoveFromCart(item.id)}>Remove</Button>
             </CardActions>
         </Card>
     )

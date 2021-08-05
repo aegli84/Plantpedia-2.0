@@ -1,25 +1,18 @@
 import styled from "styled-components";
 import subspage from '../assets/bgimg/subspage.png'
 import { commerce } from '../lib/commerce'
-import  {Products, Cart, Checkout} from '../components'
+import  {Products} from '../components'
 import { useState, useEffect }from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 //import Navbar from '../components/Navbar/Navbar';
 
 const Subscription = () => {
     const [products, setProducts] = useState([])
     const [cart, setCart] = useState({})
-    const [order, setOrder] = useState({});
-    const [errorMessage, setErrorMessage] = useState('');
 
     const fetchProducts = async () => {
         const { data } = await commerce.products.list();
 
         setProducts(data);
-    }
-
-    const fetchCart = async () => {
-        setCart(await commerce.cart.retrieve());
     }
 
     const handleAddToCart = async (productId, quantity) => {
@@ -28,45 +21,9 @@ const Subscription = () => {
         setCart(cart)
     }
 
-    const handleUpdateCartQty = async (productId, quantity) => {
-        const {cart} = await commerce.cart.update(productId, {quantity})
-
-        setCart(cart)
-    }
-
-    const handleRemoveFromCart = async (productId) => {
-        const {cart} = await commerce.cart.remove(productId)
-
-        setCart(cart)
-    }
-
-    const handleEmptyCart = async () => {
-        const {cart} = await commerce.cart.empty()
-
-        setCart(cart)
-    }
-
-    const refreshCart = async () => {
-        const newCart = await commerce.cart.refresh();
-    
-        setCart(newCart);
-    };
-
-    const handleCaptureCheckout = async (checkoutTokenId, newOrder) => {
-        try {
-            const incomingOrder = await commerce.checkout.capture(checkoutTokenId, newOrder);
-    
-            setOrder(incomingOrder);
-    
-            refreshCart();
-        } catch (error) {
-            setErrorMessage(error.data.error.message);
-        }
-    };
-
     useEffect (() => {
         fetchProducts();
-        fetchCart();
+        // fetchCart();
     }, []);
 
 console.log(cart)
@@ -84,23 +41,6 @@ console.log(cart)
                     onAddToCart={handleAddToCart}
                     />
                 </div>
-        </Div>
-        
-            {/* <Navbar totalItems={cart.total_items}/> */}
-            
-                
-                    {/* <Products 
-                    products={products} 
-                    onAddToCart={handleAddToCart}
-                    /> */}
-                
-                
-                    {/* <Cart 
-                    cart={cart}
-                    handleUpdateCartQty={handleUpdateCartQty}
-                    handleRemoveFromCart={handleRemoveFromCart}
-                    handleEmptyCart={handleEmptyCart}
-                    /> */}
                 
                     {/* <Checkout 
                     cart={cart} 
@@ -108,6 +48,9 @@ console.log(cart)
                     onCaptureCheckout={handleCaptureCheckout} 
                     error={errorMessage}
                     /> */}
+        </Div>
+        
+            {/* <Navbar totalItems={cart.total_items}/> */}
             
         </>
     )
@@ -115,8 +58,8 @@ console.log(cart)
 
 
 const Div =styled.div`
-    min-height: 140vh;   
-    width: 100vw;
+    min-height: 150vh;   
+    width: 100%;
     display: inline-block;
     justify-content: center;
     align-items: center;

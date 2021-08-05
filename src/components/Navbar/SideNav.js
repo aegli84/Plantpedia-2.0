@@ -2,8 +2,10 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { NavLink as Link } from "react-router-dom";
 import logo from '../../assets/logo.png';
+import { IconButton, Badge } from '@material-ui/core'
+import { ShoppingCart } from '@material-ui/icons'
 
-const SideNav = (props) => {
+const SideNav = (props, {totalItems}) => {
     const { open, setOpen } = props;
     
 
@@ -11,9 +13,14 @@ const SideNav = (props) => {
         <>
         
             <Ul open={open}>
-            <NavLogo to="/">
+            <NavLogo to="/" onClick={() => setOpen(!open)}>
                 <ImgLogo src={logo}/>
             </NavLogo>
+            <IconButton component={Link} to='/Cart' onClick={() => setOpen(!open)} aria-label='Show cart items' color='inherit' >
+                            <Badge badgeContent={totalItems} color='secondary' >
+                                <ShoppingCart style={{ color: 'whitesmoke' }}/>
+                            </Badge>
+                        </IconButton>
                 <motion.li whileTap={{scale: 1.1}}>
                     <Link to="/" onClick={() => setOpen(!open)}>Home</Link>
                 </motion.li>
@@ -28,6 +35,9 @@ const SideNav = (props) => {
                 </motion.li>
                 <motion.li whileTap={{scale: 1.1}} >
                     <Link to="/Subscription" onClick={() => setOpen(!open)}>Subscription</Link>
+                </motion.li>
+                <motion.li whileTap={{scale: 1.1}} >
+                    <Link to="/Chat" onClick={() => setOpen(!open)}>Chat</Link>
                 </motion.li>
                 <motion.li whileTap={{scale: 1.1}} >
                     <Link to="/Blog" onClick={() => setOpen(!open)}>Blog</Link>

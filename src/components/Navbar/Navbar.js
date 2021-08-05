@@ -92,7 +92,7 @@ const Navbar = ({totalItems}) => {
     
     return (
         <>
-            <Nav>
+            <Nav >
             <NavLogo to="/">
                 <ImgLogo src={logo}/>
             </NavLogo>
@@ -122,7 +122,7 @@ const Navbar = ({totalItems}) => {
                 <NavBtn>
                     <NavBtnLink to="/sign-up">Login or Register</NavBtnLink>                
                 </NavBtn>
-                        <IconButton component={Link} to='/cart' aria-label='Show cart items' color='inherit' >
+                        <IconButton component={Link} to='/Cart' aria-label='Show cart items' color='inherit' >
                             <Badge badgeContent={totalItems} color='secondary' >
                                 <ShoppingCart style={{ color: 'whitesmoke' }}/>
                             </Badge>
