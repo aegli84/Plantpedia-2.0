@@ -25,15 +25,14 @@ const PaymentForm = ({ checkoutToken, nextStep, backStep, shippingData, onCaptur
                             lastname: shippingData.lastName, 
                             email: shippingData.email 
                         },
-                shipping: { name: 'International', 
+                shipping: { name: 'Domestic', 
                             street: shippingData.address, 
                             town_city: shippingData.city, 
                             county_state: shippingData.shippingSubdivision, 
                             postal_zip_code: shippingData.zip, 
                             country: shippingData.shippingCountry 
                         },
-                fulfillment: { shipping_method: shippingData.shippingOption 
-                        },
+                
                 payment: {
                             gateway: 'stripe',
                             stripe: {

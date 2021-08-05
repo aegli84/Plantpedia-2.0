@@ -20,7 +20,7 @@ import Chat from './pages/Chat';
 import Soil from "./pages/Soil";
 import AboutPage from './components/About';
 import Cart from './pages/Cart';
-
+import Checkout from './pages/Checkout';
 
 function App() {
   return (
@@ -56,7 +56,9 @@ function App() {
         <Route path="/Cart">
           <Cart />
         </Route>
-
+        <Route path="/Checkout">
+          <Checkout />
+        </Route>
         <Route path="/Blog">
           <Blog />
         </Route> 

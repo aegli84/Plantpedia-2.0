@@ -28,7 +28,7 @@ const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
             </Grid>
             <br/><br/>
             <Typography variant = 'h5' style={{ color: 'whitesmoke', marginLeft: '1.2rem' }}><HiOutlineArrowLeft size='1.3rem' style={{ color: 'whitesmoke', marginRight: '.5rem' }}/>Return to 
-            <Link to='/Subscription' className={classes.link} style={{ color: '#83a46f' }}> product!</Link>
+            <Link to='/Subscription' className={classes.link} style={{ color: '#83a46f' }}> products!</Link>
             </Typography>
             <div className={classes.cardDetails}>
                 <Typography variant='h4' gutterBottom style={{ color: 'whitesmoke' }}>Subtotal: {cart.subtotal.formatted_with_symbol}</Typography>
