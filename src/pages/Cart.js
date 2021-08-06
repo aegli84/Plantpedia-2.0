@@ -6,8 +6,7 @@ import { useState, useEffect }from 'react'
 
 const Carty = () => {
     const [cart, setCart] = useState({})
-    // const [order, setOrder] = useState({});
-    // const [errorMessage, setErrorMessage] = useState('');
+    
 
 
     const fetchCart = async () => {
@@ -59,20 +58,5 @@ const Div =styled.div`
     background-repeat: no-repeat;
     background-size: cover;
 `
-// const H1 = styled.h1`
-//     text-align: center;
-//     color: whitesmoke;
-//     padding-top: 2rem;
-//     font-size: 3.5rem;
-//     font-family: 'Raleway', sans-serif !important;
-// `
-// const P = styled.p`
-//     text-align: center;
-//     color: whitesmoke;
-//     margin: 0 10rem;
-//     padding-top: 2rem;
-//     font-size: 1.2rem;
-//     font-weight: 400;
-//     font-family: 'Montserrat', sans-serif !important;
-// `
+
 export default Carty;

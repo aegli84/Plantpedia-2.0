@@ -19,6 +19,7 @@ const Checkouto = () => {
     
         setCart(newCart);
     };
+    
     const handleCaptureCheckout = async (checkoutTokenId, newOrder) => {
         try {
             const incomingOrder = await commerce.checkout.capture(checkoutTokenId, newOrder);
@@ -49,9 +50,8 @@ console.log(cart)
     )
 }
 const Div =styled.div`
-    min-height: 100vh;   
+    height: 115vh;   
     width: 100%;
-    display: inline-block;
     background-image: url(${plantname});
     background-repeat: no-repeat;
     background-size: cover;

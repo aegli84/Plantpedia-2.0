@@ -6,10 +6,10 @@ export default makeStyles((theme) => ({
     // },
     toolbar: theme.mixins.toolbar,
     layout: {
-        marginTop: '5%',
+        marginTop: '1%',
         width: 'auto',
-        marginLeft: theme.spacing(2),
-        marginRight: theme.spacing(2),
+        // marginLeft: theme.spacing(1),
+        // marginRight: theme.spacing(1),
         [theme.breakpoints.up(600 + theme.spacing(2) * 2)]: {
         width: 600,
         marginLeft: 'auto',
@@ -17,12 +17,16 @@ export default makeStyles((theme) => ({
         },
     },
     paper: {
+        backgroundColor: 'whitesmoke',
+        opacity: '.9',
+        boxShadow: '0 4px 10px 0 black',
+        border: '.7px solid #e7e7e7',
         marginTop: theme.spacing(3),
         marginBottom: theme.spacing(3),
         padding: theme.spacing(2),
         [theme.breakpoints.down('xs')]: {
         width: '100%',
-        marginTop: 60,
+        marginTop: 50,
         },
         [theme.breakpoints.up(600 + theme.spacing(3) * 2)]: {
         marginTop: theme.spacing(6),
@@ -32,6 +36,7 @@ export default makeStyles((theme) => ({
     },
     stepper: {
         padding: theme.spacing(3, 0, 5),
+        backgroundColor: 'whitesmoke',
     },
     buttons: {
         display: 'flex',

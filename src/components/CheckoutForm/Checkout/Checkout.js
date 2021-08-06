@@ -69,8 +69,8 @@ const Checkout = ({cart, order, onCaptureCheckout, error}) => {
     const Form = () => activeStep === 0
         ? <AddressForm 
             checkoutToken={checkoutToken} 
-            // nextStep={nextStep} 
-            // setShippingData={setShippingData} 
+            nextStep={nextStep} 
+            setShippingData={setShippingData} 
             test={test}
         /> 
         : <PaymentForm  
@@ -88,7 +88,7 @@ const Checkout = ({cart, order, onCaptureCheckout, error}) => {
             <div className={classes.toolbar}/>
             <main className={classes.layout}>
                 <Paper className={classes.paper}>
-                    <Typography variant='h4' align='center'>Checkout</Typography>
+                    <Typography variant='h4' style={{fontFamily: 'Montserrat'}} align='center'>Checkout</Typography>
                     <Stepper activeStep={activeStep} className={classes.stepper}>
                         {steps.map((label) => (
                             <Step key={label}>

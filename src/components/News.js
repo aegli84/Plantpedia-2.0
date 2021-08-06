@@ -12,7 +12,7 @@ const News = () => {
     return (
         <Div>
             <Swiper 
-            smooth = {true}
+            smooth = 'true'
             spaceBetween={40} 
             centeredSlides={true} 
             autoplay={{
