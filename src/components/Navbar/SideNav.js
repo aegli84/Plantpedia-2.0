@@ -18,7 +18,7 @@ const SideNav = (props, {totalItems}) => {
             </NavLogo>
             <IconButton component={Link} to='/Cart' onClick={() => setOpen(!open)} aria-label='Show cart items' color='inherit' >
                             <Badge badgeContent={totalItems} color='secondary' >
-                                <ShoppingCart style={{ color: 'whitesmoke' }}/>
+                                <ShoppingCart style={{ color: 'whitesmoke', size: '2.2rem', display: 'flex', justifyContent: 'space-between' }}/>
                             </Badge>
                         </IconButton>
                 <motion.li whileTap={{scale: 1.1}}>

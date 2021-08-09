@@ -2,7 +2,6 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles(() => ({
     root: {
-        // maxWidth: 345, original width style
         maxWidth: '100%',
         borderRadius: '1.3rem',
         padding: '.5rem',
@@ -13,7 +12,7 @@ export default makeStyles(() => ({
         
     },
     media: {
-        height: 200,
+        height: 260,
         borderRadius: '1.3rem',
     },
     cardContent: {

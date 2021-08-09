@@ -31,26 +31,20 @@ console.log(cart)
     return (
         <>
         <Div>
+        {/* <Navbar totalItems={cart.total_items}/> */}
             <H1>Our Plant Subsciption Boxes</H1>
             <P>
                 Plants are an intimate part of our lives — we live with them and love them every day — and we want to share this lifestyle with you by carefully curating kits with hardy plants that will ease your anxiety about greenery care. We thoughtfully designed our plant subscription box service as a program that takes you through different levels of plant care
             </P>
-            <div>
+            
             <Products 
                     products={products} 
                     onAddToCart={handleAddToCart}
                     />
-                </div>
                 
-                    {/* <Checkout 
-                    cart={cart} 
-                    order={order} 
-                    onCaptureCheckout={handleCaptureCheckout} 
-                    error={errorMessage}
-                    /> */}
+                
         </Div>
         
-            {/* <Navbar totalItems={cart.total_items}/> */}
             
         </>
     )
@@ -58,11 +52,11 @@ console.log(cart)
 
 
 const Div =styled.div`
-    min-height: 150vh;   
+    min-height: 100vh;   
     width: 100%;
-    display: inline-block;
+    /* display: inline-block;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     background-image: url(${subspage});
     background-repeat: no-repeat;
     background-size: cover;

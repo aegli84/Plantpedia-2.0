@@ -1,12 +1,14 @@
 import { Card, CardMedia, CardContent, CardActions, Typography, Button } from '@material-ui/core';
 import useStyles from './styles'
 
+
 const CartItem = ({ item, onUpdateCartQty, onRemoveFromCart }) => {
     const classes = useStyles();
 
     return (
         <Card className={classes.root}>
-            <CardMedia item={item.media.source} alt={item.name} className={classes.media}/>
+            <CardMedia image={item.media.source} alt={item.name} className={classes.media}/>
+            
             <CardContent className={classes.cardContent}>
                 <Typography variant='h5' style={{ fontFamily: 'Montserrat'}}>{item.name}</Typography>
                 <Typography variant='h5'>{item.line_total.formatted_with_symbol}</Typography>

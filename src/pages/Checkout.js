@@ -40,17 +40,19 @@ console.log(cart)
 
     return (
         <Div>
+        
             <Checkout 
                     cart={cart} 
                     order={order} 
                     onCaptureCheckout={handleCaptureCheckout} 
                     error={errorMessage}
                     /> 
+                    
         </Div>
     )
 }
 const Div =styled.div`
-    height: 115vh;   
+    min-height: 100vh;   
     width: 100%;
     background-image: url(${plantname});
     background-repeat: no-repeat;
