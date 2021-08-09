@@ -1,7 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import bg from "../assets/bgimg/plantpediapage.png";
-import PlantCards from "../components/PlantCards/PlantCards";
+import plants from "../components/plantpedia/plantpediaAssets/plantpediaData";
+import PlantCard from "../components/PlantCards/PlantCard";
+import { Dropdown, Selection } from 'react-dropdown-now';
+import "../components/plantpedia/plantpediaAssets/style.css";
+import { useState } from "react";
 
 
 const ExternalFrame = styled.div`
@@ -12,6 +16,7 @@ padding-bottom: 7vh;
 background-image:url(${bg});
 background-size: cover;
 background-repeat:no-repeat;
+text-align: center;
 @media (max-width: 340px) {
     height: 75vh;
 }
@@ -66,18 +71,31 @@ border-radius: 0 5rem 5rem 0rem;
 
 
 
-const Plantpedia = () => {
 
+
+
+
+const Plantpedia = () => {
+    const [selectedPlant, setSelectedPlant] = useState(1)
 
     return(
         <ExternalFrame>
-            <InternalFrame>
+                <Dropdown
+                    placeholder="Select a plant"
+                    className="my-className"
+                    options={plants.map(i=> {return {label:i.plantName, id:i.id} })}
+                    onChange={(value) => console.log('change!', value)}
+                    onSelect={(value) => setSelectedPlant(value.id)} // always fires once a selection happens even if there is no change
+                    onClose={(closedBySelection) => console.log('closedBySelection?:', closedBySelection)}
+                    onOpen={() => console.log('open!')}
+                    />;
 
+            <InternalFrame>
                 <LeftDiv>
                 </LeftDiv>
                 <RightDiv>
+                    <PlantCard data={plants[selectedPlant-1]}/>
                 </RightDiv>
-
             </InternalFrame>
         </ExternalFrame>
     )
