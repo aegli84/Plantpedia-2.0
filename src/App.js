@@ -21,6 +21,7 @@ import Soil from "./pages/Soil";
 import AboutPage from './components/About';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
+import Contact from './pages/Contact'
 
 function App() {
   return (
@@ -93,6 +94,9 @@ function App() {
         
         <Route path="/Register">
           <Register />
+        </Route> 
+        <Route path="/Contact">
+          <Contact />
         </Route> 
 
         <Route path="/AboutUs">

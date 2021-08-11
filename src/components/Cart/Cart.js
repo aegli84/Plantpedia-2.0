@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import useStyles from './styles';
 import CartItem from './CartItem/CartItem';
 import { HiOutlineArrowLeft } from 'react-icons/hi'
+import { CircularProgress } from '@material-ui/core'
 
 const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart }) => {
     const classes = useStyles();
@@ -26,12 +27,12 @@ const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
                     </Grid>
                 ))}
             </Grid>
-            <br/><br/>
+            <br/><br/> <br />
             <Typography variant = 'h5' style={{ color: 'whitesmoke', marginLeft: '1.2rem' }}><HiOutlineArrowLeft size='1.3rem' style={{ color: 'whitesmoke', marginRight: '.5rem' }}/>Return to 
             <Link to='/Subscription' className={classes.link} style={{ color: '#83a46f' }}> products!</Link>
             </Typography>
             <div className={classes.cardDetails}>
-                <Typography variant='h4' gutterBottom style={{ color: 'whitesmoke' }}>Subtotal: {cart.subtotal.formatted_with_symbol}</Typography>
+                <Typography variant='h4' gutterBottom style={{ color: 'whitesmoke', marginLeft: '1rem', marginBottom: '1.2rem' }}>Subtotal: {cart.subtotal.formatted_with_symbol}</Typography>
                 <div>
                     <Button className={classes.emptyButton} size='large' type='button' variant='contained' style={{ backgroundColor: '#7e66a3', color: 'whitesmoke' }} onClick={handleEmptyCart}>Empty Cart</Button>
                     <Button component = {Link} to='/Checkout' className={classes.checkoutButton} size='large' type='button' variant='contained' style={{ backgroundColor: '#83a46f', color: 'whitesmoke' }}>Checkout</Button>
@@ -40,12 +41,12 @@ const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
         </>
     );
 
-    if(!cart.line_items) return 'LOading...'
+    if(!cart.line_items) return <div className={classes.spinner}><CircularProgress style={{ color: '#83a46f'}}/></div>
 
     return (
         <Container>
             <div className={classes.toolbar}/>
-            <Typography className={classes.title} variant='h3' style={{ color: 'whitesmoke' }} >Your Shopping Cart</Typography>
+            <Typography className={classes.title}  style={{ color: 'whitesmoke', fontSize: '2.6rem', fontWeight: '400' }} >Your Shopping Cart</Typography>
             {!cart.line_items.length ? <EmptyCart /> : <FilledCart />}
         </Container>
     )

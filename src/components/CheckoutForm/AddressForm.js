@@ -53,14 +53,14 @@ const AddressForm = ({ checkoutToken, test }) => {
             <Typography variant='h6' gutterBottom>Shipping Address</Typography>
             <FormProvider {...methods}>
                 <form onSubmit={methods.handleSubmit((data) => test({...data, shippingCountry, shippingSubdivision, shippingOption}))}>
-                    <Grid container spacing={3}>
+                    <Grid container spacing={2}>
                         <FormInput required name='firstName' label='First Name'/>
                         <FormInput required name="lastName" label="Last name" />
                         <FormInput required name="address" label="Address" />
                         <FormInput required name="email" label="Email" />
                         <FormInput required name="city" label="City" />
                         <FormInput required name="zip" label="Zip / Postal code" />
-                        <Grid item xs={12} sm={6}>
+                        <Grid item xs={12} sm={6} spacing={2}>
                             <InputLabel>Shipping Country</InputLabel>
                             <Select value={shippingCountry} fullWidth onChange={(e) => setShippingCountry(e.target.value)}>
                             {Object.entries(shippingCountries).map(([code, name]) => ({id: code, label: name})).map((item) =>(
@@ -71,7 +71,7 @@ const AddressForm = ({ checkoutToken, test }) => {
                             </Select>
                         </Grid>
                     </Grid>
-                    <Grid item xs={12} sm={6}>
+                    <Grid item xs={12} sm={6} gutterBottom>
                             <InputLabel>Shipping Subdivision</InputLabel>
                             <Select value={shippingSubdivision} fullWidth onChange={(e) => setShippingSubdivision(e.target.value)}>
                             {Object.entries(shippingSubdivisions).map(([code, name]) => ({ id: code, label: name })).map((item) => (
@@ -93,8 +93,8 @@ const AddressForm = ({ checkoutToken, test }) => {
                         </Grid>
                         <br/>
                         <div style={{display: 'flex', justifyContent: 'space-between'}}>
-                            <Button component={Link} variant="outlined" to="/Cart">Back to Cart</Button>
-                            <Button type="submit" variant="contained" color="primary">Next</Button>
+                            <Button component={Link} variant="contained" style={{ backgroundColor: '#7e66a3', color: 'whitesmoke', minWidth: '140px' }} to="/Cart">Back to Cart</Button>
+                            <Button type="submit" variant="contained" style={{ backgroundColor: '#83a46f', color: 'whitesmoke', minWidth: '140px' }}>Next</Button>
                         </div>
                 </form>
             </FormProvider>
@@ -103,5 +103,3 @@ const AddressForm = ({ checkoutToken, test }) => {
 }
 
 export default AddressForm
-
-

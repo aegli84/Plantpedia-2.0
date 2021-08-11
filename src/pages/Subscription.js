@@ -23,7 +23,6 @@ const Subscription = () => {
 
     useEffect (() => {
         fetchProducts();
-        // fetchCart();
     }, []);
 
 console.log(cart)
@@ -54,19 +53,39 @@ console.log(cart)
 const Div =styled.div`
     min-height: 100vh;   
     width: 100%;
-    /* display: inline-block;
-    justify-content: center;
-    align-items: center; */
     background-image: url(${subspage});
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 4rem;
+
+@media (max-width: 768px) {
+    min-height: 80vh;  
+    background-size: contain;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+@media (max-width: 480px) {
+    min-height: 60vh;
+    padding-top: 5rem;
+}
 `
 const H1 = styled.h1`
     text-align: center;
+    text-shadow: 0  15px 7px black; 
     color: whitesmoke;
     padding-top: 2rem;
     font-size: 3.5rem;
     font-family: 'Raleway', sans-serif !important;
+
+@media (max-width: 768px) {
+    padding-top: 3rem;
+}
+
+@media (max-width: 480px) {
+    padding-top: 1.5rem;
+    font-size: 5rem;
+}
 `
 const P = styled.p`
     text-align: center;
@@ -76,5 +95,15 @@ const P = styled.p`
     font-size: 1.2rem;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif !important;
+
+@media (max-width: 768px) {
+    margin: 1.5rem 6rem;
+    font-size: 1.6rem;
+}
+
+@media (max-width: 480px) {
+    margin: 1rem 2rem;
+    font-size: 1.6rem;
+}
 `
 export default Subscription;

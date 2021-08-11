@@ -5,8 +5,10 @@ export default makeStyles((theme) => ({
     toolbar: theme.mixins.toolbar,
     title: {
         marginTop: '1%',
+        marginLeft: '1%',
         marginBottom: '5%',
         fontFamily: 'Montserrat',
+        textDecoration: 'underline'
     },
     emptyButton: {
         minWidth: '150px',
@@ -31,5 +33,11 @@ export default makeStyles((theme) => ({
         marginTop: '7%',
         width: '100%',
         justifyContent: 'space-between',
+    },
+    spinner: {
+        marginTop: '5rem',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
 }));

@@ -49,11 +49,11 @@ const Checkout = ({cart, order, onCaptureCheckout, error}) => {
                 <Typography variant="subtitle2">Order ref: {order.customer_reference}</Typography>
             </div>
             <br />
-            <Button component={Link} variant="outlined" type="button" to="/">Back to home</Button>
+            <Button component={Link} variant="contained" style={{  backgroundColor: '#83a46f', color: 'whitesmoke' }} type="button" to="/">Back to home</Button>
             </>
         ) :  (
             <div className={classes.spinner}>
-                <CircularProgress />
+                <CircularProgress style={{  color: '#83a46f' }}/>
             </div>
         );
 
@@ -61,7 +61,7 @@ const Checkout = ({cart, order, onCaptureCheckout, error}) => {
                 <>
                     <Typography variant="h5">Error: {error}</Typography>
                     <br />
-                    <Button component={Link} variant="outlined" type="button" to="/">Back to home</Button>
+                    <Button component={Link} variant="contained" style={{ backgroundColor: '#7e66a3', color: 'whitesmoke', minWidth: '140px' }} type="button" to="/">Back to home</Button>
                 </>
                 
             }
@@ -88,7 +88,7 @@ const Checkout = ({cart, order, onCaptureCheckout, error}) => {
             <div className={classes.toolbar}/>
             <main className={classes.layout}>
                 <Paper className={classes.paper}>
-                    <Typography variant='h4' style={{fontFamily: 'Montserrat'}} align='center'>Checkout</Typography>
+                    <Typography variant='h4' style={{fontFamily: 'Montserrat', fontWeight: '500'}} align='center'>Checkout</Typography>
                     <Stepper activeStep={activeStep} className={classes.stepper}>
                         {steps.map((label) => (
                             <Step key={label}>

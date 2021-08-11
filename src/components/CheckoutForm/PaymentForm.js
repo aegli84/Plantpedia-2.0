@@ -61,8 +61,8 @@ const PaymentForm = ({ checkoutToken, nextStep, backStep, shippingData, onCaptur
                         <CardElement/>
                         <br />
                         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                            <Button variant="outlined" onClick={backStep}>Back</Button>
-                            <Button type="submit" variant="contained" disabled={!stripe} color="primary">Pay {checkoutToken.live.subtotal.formatted_with_symbol}
+                            <Button variant="contained" style={{ backgroundColor: '#7e66a3', color: 'whitesmoke', minWidth: '140px' }} onClick={backStep}>Back</Button>
+                            <Button type="submit" variant="contained" disabled={!stripe} style={{ backgroundColor: '#83a46f', color: 'whitesmoke', minWidth: '140px' }}>Pay {checkoutToken.live.subtotal.formatted_with_symbol}
                             </Button>
                         </div>
                     </form>
