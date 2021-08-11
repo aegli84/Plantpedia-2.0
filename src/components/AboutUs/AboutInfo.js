@@ -14,6 +14,9 @@ background-size: 80vw 100vh;
 `
 
 const Container = styled.div `
+@media  (max-width: 770px) {
+    @media (max-width: 377px) {
+    }
 `
 
 const Header = styled.h1 `
@@ -25,12 +28,30 @@ const Header = styled.h1 `
     color: whitesmoke;
     font-family: 'Montserrat', Sans serif;
     font-size: 3.5rem; 
+    @media (max-width: 770px) {
+        width: 30vw;
+        height: 0;
+        margin-left: 35.5vw;
+        font-size: 3rem; 
+        @media (max-width: 377px) {
+        width: 35vw;
+        height: 0;
+        padding: 0;
+        margin-top: 100px;
+        font-size:2rem; 
+        }
 `
 const Box = styled.div `
     display: flex; 
-    margin-left: -10vw;
+    margin-left: -12vw;
+    @media (max-width: 770px) {
+        margin-left: -9vw;
+        margin-top: 20vw;
+        @media (max-width: 377px) {
+        }
 `
-const InfoText = styled.div `
+
+const Paragraph = styled.p `
     width: 60vw;
     height: 38vh;
     margin-left: 20vw;
@@ -38,12 +59,15 @@ const InfoText = styled.div `
     border: 1px solid black;
     background-color: grey;
     border-radius: 5px 20px 5px;
-`
-const Paragraph = styled.p `
     padding: 1vw;
     font-family: 'Montserrat', Sans serif;
     font-size: 1rem;
     font-weight: 300;
+    @media(max-width: 770px) {
+        margin-left: 18vw;
+        margin-top: 50vw;
+        @media(max-width: 377px) {
+        }
 `
 function AboutUsUi () {
     return(
@@ -67,9 +91,8 @@ function AboutUsUi () {
                     />
                 </div>
             </Box>
-            <InfoText>
-                    <Paragraph>asndniducdakslchbsuzgf</Paragraph>
-                </InfoText>
+        
+                    <Paragraph>asndniducdaksdsggrgdrgdfgdfgdfgdfgdfgdflchbsuzgf</Paragraph>
         </Container>
 </BgContainer>
     );

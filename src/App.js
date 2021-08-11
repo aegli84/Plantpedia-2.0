@@ -18,9 +18,8 @@ import Pest from './pages/Pest';
 import Humidity from './pages/Humidity';
 import Chat from './pages/Chat';
 import Soil from "./pages/Soil";
-import AboutUs from './pages/AboutUs';
-import AboutPage from '../src/components/AboutUs/About';
 import AboutUsUi from '../src/components/AboutUs/AboutInfo';
+import AppRouter from './pages/Register';
 
 
 function App() {
@@ -94,6 +93,9 @@ function App() {
           <AboutUsUi />
         </Route> 
 
+        <Route path="/SignUp">
+          <AppRouter />
+        </Route> 
     </Switch>
     <Footer/>
     </div>
