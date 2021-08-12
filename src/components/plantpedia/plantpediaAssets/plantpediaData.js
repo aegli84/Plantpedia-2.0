@@ -4,11 +4,13 @@ import aloZebrina2 from "./Alocasia zebrina/aloZebrina2.jpeg";
 import aloZebrina3 from "./Alocasia zebrina/aloZebrina3.jpeg";
 import calatheaOrbifolia1 from "./Calathea Orbifolia/calatheaOrbifolia1.jpeg";
 import calatheaOrbifolia2 from "./Calathea Orbifolia/calatheaOrbifolia2.jpeg";
+import calatheaOrbifolia3 from "./Calathea Orbifolia/calatheaOrbifolia3.jpg";
 import calatheaZebrina1 from "./Calathea Zebrina/calatheaZebrina1.jpeg";
 import calatheaZebrina2 from "./Calathea Zebrina/calatheaZebrina2.jpeg";
 import calatheaZebrina3 from "./Calathea Zebrina/calatheaZebrina3.jpeg";
 import monstera1 from "./Monstera Deliciosa/monstera1.jpeg";
 import monstera2 from "./Monstera Deliciosa/monstera2.jpeg";
+import monstera3 from "./Monstera Deliciosa/monstera3.jpg";
 import zzPlant1 from "./Zamioculcas (plant ZZ)/zzPlant1.jpeg";
 import zzPlant2 from "./Zamioculcas (plant ZZ)/zzPlant2.jpeg";
 import zzPlant3 from "./Zamioculcas (plant ZZ)/zzPlant3.jpeg";
@@ -29,17 +31,6 @@ import strelitzia2 from "./Strelitzia nicolai/strelitzia2.jpeg";
 import strelitzia3 from "./Strelitzia nicolai/strelitzia3.jpeg";
 
 
-
-
-
-
-
-
-
-
-
-
-
 const plants = [
     {
         id:"1",
@@ -57,6 +48,7 @@ const plants = [
         id:"2",
         picture1:{calatheaOrbifolia1},
         picture2:{calatheaOrbifolia2},
+        picture3:{calatheaOrbifolia3},
         plantName:"Calathea Orbifolia",
         description:"Calathea orbifolia is a beautiful houseplant highly sought after due to the exquisite beauty of its large, round leaves and its air-purifying qualities. This beautiful foliage is subtly striped with pale silver-green markings, with the undersides of the leaf also being a pale silver-green.The Calathea orbifolia is bound to add dramatic interest to your houseplant collections and is very much on trend.Make sure your Orbifolia is not near your pets!",
         humidity:"55%-60%",
@@ -116,6 +108,7 @@ const plants = [
         id:"7",
         picture1:{monstera1},
         picture2:{monstera2},
+        picture3:{monstera3},
         plantName:"Monstera Deliciosa",
         description:"Monstera deliciosa, commonly called split-leaf philodendron or swiss cheese plant, is native to Central America. It is a climbing, evergreen perennial vine that is perhaps most noted for its large perforated leaves on thick plant stems and its long cord-like aerial roots. Unfortunately, Monstera deliciosa contains insoluble calcium oxalates making them highly toxic to cats.",
         humidity:"55%-60%",

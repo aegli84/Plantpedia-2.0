@@ -6,6 +6,9 @@ import PlantCard from "../components/PlantCards/PlantCard";
 import { Dropdown, Selection } from 'react-dropdown-now';
 import "../components/plantpedia/plantpediaAssets/style.css";
 import { useState } from "react";
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
+import CarouselPics from "../components/plantpedia/plantpediaAssets/carousel";
 
 
 const ExternalFrame = styled.div`
@@ -17,11 +20,12 @@ background-image:url(${bg});
 background-size: cover;
 background-repeat:no-repeat;
 text-align: center;
-@media (max-width: 340px) {
-    height: 75vh;
-}
 @media (max-width: 770px) {
-    height: 80vh;
+    height: 85vh;
+}
+
+@media (max-width: 380px) {
+    height: 155vh;
 }
 `
 
@@ -45,8 +49,8 @@ display: flex;
 
 }
 @media (max-width: 375px) {
-    grid-template-columns: auto auto ;
-    height: 70vh;
+    grid-template-columns: auto;
+    height: 1100px;
 
 
 }
@@ -55,9 +59,16 @@ display: flex;
 
 const LeftDiv = styled.div`
 width: 50%;
-background-color: blue;
 height: 100%;
 border-radius: 5rem 0 0 5rem;
+overflow:hidden;
+@media (max-width: 770px) {
+    
+    
+}
+@media (max-width: 377px) {
+    display: none;
+}
 
 
 `
@@ -67,7 +78,19 @@ width: 50%;
 height: 100%;
 border-radius: 0 5rem 5rem 0rem;
 
+@media (max-width: 770px) {
+    
+    
+}
+@media (max-width: 377px) {
+margin:auto;
+height: 90%;
+
+}
+
 `
+
+
 
 
 
@@ -92,6 +115,7 @@ const Plantpedia = () => {
 
             <InternalFrame>
                 <LeftDiv>
+                    <CarouselPics data={plants[selectedPlant -1]} />
                 </LeftDiv>
                 <RightDiv>
                     <PlantCard data={plants[selectedPlant-1]}/>
