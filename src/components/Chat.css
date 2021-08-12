@@ -306,6 +306,7 @@ navbar on the chat feed */
 .text-chat {
   font-family: 'Montserrat', sans-serif !important;
   color: white;
+  text-shadow: 0  15px 7px rgb(0, 0, 0); 
   font-size: 2.5rem;
   font-weight: 600;
 }

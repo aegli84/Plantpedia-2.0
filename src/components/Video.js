@@ -14,6 +14,7 @@ const Div = styled.div`
     height: 80vh; 
     z-index: -1;
     background-color:black;
+    
 @media (max-width: 767px) {
     width: 100vw; 
     height: 50vh;
