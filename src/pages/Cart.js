@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import plantname from '../assets/bgimg/plantname.png'
+import giftpage from '../assets/bgimg/giftpage.png'
 import { commerce } from '../lib/commerce'
 import  {Cart} from '../components'
 import { useState, useEffect }from 'react'
@@ -51,12 +52,22 @@ console.log(cart)
     )
 }
 const Div =styled.div`
-    min-height: 100vh;   
+    height: 110vh;   
     width: 100%;
     display: inline-block;
     background-image: url(${plantname});
     background-repeat: no-repeat;
     background-size: cover;
+@media (max-width: 768px) {
+    height: 75vh;
+    padding-top: 5rem;
+    
+}
+
+@media (max-width: 480px) {
+    height: 143vh;
+    
+}
 `
 
 export default Carty;
