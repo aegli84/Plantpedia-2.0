@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import plantname from '../assets/bgimg/plantname.png'
 import giftpage from '../assets/bgimg/giftpage.png'
 import { commerce } from '../lib/commerce'
 import  {Cart} from '../components'
@@ -40,6 +39,7 @@ const Carty = () => {
 
 console.log(cart)
 
+
     return (
         <Div>
             <Cart 
@@ -52,20 +52,19 @@ console.log(cart)
     )
 }
 const Div =styled.div`
-    height: 110vh;   
+    min-height: 100vh;   
     width: 100%;
     display: inline-block;
-    background-image: url(${plantname});
+    background-image: url(${giftpage});
     background-repeat: no-repeat;
     background-size: cover;
 @media (max-width: 768px) {
-    height: 75vh;
     padding-top: 5rem;
-    
+    min-height: 80vh;   
 }
 
 @media (max-width: 480px) {
-    height: 143vh;
+    min-height: 160vh;
     
 }
 `

@@ -16,9 +16,10 @@ const SideNav = (props, {totalItems}) => {
             <NavLogo to="/" onClick={() => setOpen(!open)}>
                 <ImgLogo src={logo}/>
             </NavLogo>
-            <IconButton component={Link} to='/Cart' onClick={() => setOpen(!open)} aria-label='Show cart items' color='inherit' >
+        
+                <IconButton component={Link} to='/Cart' onClick={() => setOpen(!open)} aria-label='Show cart items' color='inherit' >
                             <Badge badgeContent={totalItems} color='secondary' >
-                                <ShoppingCart style={{ color: 'whitesmoke', size: '2.2rem', display: 'flex', justifyContent: 'space-between' }}/>
+                                <ShoppingCart style={{ color: 'whitesmoke', fontSize: '4rem', marginLeft: '10rem' }}/>
                             </Badge>
                         </IconButton>
                 <motion.li whileTap={{scale: 1.1}}>
@@ -47,9 +48,9 @@ const SideNav = (props, {totalItems}) => {
                     <Link to="/Login">Login</Link>   
                     <Link to="/Register"> / Register</Link>   
                 </motion.li>             
-            
+                
             </Ul>
-        
+            
         </>
     )
 }
@@ -73,7 +74,7 @@ const Ul = styled.ul`
     right: 0;
     height: 100vh;
     width: 100vw;
-    padding-top: 5rem;
+    padding-top: 10rem;
     transition: transform 0.3s ease-in-out;
     z-index: 2;
     a {

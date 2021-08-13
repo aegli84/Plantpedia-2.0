@@ -325,11 +325,19 @@ navbar on the chat feed */
   background-color: #3b5998;
 }
 
-.google {
-  background-color: #4285f4;
-  /* color: white; */
+.facebook:hover {
+  background-color: #2e467a;
+  transition: all 0.5s;
 }
 
+.google {
+  background-color: #4285f4;
+}
+
+.google:hover {
+  background-color: #164faa;
+  transition: all 0.5s;
+}
 #loading-container {
   position: absolute;
   top: 0px;

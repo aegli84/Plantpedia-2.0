@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import plantname from '../assets/bgimg/plantname.png'
 import giftpage from '../assets/bgimg/giftpage.png'
 import { commerce } from '../lib/commerce'
 import  {Checkout} from '../components'

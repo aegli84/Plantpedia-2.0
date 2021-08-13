@@ -116,7 +116,7 @@ const ContactForm = () => {
 }
 
 const Div = styled.div `
-    border-radius: 1rem;
+    border-radius: .5rem;
     box-shadow: 0 10px 30px black;
     padding-left: 7rem; 
     padding-top: 1.5rem;
