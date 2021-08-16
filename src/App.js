@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {Switch, Route} from 'react-router-dom';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home';
 import Plantpedia from './pages/Plantpedia';
 import Guides from './pages/Guides';
@@ -11,7 +11,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import GlobalStyles from './GlobalStyles';
 import Footer from './components/Footer';
-import NavBurgerMenu from './components/NavBurgerMenu';
+import NavBurgerMenu from './components/Navbar/NavBurgerMenu';
 import Watering from './pages/Watering';
 import Light from './pages/Light';
 import Pest from './pages/Pest';
@@ -20,15 +20,22 @@ import Chat from './pages/Chat';
 import Soil from "./pages/Soil";
 import Impressum from './pages/Impressum';
 import TC from './pages/TC';
+import AboutPage from './components/About';
+import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
+import Contact from './pages/Contact'
 
 
 
 function App() {
+  
+
+
   return (
     <div className="App">
   
     <GlobalStyles/>
-    <Navbar/>
+    <Navbar />
     <NavBurgerMenu/> 
 
       <Switch>
@@ -40,7 +47,6 @@ function App() {
         <Route path="/Plantpedia">
           <Plantpedia />
         </Route>
-
 
         <Route path="/Guides">
           <Guides />
@@ -55,6 +61,12 @@ function App() {
           <Subscription />
         </Route>
 
+        <Route path="/Cart">
+          <Cart />
+        </Route>
+        <Route path="/Checkout">
+          <Checkout />
+        </Route>
         <Route path="/Blog">
           <Blog />
         </Route> 
@@ -83,6 +95,7 @@ function App() {
           <Humidity />
         </Route> 
 
+
         <Route path="/Impressum">
           <Impressum />
         </Route> 
@@ -91,14 +104,19 @@ function App() {
           <TC />
         </Route> 
 
-
-
         <Route path="/Chat">
           <Chat />
         </Route> 
         
         <Route path="/Register">
           <Register />
+        </Route> 
+        <Route path="/Contact">
+          <Contact />
+        </Route> 
+
+        <Route path="/AboutUs">
+          <AboutPage />
         </Route> 
 
     </Switch>

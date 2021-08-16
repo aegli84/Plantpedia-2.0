@@ -11,6 +11,7 @@ import 'react-slideshow-image/dist/styles.css';
 import CarouselPics from "../components/plantpedia/plantpediaAssets/carousel";
 
 
+
 const ExternalFrame = styled.div`
 width:100vw;
 height: 100vh;
@@ -101,6 +102,7 @@ height: 90%;
 const Plantpedia = () => {
     const [selectedPlant, setSelectedPlant] = useState(1)
 
+
     return(
         <ExternalFrame>
                 <Dropdown
@@ -114,12 +116,14 @@ const Plantpedia = () => {
                     />;
 
             <InternalFrame>
+
                 <LeftDiv>
                     <CarouselPics data={plants[selectedPlant -1]} />
                 </LeftDiv>
                 <RightDiv>
                     <PlantCard data={plants[selectedPlant-1]}/>
                 </RightDiv>
+
             </InternalFrame>
         </ExternalFrame>
     )

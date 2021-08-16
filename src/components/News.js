@@ -12,7 +12,7 @@ const News = () => {
     return (
         <Div>
             <Swiper 
-            smooth = {true}
+            smooth = 'true'
             spaceBetween={40} 
             centeredSlides={true} 
             autoplay={{
@@ -97,8 +97,8 @@ const News = () => {
 
 const Div = styled.div`
     height:40vh;
-    width: 100vw;
-    background-color: #ac92c5;
+    width: 100%;
+    background-color: #68855b;
     /* opacity: 0.9; */
     display: flex;
     flex-wrap: wrap;
@@ -106,7 +106,7 @@ const Div = styled.div`
     justify-content: center;
     text-align: center;
     padding: 4rem;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     
     
     .swiper-button-next{
@@ -124,35 +124,32 @@ const Div = styled.div`
     .swiper-pagination > .swiper-pagination-bullet-active {
         background-color: #323144;
     }
-@media (min-width: 767px) { 
-    height: 45vh;
-    padding: 4rem;
-    margin-top: .1rem;
-    
-    }
-@media (min-width: 340px) {
+@media (max-width: 768px) { 
     height: 40vh;
-    padding: 0.6rem;
-    margin-top: .1rem;
-    
+    padding: 2rem;
+    }
+@media (max-width: 480px) {
+    height: 35vh;
+    padding: 0;
 }
+
 `
 
 const H2 = styled.h2 `
     font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 5rem;
+    font-weight: 800;
+    font-size: 2.5rem;
     color: whitesmoke; 
-    padding: 0 4rem 1rem;
+    padding: 1rem 4rem 1rem;
 
-@media (min-width: 767px) {
-    font-size: 2rem;
-    padding: 5rem;
+@media (max-width: 768px) {
+    font-size: 4rem;
+    padding: 3rem;
 }
-@media (min-width: 340px) {
+@media (max-width: 480px) {
     padding: .5rem 1.8rem 0rem 2rem;
-    margin-top: 1rem;
-    font-size: 1.9rem;
+    margin-top: .5rem;
+    font-size: 2.2rem;
 }
 `
 
@@ -160,9 +157,9 @@ const P = styled.p `
     margin: 1.7rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 1.7rem;  
+    font-size: 1.4rem;  
     color: whitesmoke;
-    padding: 0 4rem 2rem;
+    padding: .5rem 4rem 2rem;
     p{
         margin-top: 1rem;
         
@@ -172,15 +169,19 @@ const P = styled.p `
         font-size: 1.2rem;
         font-weight: 500;
         text-decoration: none;
-        border-bottom: .5rem solid #83a46f;
-        
-    
+        border-bottom: .5rem solid #8978a3;
     }
 
-@media (min-width: 767px) {
-    font-size: 1.5rem;
+@media (max-width: 768px) {
+    font-size: 1.8rem;
+    p{
+        margin-top: 1.5rem;
+    }
+    a{
+        font-size: 1.6rem;
+    }
 } 
-@media (min-width: 340px) {
+@media (max-width: 480px) {
     padding: .5rem 1.8rem 1rem 2rem;
     font-size: 1.1rem;
 }
