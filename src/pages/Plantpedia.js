@@ -121,10 +121,7 @@ const Plantpedia = () => {
                     <CarouselPics data={plants[selectedPlant -1]} />
                 </LeftDiv>
                 <RightDiv>
-<<<<<<< HEAD
-=======
                     <PlantCard data={plants[selectedPlant-1]}/>
->>>>>>> a2e0bd353465d7166214dddd27429201c9995052
                 </RightDiv>
 
             </InternalFrame>
