@@ -5,6 +5,8 @@ import useStyles from './styles';
 import AddressForm from '../AddressForm';
 import PaymentForm from '../PaymentForm';
 import { Link, useHistory } from 'react-router-dom';
+import { motion } from 'framer-motion'
+import { titleAnimation } from '../../../animations'
 
 const steps =['Shipping address', 'Payment details']
 
@@ -43,7 +45,7 @@ const Checkout = ({cart, order, onCaptureCheckout, error}) => {
 
     let Confirmation = () => order.customer ? (
         <>
-            <div>
+            <div >
                 <Typography variant="h5">Thank you for your purchase, {order.customer.firstname} {" "} {order.customer.lastname}!</Typography>
                 <Divider className={classes.divider} />
                 <Typography variant="subtitle2">Order ref: {order.customer_reference}</Typography>
@@ -83,9 +85,13 @@ const Checkout = ({cart, order, onCaptureCheckout, error}) => {
 
     
     return (
-        <>
-        <CssBaseline/>
-            <div className={classes.toolbar}/>
+        <motion.div variants = {titleAnimation} 
+        initial = "hidden" 
+        animate = "show">
+        
+            <div />
+            <CssBaseline/>
+            {/* <div className={classes.toolbar}/> */}
             <main className={classes.layout}>
                 <Paper className={classes.paper}>
                     <Typography variant='h4' style={{fontFamily: 'Montserrat', fontWeight: '500'}} align='center'>Checkout</Typography>
@@ -99,7 +105,7 @@ const Checkout = ({cart, order, onCaptureCheckout, error}) => {
                     {activeStep === steps.length ? (<Confirmation /> ) : ( checkoutToken &&  <Form /> )}
                 </Paper>
             </main>
-        </>
+        </motion.div>
     )
 }
 

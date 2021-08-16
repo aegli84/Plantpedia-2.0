@@ -1,13 +1,16 @@
 import { Card, CardMedia, CardContent, CardActions, Typography, Button } from '@material-ui/core';
 import useStyles from './styles'
+import { motion } from 'framer-motion'
+import { titleAnimation } from '../../../animations'
+
 
 const CartItem = ({ item, onUpdateCartQty, onRemoveFromCart }) => {
     const classes = useStyles();
 
-    
-// const image = item.media.source
-
     return (
+        <motion.div variants = {titleAnimation} 
+        initial = "hidden" 
+        animate = "show">
         <Card className={classes.root}>
             <CardMedia image={item.media.source} alt={item.name} className={classes.media}/>
             
@@ -24,6 +27,7 @@ const CartItem = ({ item, onUpdateCartQty, onRemoveFromCart }) => {
                 <Button variant='contained' type='button' style = {{backgroundColor:'#7e66a3', color: 'whitesmoke'}} onClick={() => onRemoveFromCart(item.id)}>Remove</Button>
             </CardActions>
         </Card>
+        </motion.div>
     )
 }
 

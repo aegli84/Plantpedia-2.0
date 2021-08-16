@@ -5,18 +5,21 @@ import LoginForm from '../components/LoginForm'
 import { AuthProvider } from '../context/AuthContext'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
+
 const Chat = () => {
     return (
-        <Div>
+        <>
+        <Div >
             <Router>
                 <AuthProvider>
                     <Switch>
                         <Route path="/chats" component={ChatBox} />
-                        <Route path="/" component={LoginForm} />
+                        <Route path="/" component={LoginForm}/>
                     </Switch>
                 </AuthProvider>
         </Router>
         </Div>
+        </>
     )
 }
 

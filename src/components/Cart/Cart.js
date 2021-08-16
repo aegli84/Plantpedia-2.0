@@ -45,9 +45,11 @@ const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
 
     return (
         <Container>
-            <div className={classes.toolbar}/>
-            <Typography className={classes.title}  style={{ color: 'whitesmoke', fontSize: '2.6rem', fontWeight: '400' }} >Your Shopping Cart</Typography>
+            <div className={classes.toolbar} />
+            
+            <Typography className={classes.title}  style={{ color: 'whitesmoke', fontSize: '2.6rem', fontWeight: '500' }} >Your Shopping Cart</Typography>
             {!cart.line_items.length ? <EmptyCart /> : <FilledCart />}
+            
         </Container>
     )
 }

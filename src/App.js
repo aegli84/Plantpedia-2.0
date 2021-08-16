@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import {Switch, Route} from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home';
@@ -26,8 +26,6 @@ import Contact from './pages/Contact'
 
 function App() {
   
-
-
   return (
     <div className="App">
   

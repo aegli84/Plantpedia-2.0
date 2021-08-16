@@ -1,8 +1,9 @@
 import { Card, CardMedia, CardContent, CardActions, Typography, IconButton, Button } from '@material-ui/core'
 import {useState} from 'react'
-
 import { AddShoppingCart } from '@material-ui/icons'
 import useStyles from './styles'
+import { motion } from 'framer-motion'
+import { titleAnimation } from '../../../animations'
 
 const Product = ({ product, onAddToCart}) => {
     const classes = useStyles();
@@ -10,11 +11,14 @@ const Product = ({ product, onAddToCart}) => {
     const handleAddToCart = () => onAddToCart(product.id, 1);
     
     return (
+        <motion.div variants = {titleAnimation} 
+        initial = "hidden" 
+        animate = "show" >
         <Card className={classes.root}>
             <CardMedia className={classes.media} image={product.media.source} title={product.name}/>
             <CardContent>
             
-                <div className={classes.cardContent}>
+                <div className={classes.cardContent} >
                     <Typography  variant="h5" style = {{fontFamily: 'Montserrat'}} gutterBottom>
                         {product.name}
                     </Typography>
@@ -39,6 +43,7 @@ const Product = ({ product, onAddToCart}) => {
             </CardContent>
             
         </Card>
+        </motion.div>
     )
 }
 

@@ -52,21 +52,23 @@ console.log(cart)
     )
 }
 const Div =styled.div`
-    height: 100vh;   
+    min-height: 100vh;   
     width: 100%;
     background-image: url(${giftpage});
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
 
 @media (max-width: 768px) {
-    height: 75vh;
+    min-height: 75vh;
     padding-top: 5rem;
 }
 
 @media (max-width: 480px) {
     padding-bottom: 10rem;
     padding-top: 5rem;
-    height: 110vh;
+    min-height: 110vh;
 }
 `
 

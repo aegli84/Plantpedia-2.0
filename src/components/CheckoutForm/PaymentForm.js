@@ -2,6 +2,7 @@ import { Typography, Button, Divider } from '@material-ui/core'
 import { Elements, CardElement, ElementsConsumer } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 import Review from './Review';
+import styled from "styled-components";
 
 const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY)
 
@@ -53,7 +54,18 @@ const PaymentForm = ({ checkoutToken, nextStep, backStep, shippingData, onCaptur
         <>
             <Review checkoutToken={checkoutToken}/>
             <Divider />
+            <Typography>
+            <Select name="card-test-number">
+                <option value="">-- Test Card Details --</option>
+                <option value="">-- Card no --4242424242424242</option>
+                <option value="MM">--MM--42</option>
+                <option value="YY">--YY--42</option>
+                <option value="CVC">--CVC--42</option>
+                <option value="ZIP">--ZIP--42</option>
+            </Select>
+            </Typography>
             <Typography variant="h6" gutterBottom style={{ margin: '20px 0' }}>Payment method</Typography>
+            
             <Elements stripe={stripePromise}>
             <ElementsConsumer>
                 {({ elements, stripe }) => (
@@ -72,5 +84,16 @@ const PaymentForm = ({ checkoutToken, nextStep, backStep, shippingData, onCaptur
         </>
     )
 }
+const Select = styled.select `
+    border-radius: .3rem;
+    padding: .5rem;
+    margin-top: .5rem;
+    border: none;
+    outline: none;
+    /* background-color: whitesmoke; */
+    width: 100%;
+    font-family: 'Montserrat', sans-serif !important;
+    border: 2px solid #83a46f;
+`
 
 export default PaymentForm

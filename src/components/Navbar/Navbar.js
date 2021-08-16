@@ -95,9 +95,10 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const Navbar = ({totalItems}) => {
-    
+
     const activeStyle = { color: ' #918EA4' };
     const classes = useStyles();
+    
 
     return (
         <>
@@ -132,8 +133,10 @@ const Navbar = ({totalItems}) => {
                     <NavBtnLink to="/sign-up">Login or Register</NavBtnLink>                
                 </NavBtn>
                         <IconButton component={Link} to='/Cart' aria-label='Show cart items' color='inherit' >
-                            <Badge badgeContent={totalItems} classes={{badge: classes.badge}}>
-                                <ShoppingCart style={{ color: 'whitesmoke' }}/>
+                        {/* <a>{total_items > 0 ? <span>{total_items}</span> : null}</a> */}
+                            <Badge badgeContent={2} classes={{badge: classes.badge}}>
+                                <ShoppingCart style={{ color: 'whitesmoke' }} />
+                                
                             </Badge>
                         </IconButton>
             </NavMenu> 

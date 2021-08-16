@@ -3,27 +3,34 @@ import 'firebase/app'
 import { auth } from './firebase'
 import firebase from 'firebase/app'
 import './Chat.css'; //styiling for form will be done with styled-components
+import { motion } from 'framer-motion'
+import { titleAnimation } from '../animations'
+
 
 const LoginForm = () => {
     return (
-        <div id='login-page'>
-            <div id='login-card'>
+        <div id='login-page' >
+            <motion.div id='login-card' variants = {titleAnimation} 
+                initial = "hidden" 
+                animate = "show" >
                 <h2 className='text-chat'>Plantpedia Live Chat!</h2>
                 <br /> <br />
-                <div
+                <motion.div whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.9 }}
                     className='login-button google'
                     onClick={() => auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())}
                 >
                     <FaGoogle/> Sign in with Google
-                </div>
+                </motion.div>
                 <br /> <br />
-                <div
+                <motion.div whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.9 }}
                     className='login-button facebook'
                     onClick={() => auth.signInWithRedirect(new firebase.auth.FacebookAuthProvider())}
                 >
                     <FaFacebook/> Sign in with Facebook
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </div>
 
     )
