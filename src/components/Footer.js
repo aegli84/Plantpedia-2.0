@@ -96,9 +96,11 @@ const Footer = (props) => {
                         <FiFacebook className='icon'  color= "whitesmoke" size= "1.5rem"/>
                         </a>
                     </SocialMedia>
+                    
                     <Copyright> Copyright @Plantpedia 2021</Copyright>
                     
                 </IconsDiv>
+                
                 <RightDiv>
                     <FooterLink to="/Impressum" activeStyle>
                         Impressum

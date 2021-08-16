@@ -8,8 +8,8 @@ const LoginForm = () => {
     return (
         <div id='login-page'>
             <div id='login-card'>
-                <h2>Welcome to our Live Chat!</h2>
-                <h3>Members Only!</h3>
+                <h2 className='text-chat'>Plantpedia Live Chat!</h2>
+                <br /> <br />
                 <div
                     className='login-button google'
                     onClick={() => auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())}

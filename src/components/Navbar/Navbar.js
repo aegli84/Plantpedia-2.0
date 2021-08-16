@@ -1,9 +1,10 @@
 import React from "react";
-import logo from "../assets/logo.png";
-//import { FaBars } from "react-icons/fa";
+import logo from '../../assets/logo.png';
+import { IconButton, Badge } from '@material-ui/core'
+import { ShoppingCart } from '@material-ui/icons'
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
-//import { useState } from "react";
+import {makeStyles} from "@material-ui/styles";
 
 
 const Nav = styled.nav`
@@ -50,20 +51,6 @@ const NavLink = styled(Link)`
     }
 `;
 
-// const Bars = styled(FaBars)`
-//     display: none;
-//     color: #fff;
-//     @media screen and (max-width: 768px) {
-//         display: block;
-//         position: absolute;
-//         top: 0;
-//         right: 0;
-//         transform: translate(-100%, 75%);
-//         font-size: 1.8rem;
-//         cursor: pointer;
-//     }
-// `;
-
 const NavMenu = styled.div`
     display: flex;
     align-items: center;
@@ -100,13 +87,21 @@ const NavBtnLink = styled(Link)`
     }
 `;
 
-const Navbar = () => {
-    const activeStyle = { color: ' #918EA4' };
+const useStyles = makeStyles(theme => ({
+    badge: {
+        backgroundColor: "#83a46f",
+        color: 'whitesmoke',
+    }
+}));
 
+const Navbar = ({totalItems}) => {
     
+    const activeStyle = { color: ' #918EA4' };
+    const classes = useStyles();
+
     return (
         <>
-            <Nav>
+            <Nav >
             <NavLogo to="/">
                 <ImgLogo src={logo}/>
             </NavLogo>
@@ -127,15 +122,25 @@ const Navbar = () => {
                 <NavLink to="/Subscription" activeStyle={activeStyle}>
                     Subscription
                 </NavLink>
+                <NavLink to="/Chat" activeStyle={activeStyle}>
+                    Chat
+                </NavLink>
                 <NavLink to="/Blog" activeStyle={activeStyle}>
                     Blog
                 </NavLink>
                 <NavBtn>
                     <NavBtnLink to="/sign-up">Login or Register</NavBtnLink>                
                 </NavBtn>
+                        <IconButton component={Link} to='/Cart' aria-label='Show cart items' color='inherit' >
+                            <Badge badgeContent={totalItems} classes={{badge: classes.badge}}>
+                                <ShoppingCart style={{ color: 'whitesmoke' }}/>
+                            </Badge>
+                        </IconButton>
             </NavMenu> 
             </Nav> 
         </>
     );
 };
+
+
 export default Navbar;
