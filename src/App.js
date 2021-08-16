@@ -18,10 +18,13 @@ import Pest from './pages/Pest';
 import Humidity from './pages/Humidity';
 import Chat from './pages/Chat';
 import Soil from "./pages/Soil";
+import Impressum from './pages/Impressum';
+import TC from './pages/TC';
 import AboutPage from './components/About';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import Contact from './pages/Contact'
+
 
 
 function App() {
@@ -90,6 +93,15 @@ function App() {
 
         <Route path="/Humidity">
           <Humidity />
+        </Route> 
+
+
+        <Route path="/Impressum">
+          <Impressum />
+        </Route> 
+
+        <Route path="/TC">
+          <TC />
         </Route> 
 
         <Route path="/Chat">
