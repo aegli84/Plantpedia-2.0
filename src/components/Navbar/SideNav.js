@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-//import { NavHashLink as Link } from "react-router-hash-link";
-//import ScrollIntoView from 'react-scroll-into-view';
 import { motion } from 'framer-motion';
 import { NavLink as Link } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from '../../assets/logo.png';
+import { IconButton, Badge } from '@material-ui/core'
+import { ShoppingCart } from '@material-ui/icons'
 
-const SideNav = (props) => {
+const SideNav = (props, {totalItems}) => {
     const { open, setOpen } = props;
     
 
@@ -13,9 +13,15 @@ const SideNav = (props) => {
         <>
         
             <Ul open={open}>
-            <NavLogo to="/">
+            <NavLogo to="/" onClick={() => setOpen(!open)}>
                 <ImgLogo src={logo}/>
             </NavLogo>
+        
+                <IconButton component={Link} to='/Cart' onClick={() => setOpen(!open)} aria-label='Show cart items' color='inherit' >
+                            <Badge badgeContent={totalItems} color='secondary' >
+                                <ShoppingCart style={{ color: 'whitesmoke', fontSize: '4rem', marginLeft: '10rem' }}/>
+                            </Badge>
+                        </IconButton>
                 <motion.li whileTap={{scale: 1.1}}>
                     <Link to="/" onClick={() => setOpen(!open)}>Home</Link>
                 </motion.li>
@@ -23,10 +29,16 @@ const SideNav = (props) => {
                     <Link to="/Plantpedia" onClick={() => setOpen(!open)}>Plantpedia</Link>
                 </motion.li>
                 <motion.li whileTap={{scale: 1.1}} >
+                    <Link to="/Guides" onClick={() => setOpen(!open)}>Guides</Link>
+                </motion.li>
+                <motion.li whileTap={{scale: 1.1}} >
                     <Link to="/BoutiqueShops" onClick={() => setOpen(!open)}>Boutique Shops</Link>
                 </motion.li>
                 <motion.li whileTap={{scale: 1.1}} >
                     <Link to="/Subscription" onClick={() => setOpen(!open)}>Subscription</Link>
+                </motion.li>
+                <motion.li whileTap={{scale: 1.1}} >
+                    <Link to="/Chat" onClick={() => setOpen(!open)}>Chat</Link>
                 </motion.li>
                 <motion.li whileTap={{scale: 1.1}} >
                     <Link to="/Blog" onClick={() => setOpen(!open)}>Blog</Link>
@@ -36,9 +48,9 @@ const SideNav = (props) => {
                     <Link to="/Login">Login</Link>   
                     <Link to="/Register"> / Register</Link>   
                 </motion.li>             
-            
+                
             </Ul>
-        
+            
         </>
     )
 }
@@ -62,7 +74,7 @@ const Ul = styled.ul`
     right: 0;
     height: 100vh;
     width: 100vw;
-    padding-top: 5rem;
+    padding-top: 10rem;
     transition: transform 0.3s ease-in-out;
     z-index: 2;
     a {

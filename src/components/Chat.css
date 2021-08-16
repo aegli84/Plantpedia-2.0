@@ -1,7 +1,3 @@
-/* * {
-  font-family: 'Montserrat', sans-serif;
-  
-} */
 
 .ce-chat-list {
   background-color: rgb(240, 240, 240) !important;
@@ -12,44 +8,38 @@
 .ce-chats-container {
   background-color: lavender !important;
   border-radius: 15px !important;
-  /* border: 8px solid #7554a0 !important; */
-  
-  
 }
 
 .ce-active-chat-card {
   background-color: #7554a081 !important;
-  /* border: 8px solid #cabcdc !important; */
   padding: 1.5rem !important;
   border-radius: 8px  !important;
 }
-/* 
-small text on the chat feed title bar */
+
+/* small text on the chat feed title bar */
 .ce-chat-subtitle-text {
-  color: #595959 !important;
+  color: #616161 !important;
   font-family: 'Montserrat', sans-serif !important;
 }
 
-
 .ce-chat-form-container {
   padding-bottom: 20px !important;
-  background-color: lavender !important;
+  background-color: lavender  !important;
   color: #57744bf6;
   font-weight: 700 !important;
   font-size: 2rem !important;
 }
 
 .ce-chat-form-container > div > div > div {
-  color: #57744bf6;
+  color: #83a46f;
   font-weight: 800 !important;
-  font-size: 2rem !important;
+  font-size: 1.8rem !important;
   font-family: 'Raleyway', sans-serif !important;
 }
 .ce-text-input {
   border-radius: 6px !important;
-  /* border: 1px solid #3b2a50 !important; */
   font-family: 'Montserrat', sans-serif !important;
-  background-color: #7554a0b2 !important;
+  background-color: #7554a0af !important;
   color: whitesmoke;
   padding: 1.5rem !important;
 }
@@ -72,14 +62,23 @@ small text on the chat feed title bar */
 /* settings list right background */
 .ce-settings {
   background-color: #83a46f94 !important;
-  /* width: 180%;
-  border-radius: 5rem !important; */
 }
-
+.ce-chat-settings-mobile-option > div > div > div {
+  background-color: #83a46f;
+  
+}
+.ce-chat-settings-mobile-option > div > div > div > div {
+  color:whitesmoke;
+  font-family: 'Raleway', sans-serif !important;
+}
+.anticon-close {
+  color: #7554a0;
+}
 /* settings list right top avatar and name of chat*/
 .ce-chat-settings-container {
   padding-top: 52px !important;
   font-family: 'Montserrat', sans-serif !important;
+  
 } 
 
 .ce-person-title-container,
@@ -96,7 +95,6 @@ small text on the chat feed title bar */
 .ce-chat-feed-container {
   background-color: #c5c5c460!important;
   font-family: 'Montserrat', sans-serif !important;
-  
 }
 .chat-feed {
   height: 100%;
@@ -124,16 +122,11 @@ navbar on the chat feed */
   background-color: rgb(241, 241, 241);
   color: whitesmoke !important;
 }
-/* .ce-chat-list-mobile-option, .ce-chat-settings-mobile-option  {
-  background-color:#c5c5c457!important;
-  position: relative !important;
 
-} */
 .ce-chat-title-text {
   color:#6d52a5 ;
   font-weight: 800;
   font-size: 1.5rem;
-
 }
 
 .chat-subtitle {
@@ -143,19 +136,15 @@ navbar on the chat feed */
   padding-top: 4px;
 }
 
-
 .ce-my-message-bubble {
   background-color: #423064dc !important;
   border-radius:  1.8rem 0rem 2rem 1rem!important;
   margin-right: .7rem !important;
-  
 }
 
 .ce-their-message-bubble {
   background-color: #57744b91 !important;
   border-radius:  0rem 1.8rem 1rem 2rem!important;
-  /* margin-left: .5rem !important; */
-
 }
 
 .message-row {
@@ -182,8 +171,6 @@ navbar on the chat feed */
 #ce-send-message-button {
   background-color: #7554a0 !important;
   margin-right: .9rem !important;
-  /* padding: 0.5rem 1.5rem !important;
-  margin-bottom: 15rem !important; */
 }
 
 .message {
@@ -220,7 +207,6 @@ navbar on the chat feed */
   background-size: 14px;
 }
 
-
 .ce-message-form-container {
   position: absolute;
   bottom: 0px;
@@ -229,64 +215,47 @@ navbar on the chat feed */
   padding: 8px;
   background-color: #c5c5c425 !important;
 }
-/* 
-.message-form {
-  overflow: hidden;
-  border-radius: 6px;
-  border: 2px solid #3b2a50;
-  background-color: white;
-} */
-/* 
-.message-input {
-  height: 40px;
-  width: calc(100% - 132px);
-  background-color: white;
-  border: 1px solid white;
-  padding: 0px 18px;
-  outline: none;
-  font-size: 15px;
-} */
 
-/* .image-button {
-  cursor: pointer;
-  padding: 0px 12px;
-  height: 100%;
-} */
-
-
-
-.chats-page {
+  .chats-page {
     position: relative;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    top: 50px;
+    top: 45px;
     width: 85%;
-    height: 100vh;
     overflow: hidden ;
-    margin-left: 100px !important;
+    margin-left: 105px !important;
     border-radius: 1rem  !important;
+  }
+  
+  .nav-bar-main {
+    width: 100%;
+    height: 70px;
+    background-color: #7e66a3;
   }
 
   .logo-tab {
     position: absolute;
     left: 22px;
-    top: 19px;
+    top: 20px;
     font-size: 32px;
     font-weight: 700;
     color: white;
+    font-family: 'Raleyway', sans-serif !important;
   }
-  
+  .logout-text{
+    position: absolute;
+    top: 7px;
+    right: 37px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif !important;
+  }
   .logout-tab {
     position: absolute;
-    top: 22px;
+    top: 20px;
     right: 22px;
     color: white;
     cursor: pointer;
   }
 
-  
-    ::-webkit-scrollbar {
+  ::-webkit-scrollbar {
       width: 12px;
       z-index: -1;
   }
@@ -308,141 +277,67 @@ navbar on the chat feed */
     z-index: -1;
   }
 
-/* LOGIN FORM STYLES */
-  /* .wrapper {
-    height: 100vh;
-    width: 100%;
+
+/* LOGIN PAGE */
+  
+#login-page {
+    height: 90vh;
+    width: 100vw;
     opacity: 0.9;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-  }
-  
-  .input {
-    color: #333;
-    font-size: 1.2rem;
-    margin: 0 auto;
-    padding: 1.5rem 2rem;
-    border-radius: 0.2rem;
-    background-color: rgba(255, 255, 255, 0.699);
-    border: none;
-    width: 90%;
-    display: block;
-    border-bottom: 0.3rem solid transparent;
-    transition: all 0.3s;
-    outline: none;
-    margin-bottom: 25px;
-  }
-
-  .input:hover {
-    background-color: whitesmoke;
-  }
-  
-  .form {
-    width: 400px;
-    padding-bottom: 5rem;
-  }
-  
-  .title {
-    text-align: center;
-    color: white;
-    margin-bottom: 30px;
-    width: 95%;
-    font-size: 2.3em;;
-  }
-  
-  .button {
-    border-radius: 4px;
-    border: none;
-    background-color: #57744bd5;
-    color: whitesmoke;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 22px;
-    padding: 20px;
-    width: 200px;
-    transition: all 0.4s;
-    cursor: pointer;
-    margin: 5px;
-    width: 90%;
-    
-  }
-  
-  .button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.4s;
-    font-size: 1rem;
-    font-weight: 700;
-  }
-  
-  .button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-  .button:hover {
-    background-color: #423064;
-    transition: 0.5s;
-  }
-  .button:hover span {
-    padding-right: 25px;
-    
-  }
-  .button:hover span:after {
-    opacity: 1;
-    right: 0;
-    
-  } */
-
-
-/* Login Page */
-  
-#login-page {
-  height: 90vh;
-    width: 100%;
-    opacity: 0.9;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    /* padding-bottom: 5rem; */
 }
 
 #login-card {
-/*   
-  top: calc(50vh - 144px);
-  left: calc(50vw - 210px); */
   padding-top: 36px;
-
-  padding-bottom: 66px;
-  width: 65vw;
+  padding-bottom: 46px;
+  width: 40%;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.603);
-  border-radius: 22px;
+  border: 1px solid whitesmoke;
+  border-radius: 15px;
+  background: #392357a6;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 26px );
+  -webkit-backdrop-filter: blur( 26px );
+  
+}
+
+.text-chat {
+  font-family: 'Montserrat', sans-serif !important;
+  color: white;
+  text-shadow: 0  15px 7px rgb(0, 0, 0); 
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
 .login-button {
   cursor: pointer;
   color: white;
-  padding: 12px;
-  border-radius: 8px;
+  padding: 12px 0 12px 0;
+  border-radius: 7px;
   display: inline-block;
+  width: 50%;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .facebook {
   background-color: #3b5998;
 }
 
-.google {
-  background-color: #4285f4;
-  color: white;
+.facebook:hover {
+  background-color: #2e467a;
+  transition: all 0.5s;
 }
 
+.google {
+  background-color: #4285f4;
+}
+
+.google:hover {
+  background-color: #164faa;
+  transition: all 0.5s;
+}
 #loading-container {
   position: absolute;
   top: 0px;
@@ -460,28 +355,120 @@ navbar on the chat feed */
 }
 
 
+.tracking-in-expand {
+  padding-top: 10rem;
+	-webkit-animation: tracking-in-expand 0.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: tracking-in-expand 0.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
 
-
-
-
-
-
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
   @media (max-width: 768px) {
-    .nav-bar {
-      width: 100%;
-      height: 85px;
+    .nav-bar-main {
+      height: 9vh;
       background-color: #83a46f;
     }
     .chats-page{
-      top:0;
+      top: 0;
+      width: 100%;
+      height: 85vh !important;
+      margin-left: 0px !important;
+    }
+    .logo-tab {
+      left: 20px;
+      top: 27px;
+      font-size: 37px;
+      font-weight: 700;
+      font-family: 'Montserrat', sans-serif !important;
+    }
+    #login-card {
+      width: 60%;
+      
+    }
+    .text-chat {
+      font-size: 3.2rem;
+    }
+    .login-button {
+      width: 60%;
+      padding: 13px 0 13px 0;
+      font-size: 1.3rem;
+    }
+    .logout-text{
+      top: 2px;
+      right: 25px;
+      font-size: 1.4rem;
+    }
+    .logout-tab {
+      top: 15px;
+      right: 27px;
+    }
+    .ce-chat-form-container > div > div > div {
+      font-size: 1.8rem !important;
+      font-family: 'Raleyway', sans-serif !important;
     }
   }
   @media (max-width: 480px) {
-    .nav-bar {
-      width: 100%;
-      height: 75px;
+    .nav-bar-main {
+      height: 11vh;
       background-color: #83a46f;
+    }
+    .chats-page{
+      top: 0;
+      width: 100%;
+      height: 100vh !important;
+      margin-left: 0px !important;
+    }
+
+    #login-card {
+      width: 85%;
+      padding: 45px 0 60px ;
+      
+    }
+    .text-chat {
+      font-size: 3.4rem;
+    }
+    .login-button {
+      width: 75%;
+      font-size: 1.3rem;
+    }
+    .logout-text{
+      top: .5vh;
+      /* right: 29px; */
+      font-size: 1.1rem;
+    }
+    .logout-tab {
+      top: 5px;
+      right: 29px;
+    }
+    .logo-tab {
+      left: 15px;
+      top: 30px;
+      font-size: 29px;
+      font-weight: 700;
+      font-family: 'Montserrat', sans-serif !important;
     }
   }
   
