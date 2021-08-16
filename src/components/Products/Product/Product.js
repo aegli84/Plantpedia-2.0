@@ -4,11 +4,11 @@ import {useState} from 'react'
 import { AddShoppingCart } from '@material-ui/icons'
 import useStyles from './styles'
 
-const Product = ({ product, onAddToCart }) => {
+const Product = ({ product, onAddToCart}) => {
     const classes = useStyles();
     const [show, setShow] = useState(false);
     const handleAddToCart = () => onAddToCart(product.id, 1);
-
+    
     return (
         <Card className={classes.root}>
             <CardMedia className={classes.media} image={product.media.source} title={product.name}/>
@@ -28,7 +28,7 @@ const Product = ({ product, onAddToCart }) => {
                 <Button variant='contained' type='button' style = {{backgroundColor:'#7e66a3', color: 'whitesmoke'}} onClick={() => setShow(!show)}>
                     Product details 
                 </Button>
-                    <IconButton aria-label="Add to Cart" onClick={handleAddToCart}>
+                    <IconButton aria-label="Add to Cart" onClick={handleAddToCart} >
                         <AddShoppingCart />
                     </IconButton>
                 </CardActions>

@@ -68,5 +68,4 @@ const Div =styled.div`
     
 }
 `
-
 export default Carty;
