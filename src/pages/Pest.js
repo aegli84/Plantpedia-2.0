@@ -1,6 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import bg from "../assets/bgimg/guidepage.png";
+import pest1 from "../assets/guidesImages/pest1.jpg";
+import pest2 from "../assets/guidesImages/pest2.jfif";
+import pest3 from "../assets/guidesImages/pest3.jpg";
+import {FaArrowLeft} from "react-icons/fa";
+import {FaArrowRight} from "react-icons/fa";
+
+import { NavLink as Link } from "react-router-dom";
+
+
+
 
 
 
@@ -12,8 +22,8 @@ padding-bottom: 7vh;
 background-image:url(${bg});
 background-size: cover;
 background-repeat:no-repeat;
-@media (max-width: 340px) {
-    height: 75vh;
+@media (max-width: 377px) {
+  height: 75vh;
 }
 @media (max-width: 770px) {
     height: 80vh;
@@ -23,7 +33,7 @@ background-repeat:no-repeat;
 const InternalFrame = styled.div`
 width:80vw;
 padding-top:20px;
-height: 60vh;
+height: 65vh;
 margin: auto ;
 border-radius: 5rem;
 box-shadow: 0 0 20px black;
@@ -36,11 +46,11 @@ text-align:justify;
 
 
 @media (max-width: 770px) {
-    height: 70vh;
+    height: 72vh;
 
 }
-@media (max-width: 375px) {
-    height: 70vh;
+@media (max-width: 377px) {
+  height: 72vh;
 
 
 
@@ -95,8 +105,8 @@ overflow-y: auto;
 
 
 }
-@media (max-width: 375px) {
-    height: 65vh;
+@media (max-width: 377px) {
+  height: 65vh;
     ::-webkit-scrollbar-button:end:increment {
         height: 5%;
         display: block;
@@ -115,10 +125,32 @@ overflow-y: auto;
 
 `
 const Div2 = styled.div`
-width: 50vw;
-height:50vh;
-display: none;
+width: 90%;
+height:10vh;
+margin-top: 30px;
+justify-content: space-around;
+display: flex;
+
+@media (max-width: 770px) {
+  margin-top: 5px;
+
+
+}
+
 `
+const Img = styled.img`
+width:30%;
+margin-left: 35%;
+margin-top:1%;
+border-radius: 3rem;
+
+`
+const NavLink = styled(Link)`
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+
+`;
 
 
 const Pest = () => {
@@ -131,6 +163,7 @@ const Pest = () => {
                     <H2Parag>Common houseplant pests</H2Parag>
                     <H4Parag>The list of three insects and mites are by no means an exhaustive list of houseplant pests, but they are the most typical ones that you'll likely see in the home.  </H4Parag>
                     <H2Parag>Common brown scale</H2Parag>
+                    <Img src={pest1}/>
                     <H4Parag>The first time I noticed a scale insect was on a jasmine plant that I had purchased at the farmers market. I didn't see the insect at first, but I did notice that some of the bottom leaves of the plant were shiny and sticky. Upon closer inspection, I noticed brown nubs stuck to the woody stem and underside of leaves, closest to the central vein. This was scale. 
 
                     There are different varieties of scale but by far the most common is the brown soft scale (Coccus hesperidum L.). They are rather inconspicuous—and don't look like a typical insect—unless you know what to look out for. Firstly, they're ovate, only about 3-4 mm long and about half as wide. They can range in color, but are most often brownish in appearance (hence the name), but I've also seen them in shades of yellow, amber, and even olivaceous. They're called "scales" largely due to their scale-like appearance on a plant, due to waxy or armored coverings. They are often seen in clumps along a stem, sucking away at the plant's juices with their spiky mouthpart. 
@@ -152,12 +185,14 @@ const Pest = () => {
                     5. Check the plant again for the next three days, making sure that you hadn't missed any scales. If you did, you can repeat steps 1-4. Check again once a week for the two months, just to make certain you got all the little buggers.
                     </H4Parag>
                     <H2Parag>Mealybugs (Pseudococcidae families)</H2Parag>
+                    <Img src={pest2}/>
                     <H4Parag>I'm not quite sure how mealybugs first got into my home, but I first noticed them on my potato plants that I was growing in my closet garden. Potatoes, particularly the leaves and stems, grow incredibly fast, so I was monitoring them pretty closely. I first planted the potatoes from ones that I purchased in the farmers market and that started growing "eyes". Interesting enough, I had more potatoes that began growing eyes in my fruit basket, and mealybugs would just "show up" on them. Still to this day I'm befuddled by their spontaneous generation. 
 
                     Mealybugs are an unarmored scale insect, and I personally think they are more difficult to control than the common brown scale. This is for a few reasons. First is the most obvious: mealybugs move. Though its slow movement, if any plant is touching another, there is a chance the mealybug will hitch a ride on a new leaf and spread. Secondly, though their soft, cottony white appearance is quite obvious on a plant, they have a tendency to hide out in the damnedest of places, like the crotch of a plant or in a leaf that has yet to unfurl. Additionally, they have waxy secretions, giving them their cotton-like appearance, which can serve as some basic protection. And lastly, they breed like rabbits of the insect world. Females can deposit around 600 eggs in loose cottony masses, often on the underside of leaves or along stems. The early instars will hatch in about a week and this often causes a population explosion.
 
                     As such, it's important to get mealybug populations in control. Some will toss out a plant completely, but I did no such thing. Instead I did a three-pronged effort, involving the release of two beneficial insects—the green lacewing (Chrysoperla carnea) and highly effective, aptly named mealybug destroyer (Cryptolaemus montrouzieri), and also spot treatment using a q-tip and isopropyl alcohol. Dabbing the alcohol directly onto the mealybugs will easily kill them on the spot, but the upside to releasing the beneficial insects is that the insects can often get to places in a plant that you often cannot get, so I believe both methods—at least for me—have worked the best. </H4Parag>
                     <H2Parag>Red spider mites </H2Parag>
+                    <Img src={pest3}/>
                     <H4Parag>Mites are technically not insects but they, like insects, are Arthropods. They are probably some of the most feared of the common household insect pests, largely because they are so difficult to get rid of.
 
                     Spider mites are nearly naked to the eye. You often need a magnifying lens to spot them, or you may just notice a reddish film across the bottom of the leaves, some webbing, or even some leaf damage, which usually results in reddish-brown spots on the leaf.
@@ -167,7 +202,12 @@ const Pest = () => {
                     Spider mites also have a range of natural predators, including other mites like Phytoseiulus sp. and generalist predators like minute pirate bugs and lacewing larvae. </H4Parag>
                     </Div1>
                     <Div2>
-
+                      <NavLink to="/Light">
+                        <FaArrowLeft size="2.7rem" color="white"/>
+                      </NavLink>
+                      <NavLink to="/Soil">
+                      <FaArrowRight size="2.7rem" color="white"/>
+                      </NavLink>
                     </Div2>
                 </InternalFrame>
             </ExternalFrame>

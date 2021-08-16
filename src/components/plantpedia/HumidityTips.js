@@ -2,7 +2,7 @@ import styled from "styled-components";
 import HumidityIcon from "../plantpedia/icons/humidity.png";
 import {Link } from "react-router-dom";
 
-const WateringCard=styled.div`
+const HumidityCard=styled.div`
     width:200px;
     height:22vh;
     background-color: #725490;
@@ -52,7 +52,7 @@ const Thumbnail = styled.div`
     background-color: white;
     border-radius: 50%;
     margin-top: 2vh;
-    margin-left: 6.5vh;
+    margin-left: 51px;
 @media (max-width: 770px) {
     width:14vw;
     height: 10vh;
@@ -89,9 +89,9 @@ const ImageHumidity= styled.img`
 }
 `
 
-const WateringButton = () => {
+const HumidityButton = () => {
     return (
-        <WateringCard>
+        <HumidityCard>
             <Section1>
             <Thumbnail>
                 <ImageHumidity src={HumidityIcon}>
@@ -110,7 +110,7 @@ const WateringButton = () => {
                     </Button>
                 </Link>
             </Section2>
-        </WateringCard>
+        </HumidityCard>
     );
 };
-export default WateringButton;
+export default HumidityButton;

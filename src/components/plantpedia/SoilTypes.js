@@ -2,7 +2,7 @@ import styled from "styled-components";
 import SoilIcon from "../plantpedia/icons/soil.png";
 import {Link } from "react-router-dom";
 
-const WateringCard=styled.div`
+const SoilCard=styled.div`
     width:200px;
     height:22vh;
     background-color: #725490;
@@ -51,7 +51,7 @@ height: 11vh;
 background-color: white;
 border-radius: 50%;
 margin-top: 2vh;
-margin-left: 6.5vh;
+margin-left: 51px;
 @media (max-width: 770px) {
     width:14vw;
     height: 10vh;
@@ -88,9 +88,9 @@ const ImageSoil= styled.img`
     height: 7vh;
 }
 `
-const WateringButton = () => {
+const SoilButton = () => {
     return (
-        <WateringCard>
+        <SoilCard>
             <Section1>
             <Thumbnail>
             <ImageSoil src={SoilIcon}>
@@ -109,7 +109,7 @@ const WateringButton = () => {
                     </Button>
                 </Link>
             </Section2>
-        </WateringCard>
+        </SoilCard>
     );
 };
-export default WateringButton;
+export default SoilButton;
