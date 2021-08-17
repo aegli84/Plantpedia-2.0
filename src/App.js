@@ -22,17 +22,47 @@ import AboutPage from './components/About';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import Contact from './pages/Contact'
-
+import { useState, useEffect }from 'react'
+import { commerce } from './lib/commerce'
+//import {CartProvider} from './components/CartContext'
 
 function App() {
+  // const [products, setProducts] = useState([])
+  const [cart, setCart] = useState({})
   
+//   const fetchProducts = async () => {
+//     const { data } = await commerce.products.list();
+
+//     setProducts(data);
+// }
+    const fetchCart = async () => {
+      setCart(await commerce.cart.retrieve());
+  }
+
+    const handleAddToCart = async (productId, quantity) => {
+        const item = await commerce.cart.add(productId, quantity)
+
+        setCart(item.cart)
+        
+    }
+
+    useEffect (() => {
+        // fetchProducts();
+        fetchCart();
+        handleAddToCart()
+    
+    }, []);
+
+    
   return (
     <div className="App">
   
     <GlobalStyles/>
-    <Navbar />
+    
+    <Navbar totalItems={cart.total_items}/>
+    
     <NavBurgerMenu/> 
-
+    
       <Switch>
 
         <Route exact path="/">
@@ -57,10 +87,12 @@ function App() {
         </Route>
 
         <Route path="/Cart">
-          <Cart />
+          <Cart 
+                    />
         </Route>
         <Route path="/Checkout">
-          <Checkout />
+          <Checkout 
+                    />
         </Route>
         <Route path="/Blog">
           <Blog />

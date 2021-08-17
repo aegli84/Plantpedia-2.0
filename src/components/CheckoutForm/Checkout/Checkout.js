@@ -34,7 +34,7 @@ const Checkout = ({cart, order, onCaptureCheckout, error}) => {
         
             generateToken();
             }
-        }, [cart]);
+        }, [cart, history]);
 
 
     const test = (data) => {

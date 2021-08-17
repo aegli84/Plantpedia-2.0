@@ -1,15 +1,19 @@
 import styled from "styled-components";
 import contactpage from '../assets/bgimg/contactpage.png'
 import ContactForm from "../components/ContactForm";
+import { motion } from 'framer-motion'
+import { titleAnimation, fade, pageAnimation } from '../animations'
 
 const Contact = () => {
     return (
         <Div>
-            <div>
-                <H1>Contact Us.</H1>
-                    <P>Our team is full of passionate plant parents ready to help. For the speediest reply, please fill out this quick form.</P>
-                    <P>This ensures we have what’s needed to help you as soon as possible!</P>
-            </div>
+            <motion.div variants = {pageAnimation} 
+                initial = "hidden" 
+                animate = "show">
+                <H1 variants={titleAnimation}>Contact Us.</H1>
+                    <P variants = {fade}>Our team is full of passionate plant parents ready to help. For the speediest reply, please fill out this quick form.</P>
+                    <P variants = {fade}>This ensures we have what’s needed to help you as soon as possible!</P>
+            </motion.div>
             <ContactForm/>
         </Div>
     )
@@ -40,7 +44,7 @@ const Div =styled.div`
 }
 `
 
-const H1 = styled.h1`
+const H1 = styled(motion.h1)`
     text-align: left;
     margin-left: 5rem;
     color: whitesmoke;
@@ -61,7 +65,7 @@ const H1 = styled.h1`
     text-align: center;
 }
 `
-const P = styled.p`
+const P = styled(motion.p)`
     /* text-align: center; */
     color: whitesmoke;
     margin: 0 5rem;

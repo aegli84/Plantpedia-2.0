@@ -5,7 +5,7 @@ import { ShoppingCart } from '@material-ui/icons'
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 import {makeStyles} from "@material-ui/styles";
-
+import { useState, useEffect } from 'react';
 
 const Nav = styled.nav`
     background: black;
@@ -95,14 +95,13 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const Navbar = ({totalItems}) => {
-
     const activeStyle = { color: ' #918EA4' };
     const classes = useStyles();
     
-
     return (
         <>
-            <Nav >
+        
+            <Nav  >
             <NavLogo to="/">
                 <ImgLogo src={logo}/>
             </NavLogo>
@@ -133,14 +132,15 @@ const Navbar = ({totalItems}) => {
                     <NavBtnLink to="/sign-up">Login or Register</NavBtnLink>                
                 </NavBtn>
                         <IconButton component={Link} to='/Cart' aria-label='Show cart items' color='inherit' >
-                        {/* <a>{total_items > 0 ? <span>{total_items}</span> : null}</a> */}
-                            <Badge badgeContent={2} classes={{badge: classes.badge}}>
-                                <ShoppingCart style={{ color: 'whitesmoke' }} />
+                        
+                            <Badge badgeContent={totalItems}  classes={{badge: classes.badge}}>
+                                <ShoppingCart style={{ color: 'whitesmoke' }}  />
                                 
                             </Badge>
                         </IconButton>
             </NavMenu> 
             </Nav> 
+        
         </>
     );
 };

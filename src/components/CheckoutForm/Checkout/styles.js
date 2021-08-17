@@ -34,7 +34,7 @@ export default makeStyles((theme) => ({
         },
     },
     stepper: {
-        padding: theme.spacing(3, 0, 5),
+        padding: theme.spacing(2, 0, 3),
         backgroundColor: 'whitesmoke',
     },
     buttons: {

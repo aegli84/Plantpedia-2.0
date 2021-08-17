@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { useForm, ValidationError } from '@formspree/react';
 import Grid from "react-fast-grid";
+import { motion } from 'framer-motion'
+import { pageAnimation } from '../animations'
 
 const ContactForm = () => {
     const [state, handleSubmit] = useForm(process.env.REACT_APP_CONTACT_FORM_KEY);
@@ -13,7 +15,9 @@ const ContactForm = () => {
 
     return (
         <>
-        <Div>
+        <Div variants = {pageAnimation} 
+                initial = "hidden" 
+                animate = "show">
             <form onSubmit={handleSubmit}>
             <Grid container spacing={2} sm={10} direction="row">
             <Grid item sm={6} xs={12}>
@@ -115,8 +119,8 @@ const ContactForm = () => {
     )
 }
 
-const Div = styled.div `
-    border-radius: .5rem;
+const Div = styled(motion.div) `
+    border-radius: 1rem;
     box-shadow: 0 10px 30px black;
     padding-left: 7rem; 
     padding-top: 1.5rem;
@@ -126,8 +130,9 @@ const Div = styled.div `
     margin-right: 6rem;
     height: 72vh;
     width: 85vw;
-    /* backdrop-filter: blur( 5px );
-    -webkit-backdrop-filter: blur( 5px ); */
+    /* background: #392357a6; */
+    backdrop-filter: blur( 5px );
+  -webkit-backdrop-filter: blur( 5px );
 
 @media (max-width: 768px) {
     height: 52vh;  
@@ -241,8 +246,9 @@ const P = styled.p`
     box-shadow: 0 10px 30px black;
     height: 50vh;
     font-family: 'Montserrat', sans-serif !important;
-    /* backdrop-filter: blur( 2px );
-    -webkit-backdrop-filter: blur( 2px ); */
+    /* background: #392357a6; */
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
 
 @media (max-width: 768px) {
     height: 30vh;  

@@ -57,11 +57,8 @@ const PaymentForm = ({ checkoutToken, nextStep, backStep, shippingData, onCaptur
             <Typography>
             <Select name="card-test-number">
                 <option value="">-- Test Card Details --</option>
-                <option value="">-- Card no --4242424242424242</option>
-                <option value="MM">--MM--42</option>
-                <option value="YY">--YY--42</option>
-                <option value="CVC">--CVC--42</option>
-                <option value="ZIP">--ZIP--42</option>
+                <option value="">-- Card no --4242424242424242-- MM--42-- YY--42-- CVC--42 --ZIP--42</option>
+                
             </Select>
             </Typography>
             <Typography variant="h6" gutterBottom style={{ margin: '20px 0' }}>Payment method</Typography>

@@ -4,6 +4,7 @@ import { commerce } from '../lib/commerce'
 import  {Checkout} from '../components'
 import { useState, useEffect }from 'react'
 
+
 const Checkouto = () => {
     const [cart, setCart] = useState({})
     const [order, setOrder] = useState({});
@@ -40,7 +41,6 @@ console.log(cart)
 
     return (
         <Div>
-        
             <Checkout 
                     cart={cart} 
                     order={order} 

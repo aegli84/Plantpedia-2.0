@@ -8,8 +8,8 @@ import { titleAnimation } from '../../../animations'
 const Product = ({ product, onAddToCart}) => {
     const classes = useStyles();
     const [show, setShow] = useState(false);
-    const handleAddToCart = () => onAddToCart(product.id, 1);
-    
+    // console.log(product)
+
     return (
         <motion.div variants = {titleAnimation} 
         initial = "hidden" 
@@ -32,7 +32,7 @@ const Product = ({ product, onAddToCart}) => {
                 <Button variant='contained' type='button' style = {{backgroundColor:'#7e66a3', color: 'whitesmoke'}} onClick={() => setShow(!show)}>
                     Product details 
                 </Button>
-                    <IconButton aria-label="Add to Cart" onClick={handleAddToCart} >
+                    <IconButton aria-label="Add to Cart" onClick={() => onAddToCart(product.id, 1)} >
                         <AddShoppingCart />
                     </IconButton>
                 </CardActions>
