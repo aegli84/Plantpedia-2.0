@@ -1,0 +1,13 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+} 
+
+.mainDiv {
+    height: 70vh;
+    background-image: url(../../../assets/bgimg/plantpediapage.png);
+}
+
+form{
+    border: 1px solid red;
+    
+}

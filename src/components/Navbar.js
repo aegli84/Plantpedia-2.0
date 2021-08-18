@@ -131,7 +131,7 @@ const Navbar = () => {
                     Blog
                 </NavLink>
                 <NavBtn>
-                    <NavBtnLink to="/sign-up">Login or Register</NavBtnLink>                
+                    <NavBtnLink to="/LoginRegister">Login or Register</NavBtnLink>                
                 </NavBtn>
             </NavMenu> 
             </Nav> 

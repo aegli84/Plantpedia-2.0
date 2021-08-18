@@ -7,8 +7,6 @@ import Guides from './pages/Guides';
 import BoutiqueShops from './pages/BoutiqueShops';
 import Subscription from './pages/Subscription';
 import Blog from './pages/Blog';
-import Login from './pages/Login';
-import Register from './pages/Register';
 import GlobalStyles from './GlobalStyles';
 import Footer from './components/Footer';
 import NavBurgerMenu from './components/NavBurgerMenu';
@@ -19,7 +17,7 @@ import Humidity from './pages/Humidity';
 import Chat from './pages/Chat';
 import Soil from "./pages/Soil";
 import AboutUsUi from '../src/components/AboutUs/AboutInfo';
-import AppRouter from './pages/Register';
+import Register from './pages/Register';
 
 
 function App() {
@@ -57,10 +55,6 @@ function App() {
           <Blog />
         </Route> 
 
-        <Route path="/Login">
-          <Login />
-        </Route> 
-
         <Route path="/Soil">
           <Soil />
         </Route>
@@ -85,18 +79,19 @@ function App() {
           <Chat />
         </Route> 
         
-        <Route path="/Register">
-          <Register />
+        <Route path="/signIn">
+        </Route> 
+
+        <Route path="/LoginRegister">
+          <Register/>
         </Route> 
 
         <Route path="/AboutUs">
           <AboutUsUi />
         </Route> 
 
-        <Route path="/SignUp">
-          <AppRouter />
-        </Route> 
     </Switch>
+
     <Footer/>
     </div>
   );
