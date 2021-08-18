@@ -5,16 +5,16 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        scroll-margin-top: 25vh;
+        ${'' /* scroll-margin-top: 25vh; */}
 }
 
     
     html {
         overflow: auto;
         scroll-behavior: smooth;
-        @media (max-width: 1200px){
+        ${'' /* @media (max-width: 1200px){
             font-size: 75%;
-        }
+        } */}
         
     }
     

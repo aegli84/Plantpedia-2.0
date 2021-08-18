@@ -9,7 +9,7 @@ const Checkouto = () => {
     const [cart, setCart] = useState({})
     const [order, setOrder] = useState({});
     const [errorMessage, setErrorMessage] = useState('');
-
+    
 
     const fetchCart = async () => {
         setCart(await commerce.cart.retrieve());
@@ -40,6 +40,8 @@ const Checkouto = () => {
 console.log(cart)
 
     return (
+        <>
+        
         <Div>
             <Checkout 
                     cart={cart} 
@@ -49,6 +51,8 @@ console.log(cart)
                     /> 
                     
         </Div>
+        
+        </>
     )
 }
 const Div =styled.div`

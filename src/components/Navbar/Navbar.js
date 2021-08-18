@@ -5,7 +5,9 @@ import { ShoppingCart } from '@material-ui/icons'
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 import {makeStyles} from "@material-ui/styles";
-import { useState, useEffect } from 'react';
+
+// import { useState } from 'react';
+
 
 const Nav = styled.nav`
     background: black;
@@ -94,13 +96,15 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-const Navbar = ({totalItems}) => {
+const Navbar = () => {
     const activeStyle = { color: ' #918EA4' };
     const classes = useStyles();
+    // const [counter, setCounter] = useState(1);
+    
+    
     
     return (
         <>
-        
             <Nav  >
             <NavLogo to="/">
                 <ImgLogo src={logo}/>
@@ -133,11 +137,13 @@ const Navbar = ({totalItems}) => {
                 </NavBtn>
                         <IconButton component={Link} to='/Cart' aria-label='Show cart items' color='inherit' >
                         
-                            <Badge badgeContent={totalItems}  classes={{badge: classes.badge}}>
-                                <ShoppingCart style={{ color: 'whitesmoke' }}  />
-                                
+                            <Badge badgeContent={0}  classes={{badge: classes.badge}}>
+                                <ShoppingCart style={{ color: 'whitesmoke' }}/>
+                            
                             </Badge>
+                        
                         </IconButton>
+                    
             </NavMenu> 
             </Nav> 
         

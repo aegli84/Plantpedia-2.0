@@ -4,9 +4,12 @@ import ContactForm from "../components/ContactForm";
 import { motion } from 'framer-motion'
 import { titleAnimation, fade, pageAnimation } from '../animations'
 
+
 const Contact = () => {
+    
     return (
-        <Div>
+        <>
+        <Div >
             <motion.div variants = {pageAnimation} 
                 initial = "hidden" 
                 animate = "show">
@@ -16,6 +19,7 @@ const Contact = () => {
             </motion.div>
             <ContactForm/>
         </Div>
+        </>
     )
 }
 

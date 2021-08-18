@@ -5,7 +5,7 @@ import logo from '../../assets/logo.png';
 import { IconButton, Badge } from '@material-ui/core'
 import { ShoppingCart } from '@material-ui/icons'
 
-const SideNav = (props, {totalItems}) => {
+const SideNav = (props) => {
     const { open, setOpen } = props;
     
 
@@ -18,7 +18,7 @@ const SideNav = (props, {totalItems}) => {
             </NavLogo>
         
                 <IconButton component={Link} to='/Cart' onClick={() => setOpen(!open)} aria-label='Show cart items' color='inherit' >
-                            <Badge badgeContent={totalItems} color='secondary' >
+                            <Badge badgeContent={1} color='secondary' >
                                 <ShoppingCart style={{ color: 'whitesmoke', fontSize: '4rem', marginLeft: '10rem' }}/>
                             </Badge>
                         </IconButton>

@@ -22,49 +22,24 @@ import AboutPage from './components/About';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import Contact from './pages/Contact'
-import { useState, useEffect }from 'react'
-import { commerce } from './lib/commerce'
+import ScrollToTop from "./components/ScrollToTop";
+
+
 //import {CartProvider} from './components/CartContext'
 
 function App() {
-  // const [products, setProducts] = useState([])
-  const [cart, setCart] = useState({})
   
-//   const fetchProducts = async () => {
-//     const { data } = await commerce.products.list();
-
-//     setProducts(data);
-// }
-    const fetchCart = async () => {
-      setCart(await commerce.cart.retrieve());
-  }
-
-    const handleAddToCart = async (productId, quantity) => {
-        const item = await commerce.cart.add(productId, quantity)
-
-        setCart(item.cart)
-        
-    }
-
-    useEffect (() => {
-        // fetchProducts();
-        fetchCart();
-        handleAddToCart()
-    
-    }, []);
-
+  
     
   return (
+    
     <div className="App">
   
     <GlobalStyles/>
-    
-    <Navbar totalItems={cart.total_items}/>
-    
+    <ScrollToTop/>
+    <Navbar />
     <NavBurgerMenu/> 
-    
       <Switch>
-
         <Route exact path="/">
           <Home />
         </Route>
@@ -76,7 +51,6 @@ function App() {
         <Route path="/Guides">
           <Guides />
         </Route>
-
 
         <Route path="/BoutiqueShops">
           <BoutiqueShops />
@@ -129,17 +103,22 @@ function App() {
         <Route path="/Register">
           <Register />
         </Route> 
+        
         <Route path="/Contact">
           <Contact />
         </Route> 
-
+      
         <Route path="/AboutUs">
           <AboutPage />
         </Route> 
 
     </Switch>
+
+
     <Footer/>
+
     </div>
+    
   );
 }
 
