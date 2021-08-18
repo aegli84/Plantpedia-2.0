@@ -48,7 +48,8 @@ const Thumbnail = styled.div`
     background-color: white;
     border-radius: 50%;
     margin-top: 2vh;
-    margin-left: 6vh;
+    margin-left: 51px;
+    overflow:hidden;
 @media (max-width: 770px) {
     width:14vw;
     height: 10vh;
@@ -68,11 +69,15 @@ const Section2=styled.div`
     margin: auto;
     justify-items: center;
 `
-const ImageWatering = styled.img`
+const ImageWatering = styled.iframe`
     width:100px;
     height: 11vh;
-    background-color: white;
+    background-color: #A9D5CD;
     border-radius: 50%;
+    border-style:none;
+    pointer-events: none;
+
+
 @media (max-width: 770px) {
     width:14vw;
     height: 10vh;
@@ -87,8 +92,7 @@ const WateringButton = () => {
         <WateringCard>
             <Section1>
             <Thumbnail>
-            <ImageWatering src={WateringIcon}>
-            </ImageWatering>
+            <ImageWatering src="https://giphy.com/embed/6BEM5I4Hx9gtg9M5eQ"></ImageWatering>
             </Thumbnail>
             </Section1>
             <Section2>

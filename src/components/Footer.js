@@ -7,6 +7,7 @@ const FooterBar = styled.div`
 height:25vh; 
 width:100vw;
 background-color: black;
+
 `;
 const LeftDiv = styled.div`
 height:100px;
@@ -95,9 +96,11 @@ const Footer = (props) => {
                         <FiFacebook className='icon'  color= "whitesmoke" size= "1.5rem"/>
                         </a>
                     </SocialMedia>
+                    
                     <Copyright> Copyright @Plantpedia 2021</Copyright>
                     
                 </IconsDiv>
+                
                 <RightDiv>
                     <FooterLink to="/Impressum" activeStyle>
                         Impressum

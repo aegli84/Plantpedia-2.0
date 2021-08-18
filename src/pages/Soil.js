@@ -1,6 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import bg from "../assets/bgimg/guidepage.png";
+import soil1 from "../assets/guidesImages/soil1.jpg";
+import soil2 from "../assets/guidesImages/soil2.jpg";
+import {FaArrowLeft} from "react-icons/fa";
+import {FaArrowRight} from "react-icons/fa";
+import { NavLink as Link } from "react-router-dom";
+
+
+
 
 
 
@@ -12,8 +20,8 @@ padding-bottom: 7vh;
 background-image:url(${bg});
 background-size: cover;
 background-repeat:no-repeat;
-@media (max-width: 340px) {
-    height: 75vh;
+@media (max-width: 377px) {
+  height: 75vh;
 }
 @media (max-width: 770px) {
     height: 80vh;
@@ -23,7 +31,7 @@ background-repeat:no-repeat;
 const InternalFrame = styled.div`
 width:80vw;
 padding-top:20px;
-height: 60vh;
+height: 65vh;
 margin: auto ;
 border-radius: 5rem;
 box-shadow: 0 0 20px black;
@@ -36,11 +44,11 @@ text-align:justify;
 
 
 @media (max-width: 770px) {
-    height: 70vh;
+    height: 72vh;
 
 }
-@media (max-width: 375px) {
-    height: 70vh;
+@media (max-width: 377px) {
+  height: 72vh;
 
 
 
@@ -95,8 +103,8 @@ overflow-y: auto;
 
 
 }
-@media (max-width: 375px) {
-    height: 65vh;
+@media (max-width: 377px) {
+  height: 65vh;
     ::-webkit-scrollbar-button:end:increment {
         height: 5%;
         display: block;
@@ -115,10 +123,34 @@ overflow-y: auto;
 
 `
 const Div2 = styled.div`
-width: 50vw;
-height:50vh;
-display: none;
+width: 90%;
+height:10vh;
+margin-top: 30px;
+justify-content: space-around;
+display: flex;
+
+@media (max-width: 770px) {
+  margin-top: 5px;
+
+
+}
+
 `
+const Img = styled.img`
+width:30%;
+margin-left: 35%;
+margin-top:1%;
+border-radius: 3rem;
+
+`
+
+const NavLink = styled(Link)`
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+
+`;
+
 
 
 const Soil = () => {
@@ -129,6 +161,7 @@ const Soil = () => {
                 <InternalFrame>
                     <Div1>
                     <H2Parag>The Right Soil</H2Parag>
+                    <Img src={soil1}/>
                     <H4Parag>If possible, your potting soil should be tailored to the particular type of plant you are growing. Cactus, succulents and rosemary, for example, prefer a coarse, well-drained soil that is about one-third sand. Seedlings should be grown in a light, moisture-retentive, soilless mix. African violets and ferns prefer soil with a high humus content, which can be achieved by adding leaf mold or shredded bark. Many kinds of orchids are happiest growing in nothing but fir bark or sphagnum moss.
 
                     A good indoor potting mix is usually composed of peat moss, vermiculite and perlite. These soilless mixes absorb moisture very well and resist compaction, but they tend to dry out very quickly. Since they do not contain any nutrients, you must provide your plants with a consistent supply of fertilizer. One advantage to a soilless mix is that it is sterile, so there is no chance of introducing pest or disease problems.
@@ -137,6 +170,7 @@ const Soil = () => {
 
                     The most critical consideration when you're purchasing or blending your own potting soil is to ensure that the mix is light enough to provide adequate pore space for air, water and healthy root growth. Month after month of overhead watering, without the benefit of earthworms and weather to aerate the soil, usually results in an unhealthy, compacted root zone. To ensure that your plants' roots have the oxygen they need for healthy growth, your potting soil should contain plenty of perlite, vermiculite, or sharp sand. This will allow water to drain freely, and ensure that the soil is at least 10 to 20 percent air.</H4Parag>
                     <H2Parag>Climate, Water and Nutrients</H2Parag>
+                    <Img src={soil2}/>
                     <H4Parag>Temperature: In their natural habitat, most plants experience a day-to-night temperature fluctuation of at least 10 degrees F. In your home, they will benefit from having a similar temperature differential. Most plants also expect a resting period each year; in fact, some flowering plants actually require a period of dormancy before they will set bud and flower.
 
                     To simulate this resting period, you should cut back on water and fertilizer during the late fall and early winter, when the intensity and duration of natural light is lowest. Once the day length begins to increase, you can declare it to be spring, and step up the water and fertilizer. Your plants will respond with healthy new growth.
@@ -156,6 +190,12 @@ const Soil = () => {
                     Supplementing with an organic amendment such as liquid seaweed or fish emulsion, or a biostimulant, will provide some of the trace nutrients lacking in an inorganic plant fertilizer. A top dressing of compost or worm castings is another effective way to add organic nutrients. Be aware that some plants are particularly sensitive to pH level, and that this sensitivity can be either exacerbated, or corrected, with the right fertilizer. To avoid the buildup of fertilizer salts, it's a good idea to periodically drench the soil with clean water, then water again with clean water. This will help flush any salts out of the soil.</H4Parag>
                     </Div1>
                     <Div2>
+                      <NavLink to="/Pest">
+                      <FaArrowLeft size="2.7rem" color="white"/>
+                      </NavLink>
+                      <NavLink to="/Humidity">
+                      <FaArrowRight size="2.7rem" color="white"/>
+                      </NavLink>
 
                     </Div2>
                 </InternalFrame>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import PestIcon from "../plantpedia/icons/pests.png";
 import {Link } from "react-router-dom";
 
-const WateringCard=styled.div`
+const PestCard=styled.div`
     width:200px;
     height:22vh;
     background-color: #725490;
@@ -45,11 +45,14 @@ const Button=styled.button`
 }
 `
 
-const ImagePest= styled.img`
+const ImagePest= styled.iframe`
     width:100px;
     height: 11vh;
     background-color: white;
     border-radius: 50%;
+    pointer-events: none;
+    border-style:none;
+
 @media (max-width: 770px) {
     width:14vw;
     
@@ -67,7 +70,8 @@ const Thumbnail = styled.div`
     background-color: white;
     border-radius: 50%;
     margin-top: 2vh;
-    margin-left: 6vh;
+    margin-left: 51px;
+    overflow:hidden;
 @media (max-width: 770px) {
     width:14vw;
     height: 10vh;
@@ -91,16 +95,12 @@ const Section2=styled.div`
     margin: auto;
     justify-items: center;
 `
-const WateringButton = () => {
+const PestButton = () => {
     return (
-        <WateringCard>
+        <PestCard>
             <Section1>
             <Thumbnail>
-            <ImagePest src={PestIcon}>
-
-            </ImagePest>
-
-
+                <ImagePest src="https://giphy.com/embed/VCI3WsLi2oF4UX4N8x"></ImagePest>
             </Thumbnail>
             </Section1>
             <Section2>
@@ -114,7 +114,7 @@ const WateringButton = () => {
                     </Button>
                 </Link>
             </Section2>
-        </WateringCard>
+        </PestCard>
     );
 };
-export default WateringButton;
+export default PestButton;

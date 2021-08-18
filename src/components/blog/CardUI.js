@@ -7,6 +7,8 @@ const ContainerBox = styled.div `
     height: 71vh;
     padding: 34px;
     @media (max-width: 770px) {
+        width: 30vw;
+    }
     @media (max-width: 377px) {
 
         background-color: yellow;
@@ -24,6 +26,7 @@ const CardBox = styled.div `
         width: 28vw;
         height: 52vh;
         margin-left: 10px;
+    }
     @media (max-width: 377px) {
         width: 30vw;
         height: 30vh;
@@ -37,6 +40,7 @@ const ImgBlog = styled.img `
     @media (max-width: 770px) {
         width: 28vw;
         height: 22vh;
+    }
     @media (max-width: 377px) {
         width: 30vw;
         height: 35vw;
@@ -56,6 +60,7 @@ const ArtTitle = styled.p `
     @media (max-width: 770px) {
         font-weight: 500;
         font-size: large;
+    }
     @media (max-width: 377px) {
         padding: 1vw;
         margin: 2vw;;
@@ -73,6 +78,7 @@ const ArtText = styled.p `
     color: black;
     @media (max-width: 770px) {
         font-size: large;
+    }
     @media (max-width: 377px) {
         display:none;
         
@@ -98,6 +104,7 @@ const ButtonStyle = styled.div `
         &:hover {
             background-color: #9c6c6c;
         }
+    }
     @media (max-width: 377px) {
         width: 24vw;
         height: 4.2vh;
@@ -107,6 +114,7 @@ const ButtonStyle = styled.div `
         &:hover {
             background-color: #9c6c6c;
         }
+    }
     `
 
 
@@ -124,7 +132,7 @@ const Card = (props) =>{
                             </ArtText>
                         </TextDiv>
                 </CardBox>
-                <a href= {props.link} target="_blank" style={{textDecoration: "none"}}><ButtonStyle>{props.button}</ButtonStyle></a>
+                <a href= {props.link} target="_blank" rel="noreferrer" style={{textDecoration: "none"}}><ButtonStyle>{props.button}</ButtonStyle></a>
             </ContainerBox>  
         )
 };

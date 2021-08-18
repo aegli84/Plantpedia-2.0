@@ -2,7 +2,7 @@ import styled from "styled-components";
 import LightIcon from "../plantpedia/icons/sun.png";
 import {Link } from "react-router-dom";
 
-const WateringCard=styled.div`
+const LightCard=styled.div`
     width:200px;
     height:22vh;
     background-color: #725490;
@@ -53,7 +53,8 @@ const Thumbnail = styled.div`
     background-color: white;
     border-radius: 50%;
     margin-top: 2vh;
-    margin-left: 6vh;
+    margin-left: 51px;
+    overflow:hidden;
 @media (max-width: 770px) {
     width:14vw;
     height: 10vh;
@@ -79,11 +80,13 @@ const Section2=styled.div`
     justify-items: center;
 `
 
-const ImageLight= styled.img`
+const ImageLight= styled.iframe`
     width:100px;
     height: 11vh;
     background-color: white;
     border-radius: 50%;
+    pointer-events: none;
+    border-style:none;
 @media (max-width: 770px) {
     width:14vw;
 }
@@ -96,15 +99,12 @@ const ImageLight= styled.img`
 
 
 
-const WateringButton = () => {
+const LightButton = () => {
     return (
-        <WateringCard>
+        <LightCard>
             <Section1>
             <Thumbnail>
-            <ImageLight src={LightIcon}>
-
-            </ImageLight>
-
+            <ImageLight src="https://giphy.com/embed/mFSlq2cgOGCnp3jkdo"></ImageLight>
             </Thumbnail>
             </Section1>
             <Section2>
@@ -118,7 +118,7 @@ const WateringButton = () => {
                     </Button>
             </Link>
             </Section2>
-        </WateringCard>
+        </LightCard>
     );
 };
-export default WateringButton;
+export default LightButton;

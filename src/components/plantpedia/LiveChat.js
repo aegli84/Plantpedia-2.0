@@ -3,7 +3,7 @@ import ChatIcon from "../plantpedia/icons/chat.png";
 import {Link } from "react-router-dom";
 // import LoginForm from './components/LoginForm';
 
-const WateringCard=styled.div`
+const ChatCard=styled.div`
     width:200px;
     height:22vh;
     background-color: #725490;
@@ -52,7 +52,7 @@ const Thumbnail = styled.div`
     background-color: white;
     border-radius: 50%;
     margin-top: 2vh;
-    margin-left: 6vh;
+    margin-left: 51px;
 @media (max-width: 770px) {
     width:14vw;
     height: 10vh;
@@ -75,13 +75,16 @@ const Section2=styled.div`
     justify-items: center;
 `
 
-const ImageChat = styled.img`
+const ImageChat = styled.iframe`
     width:80px;
     margin-left: 9px;
     margin-top: 9px;
     height: 9vh;
     background-color: white;
     border-radius: 50%;
+    border-style:none;
+    pointer-events: none;
+
 @media (max-width: 770px) {
     width:13vw;
     
@@ -92,15 +95,12 @@ const ImageChat = styled.img`
 }
 `
 
-const WateringButton = () => {
+const ChatButton = () => {
     return (
-        <WateringCard>
+        <ChatCard>
             <Section1>
             <Thumbnail>
-            <ImageChat src={ChatIcon}>
-
-            </ImageChat>
-
+            <ImageChat src="https://giphy.com/embed/26FPJGjhefSJuaRhu"></ImageChat>
             </Thumbnail>
             </Section1>
 
@@ -115,7 +115,7 @@ const WateringButton = () => {
                     </Button>
                 </Link>
             </Section2>
-        </WateringCard>
+        </ChatCard>
     );
 };
-export default WateringButton;
+export default ChatButton;

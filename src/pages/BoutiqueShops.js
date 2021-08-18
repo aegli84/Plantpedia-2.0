@@ -68,7 +68,7 @@ font-size:2.5rem;
 @media (max-width: 380px) {
     font-size: 1.5rem;
     margin-top:6vh;
-
+}
 `
 
 
