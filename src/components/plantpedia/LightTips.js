@@ -54,6 +54,7 @@ const Thumbnail = styled.div`
     border-radius: 50%;
     margin-top: 2vh;
     margin-left: 51px;
+    overflow:hidden;
 @media (max-width: 770px) {
     width:14vw;
     height: 10vh;
@@ -79,11 +80,13 @@ const Section2=styled.div`
     justify-items: center;
 `
 
-const ImageLight= styled.img`
+const ImageLight= styled.iframe`
     width:100px;
     height: 11vh;
     background-color: white;
     border-radius: 50%;
+    pointer-events: none;
+    border-style:none;
 @media (max-width: 770px) {
     width:14vw;
 }
@@ -101,10 +104,7 @@ const LightButton = () => {
         <LightCard>
             <Section1>
             <Thumbnail>
-            <ImageLight src={LightIcon}>
-
-            </ImageLight>
-
+            <ImageLight src="https://giphy.com/embed/mFSlq2cgOGCnp3jkdo"></ImageLight>
             </Thumbnail>
             </Section1>
             <Section2>

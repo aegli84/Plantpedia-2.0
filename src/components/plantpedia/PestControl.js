@@ -45,11 +45,14 @@ const Button=styled.button`
 }
 `
 
-const ImagePest= styled.img`
+const ImagePest= styled.iframe`
     width:100px;
     height: 11vh;
     background-color: white;
     border-radius: 50%;
+    pointer-events: none;
+    border-style:none;
+
 @media (max-width: 770px) {
     width:14vw;
     
@@ -68,6 +71,7 @@ const Thumbnail = styled.div`
     border-radius: 50%;
     margin-top: 2vh;
     margin-left: 51px;
+    overflow:hidden;
 @media (max-width: 770px) {
     width:14vw;
     height: 10vh;
@@ -96,11 +100,7 @@ const PestButton = () => {
         <PestCard>
             <Section1>
             <Thumbnail>
-            <ImagePest src={PestIcon}>
-
-            </ImagePest>
-
-
+                <ImagePest src="https://giphy.com/embed/VCI3WsLi2oF4UX4N8x"></ImagePest>
             </Thumbnail>
             </Section1>
             <Section2>

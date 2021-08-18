@@ -3,10 +3,6 @@ import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
 import bg from "../assets/bgimg/guidepage.png";
 
-
-
-
-
 const ExternalFrame = styled.div`
 width:100vw;
 height: 80vh;
