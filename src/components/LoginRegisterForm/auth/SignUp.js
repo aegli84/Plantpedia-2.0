@@ -46,18 +46,18 @@ const Signup = () => {
     <div className= "mainDiv">
         <form>
             <div className="form-group">
-                <label className="text-muted">Name</label>
-                <input onChange={handleChange('name')} value={name} type="text" className="form-control" />
+                <label className="text-muted">Full Name</label>
+                <input onChange={handleChange('name')} value={name} type="text"/>
             </div>
 
             <div className="form-group">
                 <label className="text-muted">Email</label>
-                <input onChange={handleChange('email')} value={email} type="email" className="form-control" />
+                <input onChange={handleChange('email')} value={email} type="email"/>
             </div>
 
             <div className="form-group">
                 <label className="text-muted">Password</label>
-                <input onChange={handleChange('password')} value={password} type="password" className="form-control" />
+                <input onChange={handleChange('password')} value={password} type="password"/>
             </div>
 
             <div>
@@ -71,10 +71,12 @@ const Signup = () => {
 
     return (
         <div>
-            <div className="col-md-6 offset-md-3">
+            <div className="hello">
                 <ToastContainer />
                  {isAuth() ? <Redirect to="/" /> : null} 
-                <h1 className="p-5 text-center">Signup</h1>
+                <h1>Register</h1>
+                <h2>Create an account</h2>
+                <h3>Already have an account? Login here</h3>
                 {signupForm()}
                 <br />
                 <Link to="/auth/password/forgot" className="btn btn-sm btn-outline-danger">

@@ -3,11 +3,40 @@
 } 
 
 .mainDiv {
-    height: 70vh;
-    background-image: url(../../../assets/bgimg/plantpediapage.png);
+    width: 100vw;
+    height: 81vh;
 }
 
 form{
-    border: 1px solid red;
-    
+    width: 30vw;
+    height: 30vh;
+    padding: 1vw;   
+    margin-left: 59vw;
+}
+
+.hello {
+    background-image: url(../../../assets/bgimg/plantpediapage.png);
+    background-repeat: no-repeat;
+}
+
+input {
+    width: 26vw;
+    height: 5vh;
+    border-radius: 10px;
+    background-color: #8978a3;
+    color: whitesmoke;
+}
+
+h1, h2, h3 {
+    color: whitesmoke;
+}
+
+label {
+    padding: 0.5vw;
+    color: whitesmoke;
+}
+
+.form-group {
+    padding: 0.5vw;
+
 }
