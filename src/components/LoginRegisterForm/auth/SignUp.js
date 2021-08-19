@@ -61,7 +61,7 @@ const Signup = () => {
             </div>
 
             <div>
-                <button className="btn btn-primary" onClick={clickSubmit}>
+                <button onClick={clickSubmit}>
                     {buttonText}
                 </button>
             </div>
@@ -70,16 +70,18 @@ const Signup = () => {
     );
 
     return (
-        <div>
-            <div className="hello">
+        <div className="hello">
+            <div className="secondary">
                 <ToastContainer />
-                 {isAuth() ? <Redirect to="/" /> : null} 
-                <h1>Register</h1>
-                <h2>Create an account</h2>
-                <h3>Already have an account? Login here</h3>
+                {isAuth() ? <Redirect to="/" /> : null} 
+                <div className="headers">
+                    <h2>Register</h2>
+                    <h1>Create an account.</h1>
+                    <h3>Already have an account? Login here</h3>
+                </div>
                 {signupForm()}
                 <br />
-                <Link to="/auth/password/forgot" className="btn btn-sm btn-outline-danger">
+                <Link to="/auth/password/forgot" className="btn-pass">
                     Forgot Password
                 </Link>
             </div>
