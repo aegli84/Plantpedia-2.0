@@ -11,7 +11,7 @@ import HumidityTips from "../components/plantpedia/HumidityTips";
 const ExternalFrame = styled.div`
 width:100vw;
 height: 100vh;
-padding-top: 7vh;
+padding-top: 20vh;
 padding-bottom: 7vh;
 background-image:url(${bg});
 background-size: cover;

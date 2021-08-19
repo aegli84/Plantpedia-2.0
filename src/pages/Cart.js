@@ -7,8 +7,6 @@ import { useState, useEffect }from 'react'
 const Carty = () => {
     const [cart, setCart] = useState({})
     
-
-
     const fetchCart = async () => {
         setCart(await commerce.cart.retrieve());
     }
@@ -58,13 +56,14 @@ const Div =styled.div`
     background-image: url(${giftpage});
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 3rem;
 @media (max-width: 768px) {
     padding-top: 5rem;
     min-height: 80vh;   
 }
 
 @media (max-width: 480px) {
-    min-height: 160vh;
+    min-height: 150vh;
     
 }
 `

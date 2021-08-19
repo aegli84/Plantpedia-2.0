@@ -5,7 +5,7 @@ import  {Products} from '../components'
 import { useState, useEffect }from 'react'
 import { motion } from 'framer-motion'
 import { titleAnimation, fade, pageAnimation } from '../animations'
-
+import contactpage from '../assets/bgimg/contactpage.png'
 
 
 const Subscription = () => {
@@ -62,10 +62,11 @@ const Div =styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 4rem;
+    padding-top: 5rem;
 
 @media (max-width: 768px) {
     min-height: 80vh;  
-    background-size: contain;
+    background-image: url(${contactpage});
     padding-top: 5rem;
     padding-bottom: 5rem;
 }

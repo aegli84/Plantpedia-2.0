@@ -4,8 +4,8 @@ import styled from "styled-components";
 
 const ExternalFrame = styled.div`
 width:100vw;
-height: 90vh;
-padding-top: 3vh;
+height: 100vh;
+padding-top: 15vh;
 padding-bottom: 7vh;
 background-size: cover;
 background-repeat:no-repeat;

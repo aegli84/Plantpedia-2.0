@@ -395,7 +395,7 @@ navbar on the chat feed */
     .chats-page{
       top: 0;
       width: 100%;
-      height: 85vh !important;
+      height: 100vh !important;
       margin-left: 0px !important;
     }
     .logo-tab {

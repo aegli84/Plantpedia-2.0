@@ -24,13 +24,15 @@ const Chat = () => {
 }
 
 const Div = styled.div `
-    height: 95vh;   
+    height: 100vh;   
     width: 100vw;
     background-image: url(${chatpage});
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 3rem;
 @media (max-width: 768px) {
     height: 83vh;
+    padding-top: 0rem;
 }
 
 @media (max-width: 480px) {

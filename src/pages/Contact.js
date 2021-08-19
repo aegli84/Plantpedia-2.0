@@ -4,8 +4,9 @@ import ContactForm from "../components/ContactForm";
 import { motion } from 'framer-motion'
 import { titleAnimation, fade, pageAnimation } from '../animations'
 
-
 const Contact = () => {
+    // window.scrollTo( x: 0, y:0);
+    // window.onunload = function(){ window.scrollTo(0,0); }
     
     return (
         <>
@@ -24,26 +25,26 @@ const Contact = () => {
 }
 
 const Div =styled.div`
-    height: 90vh;   
+    height: 100vh;   
     width: 100%;
     background-image: url(${contactpage});
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: space-between;
-    padding-top: 5rem;
-
+    padding-top: 9rem;
+    
 
 @media (max-width: 768px) {
-    padding-bottom: 5rem;
+    padding-top: 5rem;
     display: block;
     justify-content: center;
-    height: 95vh;
+    height: 95vh; 
 }
 
 @media (max-width: 480px) {
-    height: 137vh;
-    padding-bottom: 10rem;
+    height: 140vh;
+    padding-bottom: 12rem;
 
 }
 `

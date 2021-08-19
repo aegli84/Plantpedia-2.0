@@ -61,18 +61,18 @@ const Div =styled.div`
     background-image: url(${giftpage});
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: .1rem;
+    padding-top: 5rem;
     padding-bottom: .1rem;
 
 @media (max-width: 768px) {
     min-height: 75vh;
-    padding-top: 5rem;
+    padding-top: 8rem;
 }
 
 @media (max-width: 480px) {
-    padding-bottom: 10rem;
-    padding-top: 5rem;
-    min-height: 110vh;
+    padding-bottom: 5rem;
+    padding-top: 10rem;
+    
 }
 `
 

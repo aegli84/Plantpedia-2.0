@@ -19,7 +19,7 @@ const Nav = styled.nav`
     /* padding: 0.2rem calc((70vw - 1000px) / 2); */
     z-index: 12;
     padding-right: 50px;
-    position: sticky;
+    position: fixed;
 `;
 const NavLogo = styled(Link)`
     cursor: pointer;
@@ -99,9 +99,6 @@ const useStyles = makeStyles(theme => ({
 const Navbar = () => {
     const activeStyle = { color: ' #918EA4' };
     const classes = useStyles();
-    // const [counter, setCounter] = useState(1);
-    
-    
     
     return (
         <>

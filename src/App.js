@@ -24,21 +24,20 @@ import Checkout from './pages/Checkout';
 import Contact from './pages/Contact'
 import ScrollToTop from "./components/ScrollToTop";
 
-
-//import {CartProvider} from './components/CartContext'
-
 function App() {
   
   
-    
+
   return (
-    
-    <div className="App">
+    <>
   
+    <div className="App">
+
     <GlobalStyles/>
-    <ScrollToTop/>
+    
     <Navbar />
     <NavBurgerMenu/> 
+    <ScrollToTop/>
       <Switch>
         <Route exact path="/">
           <Home />
@@ -103,8 +102,8 @@ function App() {
         <Route path="/Register">
           <Register />
         </Route> 
+        <Route path="/Contact" >
         
-        <Route path="/Contact">
           <Contact />
         </Route> 
       
@@ -118,7 +117,7 @@ function App() {
     <Footer/>
 
     </div>
-    
+    </>
   );
 }
 
