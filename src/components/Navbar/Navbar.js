@@ -20,6 +20,7 @@ const Nav = styled.nav`
     z-index: 12;
     padding-right: 50px;
     position: fixed;
+    
 `;
 const NavLogo = styled(Link)`
     cursor: pointer;
@@ -82,6 +83,7 @@ const NavBtnLink = styled(Link)`
     transition: all 0.2s ease-in-out;
     text-decoration: none;
     margin-left: 24px;
+    
     &:hover {
         transition: all 0.2s ease-in-out;
         background: #fff;

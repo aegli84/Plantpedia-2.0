@@ -15,7 +15,7 @@ const Product = ({ product, onAddToCart }) => {
     
     const notify = () => toast(`Box added to cart! 🪴 👉`, {
         position: "top-right",
-        autoClose: 1500,
+        autoClose: 1700,
         hideProgressBar: true,
         closeOnClick: true,
         pauseOnHover: true,
@@ -58,7 +58,7 @@ const Product = ({ product, onAddToCart }) => {
                 </CardContent>
             </Card>
             <ToastContainer
-                hideProgressBar={true}
+                hideProgressBar={false}
                 newestOnTop={false}
                 closeOnClick
                 rtl={false}
