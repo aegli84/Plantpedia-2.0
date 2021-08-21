@@ -5,29 +5,34 @@ import LoginForm from '../components/LoginForm'
 import { AuthProvider } from '../context/AuthContext'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
+
 const Chat = () => {
     return (
-        <Div>
+        <>
+        <Div >
             <Router>
                 <AuthProvider>
                     <Switch>
                         <Route path="/chats" component={ChatBox} />
-                        <Route path="/" component={LoginForm} />
+                        <Route path="/" component={LoginForm}/>
                     </Switch>
                 </AuthProvider>
         </Router>
         </Div>
+        </>
     )
 }
 
 const Div = styled.div `
-    height: 95vh;   
+    height: 100vh;   
     width: 100vw;
     background-image: url(${chatpage});
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 3rem;
 @media (max-width: 768px) {
     height: 83vh;
+    padding-top: 0rem;
 }
 
 @media (max-width: 480px) {

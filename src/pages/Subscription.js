@@ -3,11 +3,14 @@ import subspage from '../assets/bgimg/subspage.png'
 import { commerce } from '../lib/commerce'
 import  {Products} from '../components'
 import { useState, useEffect }from 'react'
-//import Navbar from '../components/Navbar/Navbar';
+import { motion } from 'framer-motion'
+import { titleAnimation, fade, pageAnimation } from '../animations'
+import contactpage from '../assets/bgimg/contactpage.png'
+
 
 const Subscription = () => {
     const [products, setProducts] = useState([])
-    const [cart, setCart] = useState({})
+    const [cart, setCart] = useState({ })
 
     const fetchProducts = async () => {
         const { data } = await commerce.products.list();
@@ -19,32 +22,34 @@ const Subscription = () => {
         const {cart} = await commerce.cart.add(productId, quantity)
 
         setCart(cart)
+        console.log(cart);
     }
+
 
     useEffect (() => {
         fetchProducts();
-    }, []);
+        
+    }, [cart]);
 
-console.log(cart)
+// console.log(cart)
 
     return (
         <>
-        <Div>
+        <Div >
         {/* <Navbar totalItems={cart.total_items}/> */}
-            <H1>Our Plant Subsciption Boxes</H1>
-            <P>
+        <motion.div variants = {pageAnimation} 
+                initial = "hidden" 
+                animate = "show">
+            <H1 variants = {titleAnimation} >Our Plant Subscription Boxes</H1>
+            <P variants = {fade} >
                 Plants are an intimate part of our lives — we live with them and love them every day — and we want to share this lifestyle with you by carefully curating kits with hardy plants that will ease your anxiety about greenery care. We thoughtfully designed our plant subscription box service as a program that takes you through different levels of plant care
             </P>
-            
-            <Products 
+                <Products 
                     products={products} 
                     onAddToCart={handleAddToCart}
                     />
-                
-                
+                </motion.div>
         </Div>
-        
-            
         </>
     )
 }
@@ -57,10 +62,11 @@ const Div =styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 4rem;
+    padding-top: 5rem;
 
 @media (max-width: 768px) {
     min-height: 80vh;  
-    background-size: contain;
+    background-image: url(${contactpage});
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
@@ -70,7 +76,7 @@ const Div =styled.div`
     padding-top: 5rem;
 }
 `
-const H1 = styled.h1`
+const H1 = styled(motion.h1)`
     text-align: center;
     text-shadow: 0  15px 7px black; 
     color: whitesmoke;
@@ -87,7 +93,7 @@ const H1 = styled.h1`
     font-size: 5rem;
 }
 `
-const P = styled.p`
+const P = styled(motion.p)`
     text-align: center;
     color: whitesmoke;
     margin: 0 10rem;

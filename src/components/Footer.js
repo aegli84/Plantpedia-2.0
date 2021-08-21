@@ -56,8 +56,9 @@ justify-content: space-around;
 const Copyright = styled.h3 `
 color: white;
 margin-top: 45px;
-font-weight: 300;
+font-weight: 400;
 font-size: 1rem;
+font-family: 'Montserrat', sans-serif;
 `
 const SocialMedia = styled.div `
 display:flex;
@@ -69,12 +70,14 @@ justify-content: space-between;
 
 
 const Footer = (props) => {
+
+    
     console.log(props);
     return (
         <FooterBar>
             <FooterContainer>
                 <LeftDiv>
-                    <FooterLink to="/Contact" activeStyle>
+                    <FooterLink to="/Contact" activeStyle >
                         Contact
                     </FooterLink>
                     <FooterLink to="/AboutUs" activeStyle>

@@ -5,7 +5,7 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        scroll-margin-top: 25vh;
+        ${'' /* scroll-margin-top: 25vh; */}
 }
 
     
@@ -15,14 +15,11 @@ const GlobalStyles = createGlobalStyle`
         @media (max-width: 1200px){
             font-size: 75%;
         }
-        
+        height: auto;
     }
     
     body {
-        ${'' /* background: #343A40; */}
-        margin: 0;
-        padding: 0;
-        height: 100vh;
+        height: auto;
         width: 100%;
         overflow-x: hidden;
         background-color: #323144;

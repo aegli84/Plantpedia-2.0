@@ -5,6 +5,7 @@ import { commerce } from '../../lib/commerce';
 import { Link } from 'react-router-dom';
 import FormInput from './CustomTextField'
 
+
 const AddressForm = ({ checkoutToken, test }) => {
     const [shippingCountries, setShippingCountries] = useState([]);
     const [shippingCountry, setShippingCountry] = useState('');
@@ -46,7 +47,7 @@ const AddressForm = ({ checkoutToken, test }) => {
     
     useEffect(() => {
         if (shippingSubdivision) fetchShippingOptions(checkoutToken.id, shippingCountry, shippingSubdivision);
-    }, [shippingSubdivision]); //TODO delete the dependencies maybe!!!
+    }, [shippingSubdivision]); 
 
     return (
         <>
@@ -72,7 +73,7 @@ const AddressForm = ({ checkoutToken, test }) => {
                         </Grid>
                     </Grid>
                     <Grid item xs={12} sm={6} gutterBottom>
-                            <InputLabel>Shipping Subdivision</InputLabel>
+                            <InputLabel style={{ paddingTop: '15px' }}>Shipping Subdivision</InputLabel>
                             <Select value={shippingSubdivision} fullWidth onChange={(e) => setShippingSubdivision(e.target.value)}>
                             {Object.entries(shippingSubdivisions).map(([code, name]) => ({ id: code, label: name })).map((item) => (
                                 <MenuItem key={item.id} value={item.id}>
@@ -82,7 +83,7 @@ const AddressForm = ({ checkoutToken, test }) => {
                             </Select>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <InputLabel>Shipping Options</InputLabel>
+                            <InputLabel style={{ paddingTop: '15px' }}>Shipping Options</InputLabel>
                             <Select value={shippingOption} fullWidth onChange={(e) => setShippingOption(e.target.value)}>
                             {shippingOptions.map((sO) => ({ id: sO.id, label: `${sO.description} - (${sO.price.formatted_with_symbol})` })).map((item) => (
                                 <MenuItem key={item.id} value={item.id}>

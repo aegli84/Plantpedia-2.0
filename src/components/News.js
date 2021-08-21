@@ -98,7 +98,7 @@ const News = () => {
 const Div = styled.div`
     height:40vh;
     width: 100%;
-    background-color: #68855b;
+    background-color: #83a46f;
     /* opacity: 0.9; */
     display: flex;
     flex-wrap: wrap;

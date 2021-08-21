@@ -6,6 +6,8 @@ import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 import {makeStyles} from "@material-ui/styles";
 
+// import { useState } from 'react';
+
 
 const Nav = styled.nav`
     background: black;
@@ -17,7 +19,8 @@ const Nav = styled.nav`
     /* padding: 0.2rem calc((70vw - 1000px) / 2); */
     z-index: 12;
     padding-right: 50px;
-    position: sticky;
+    position: fixed;
+    
 `;
 const NavLogo = styled(Link)`
     cursor: pointer;
@@ -80,6 +83,7 @@ const NavBtnLink = styled(Link)`
     transition: all 0.2s ease-in-out;
     text-decoration: none;
     margin-left: 24px;
+    
     &:hover {
         transition: all 0.2s ease-in-out;
         background: #fff;
@@ -94,14 +98,13 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-const Navbar = ({totalItems}) => {
-    
+const Navbar = () => {
     const activeStyle = { color: ' #918EA4' };
     const classes = useStyles();
-
+    
     return (
         <>
-            <Nav >
+            <Nav  >
             <NavLogo to="/">
                 <ImgLogo src={logo}/>
             </NavLogo>
@@ -132,12 +135,17 @@ const Navbar = ({totalItems}) => {
                     <NavBtnLink to="/sign-up">Login or Register</NavBtnLink>                
                 </NavBtn>
                         <IconButton component={Link} to='/Cart' aria-label='Show cart items' color='inherit' >
-                            <Badge badgeContent={totalItems} classes={{badge: classes.badge}}>
+                        
+                            <Badge badgeContent={0}  classes={{badge: classes.badge}}>
                                 <ShoppingCart style={{ color: 'whitesmoke' }}/>
+                            
                             </Badge>
+                        
                         </IconButton>
+                    
             </NavMenu> 
             </Nav> 
+        
         </>
     );
 };

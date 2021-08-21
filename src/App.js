@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import {Switch, Route} from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home';
@@ -24,22 +24,24 @@ import AboutPage from './components/About';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import Contact from './pages/Contact'
-
+import ScrollToTop from "./components/ScrollToTop";
 
 
 function App() {
   
-
+  
 
   return (
-    <div className="App">
+    <>
   
+    <div className="App">
+
     <GlobalStyles/>
+    
     <Navbar />
     <NavBurgerMenu/> 
-
+    <ScrollToTop/>
       <Switch>
-
         <Route exact path="/">
           <Home />
         </Route>
@@ -52,7 +54,6 @@ function App() {
           <Guides />
         </Route>
 
-
         <Route path="/BoutiqueShops">
           <BoutiqueShops />
         </Route>
@@ -62,10 +63,12 @@ function App() {
         </Route>
 
         <Route path="/Cart">
-          <Cart />
+          <Cart 
+                    />
         </Route>
         <Route path="/Checkout">
-          <Checkout />
+          <Checkout 
+                    />
         </Route>
         <Route path="/Blog">
           <Blog />
@@ -111,17 +114,22 @@ function App() {
         <Route path="/Register">
           <Register />
         </Route> 
-        <Route path="/Contact">
+        <Route path="/Contact" >
+        
           <Contact />
         </Route> 
-
+      
         <Route path="/AboutUs">
           <AboutPage />
         </Route> 
 
     </Switch>
+
+
     <Footer/>
+
     </div>
+    </>
   );
 }
 

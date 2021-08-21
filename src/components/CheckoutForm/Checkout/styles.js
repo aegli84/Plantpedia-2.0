@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
     
-    toolbar: theme.mixins.toolbar,
+    // toolbar: theme.mixins.toolbar,
     layout: {
         marginTop: '1%',
         width: 'auto',
@@ -34,7 +34,7 @@ export default makeStyles((theme) => ({
         },
     },
     stepper: {
-        padding: theme.spacing(3, 0, 5),
+        padding: theme.spacing(2, 0, 3),
         backgroundColor: 'whitesmoke',
     },
     buttons: {

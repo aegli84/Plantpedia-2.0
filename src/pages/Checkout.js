@@ -4,11 +4,12 @@ import { commerce } from '../lib/commerce'
 import  {Checkout} from '../components'
 import { useState, useEffect }from 'react'
 
+
 const Checkouto = () => {
     const [cart, setCart] = useState({})
     const [order, setOrder] = useState({});
     const [errorMessage, setErrorMessage] = useState('');
-
+    
 
     const fetchCart = async () => {
         setCart(await commerce.cart.retrieve());
@@ -39,8 +40,9 @@ const Checkouto = () => {
 console.log(cart)
 
     return (
-        <Div>
+        <>
         
+        <Div>
             <Checkout 
                     cart={cart} 
                     order={order} 
@@ -49,24 +51,28 @@ console.log(cart)
                     /> 
                     
         </Div>
+        
+        </>
     )
 }
 const Div =styled.div`
-    height: 100vh;   
+    min-height: 100vh;   
     width: 100%;
     background-image: url(${giftpage});
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 5rem;
+    padding-bottom: .1rem;
 
 @media (max-width: 768px) {
-    height: 75vh;
-    padding-top: 5rem;
+    min-height: 75vh;
+    padding-top: 8rem;
 }
 
 @media (max-width: 480px) {
-    padding-bottom: 10rem;
-    padding-top: 5rem;
-    height: 110vh;
+    padding-bottom: 5rem;
+    padding-top: 10rem;
+    
 }
 `
 
