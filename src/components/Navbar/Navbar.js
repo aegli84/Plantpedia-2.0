@@ -16,11 +16,11 @@ const Nav = styled.nav`
     top: 0;
     display: flex;
     justify-content: space-between;
-    /* padding: 0.2rem calc((70vw - 1000px) / 2); */
+    padding: 0.2rem calc((70vw - 1000px) / 2);
     z-index: 12;
     padding-right: 50px;
     position: fixed;
-    
+    padding-top: .3rem;
 `;
 const NavLogo = styled(Link)`
     cursor: pointer;

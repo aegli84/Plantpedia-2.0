@@ -1,33 +1,35 @@
-import video2 from '../assets/video2.mp4';
+import herovideo from '../assets/herovideo.mp4';
 import styled from "styled-components";
 import { motion } from 'framer-motion'
 import { titleAnimation, fade, pageAnimation } from '../animations'
-import {  Button } from '@material-ui/core';
+//import {  Button } from '@material-ui/core';
 
 const Video = () => {
     return (
         <>
             <Div>
-                <Video2 src= {video2} autoPlay muted loop/>
+                <Video2 src= {herovideo} autoPlay muted loop/>
             </Div>
                 <motion.div variants = {pageAnimation} 
                 initial = "hidden" 
                 animate = "show">
                     <H1 variants = {titleAnimation}>We are Plantpedia</H1>
                     <div>
-                    <P variants = {fade}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia a placeat deserunt commodi labore neque magnam quidem. Natus, molestias aut.</P>
+                        <P variants = {fade}>An all-in-one solution for all levels of plant parents, where knowledge can be found and shared easely. </P>
                     </div>
-                    
                     </motion.div>
-                    <div >
-                    <Button  variant='contained' type='button' style = {{backgroundColor:'#7e66a3', color: 'whitesmoke', position: 'absolute',top:'68%',bottom: '20',left: '6%',
-    right: '0', minWidth: '100px'}}>Find plant
-    </Button>
-                    <Button variant='contained' type='button' style = {{backgroundColor:'#7e66a3', color: 'whitesmoke', position: 'absolute',top:'68%',bottom: '20',left: '15%',
-    right: '0', minWidth: '100px'}}>Shop
-    </Button>
-    
-    </div>
+                    <motion.div variants = {pageAnimation} 
+                initial = "hidden" 
+                animate = "show" style ={{display:'flex',
+    alignItems:'left',
+    justifyContent:'space-between'}}>
+                    
+                        <ButtonPurple variants = {fade} type='button' size="large" >Find plant
+                        </ButtonPurple>
+                        <ButtonGreen variants = {fade} type='button' size="large" >Shop
+                        </ButtonGreen>
+                </motion.div>
+
             </>
     )
 }
@@ -49,9 +51,9 @@ const Div = styled.div`
 const Video2 = styled.video`
     width:100%; 
     height:100%;
-    object-fit: fill;
+    object-fit: cover;
     position: relative;
-    left: 30%;
+    left: 20%;
 `
 const H1 = styled(motion.h1)`
     position: absolute;
@@ -89,6 +91,7 @@ const P = styled(motion.p)`
     font-size: 1.6rem;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif !important;
+    text-shadow: 0 5px 5px black;
 @media (max-width: 768px) {
     margin: 1.5rem 6rem;
     font-size: 1.6rem;
@@ -100,5 +103,48 @@ const P = styled(motion.p)`
 }
 `
 
+const ButtonPurple = styled(motion.button)`
+    background-color:#7e66a3;
+    color: whitesmoke; 
+    position: absolute;
+    left: 7%;
+    bottom: 30%;
+    right: 0;
+    width: 10%;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600;
+    &:hover {
+        transition: all 0.5s;
+        background-color:whitesmoke;
+        color: black;
+    }
+`
+const ButtonGreen = styled(motion.button)`
+    background-color:#83a46f;
+    position: absolute;
+    left: 19%;
+    bottom: 30%;
+    right: 0;
+    color: whitesmoke; 
+    width: 10%;
+    padding-bottom: 20rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600;
+    &:hover {
+        transition: all 0.5s;
+        background-color:whitesmoke;
+        color: black;
+    }
+`
 export default Video;
 
