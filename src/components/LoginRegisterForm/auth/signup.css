@@ -13,18 +13,21 @@ body {
 }
 
 .form-styling {
-    width: 30vw;
-    height: 43vh;
+    width: 35vw;
+    height: 50vh;
     padding: 1.8vw;
     margin-top: 5vw;
+    margin-left: 4vw;
     border-radius: .5rem;
     box-shadow: 0 10px 30px black;
 }
 
 
 input {
+    display: block;
     width: 25vw;
     height: 5vh;
+    margin-left: 3vw;
     border-style: none;
     border-radius: 10px;
     background-color: #8978a3;
@@ -38,15 +41,17 @@ h3 {
 }
 
 .headers {
-    width: 23vw;
+    width: 27vw;
     color: whitesmoke;
     margin-top: 7vw;
+    margin-left: -5vw;
     padding: 3vw;
 }
 
 label {
     padding: 0.5vw;
     color: whitesmoke;
+    margin-left: 3vw;
 }
 
 .form-group {
@@ -62,15 +67,15 @@ label {
 .btn-pass {
     width: 10vw;
     height: 5vh;
-    margin-top: 24.5vw;
-    margin-left: -19vw;
+    margin-top: 26vw;
+    margin-left: -22vw;
     color: whitesmoke;
 }
 
 .sub-btn {
     width: 30%;
     height: 5vh;
-    margin-left: 8.6vw;
+    margin-left: 11vw;
     margin-top: 1.5vw;
     color: whitesmoke;
     background-color: #83a46f;
@@ -85,7 +90,7 @@ label {
     opacity: .9;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
     .mainDiv{
         height: 71vh;
     }
@@ -99,7 +104,7 @@ label {
     }
     .headers{
         margin-top: 30vw;
-        margin-left: -8vw;
+        margin-left: -14vw;
         padding: 2vw;
     }
     input{
@@ -120,7 +125,7 @@ label {
 
 }
 
-@media (max-width: 480px) {
+@media (max-width: 377px) {
     .mainDiv{
         height: 72.3vh; 
 
