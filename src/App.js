@@ -104,10 +104,10 @@ function App() {
           <Chat />
         </Route> 
         
-        <Route path="/signIn">
+        <Route path="/signin">
         </Route> 
 
-        <Route path="/LoginRegister">
+        <Route path="/signup">
           <Register/>
         </Route> 
         <Route path="/Contact">
