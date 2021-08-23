@@ -23,7 +23,7 @@ body {
 }
 
 
-input {
+.input-box {
     display: block;
     width: 25vw;
     height: 5vh;
@@ -48,7 +48,7 @@ h3 {
     padding: 3vw;
 }
 
-label {
+.label-text {
     padding: 0.5vw;
     color: whitesmoke;
     margin-left: 3vw;
@@ -107,11 +107,11 @@ label {
         margin-left: -14vw;
         padding: 2vw;
     }
-    input{
+    .input-box{
         width: 35vw;
         margin-left: 4vw;
     }
-    label{
+    .label-text{
         display: block;
         margin-left: 4vw;
     }

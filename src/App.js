@@ -18,12 +18,15 @@ import Chat from './pages/Chat';
 import Soil from "./pages/Soil";
 import AboutUsUi from '../src/components/AboutUs/AboutInfo';
 import Register from './pages/Register';
+import Login from './pages/Login';
 import Impressum from './pages/Impressum';
 import TC from './pages/TC';
 //import AboutPage from './components/About';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import Contact from './pages/Contact'
+import AccountActivation from './pages/Activate';
+
 
 
 
@@ -105,6 +108,7 @@ function App() {
         </Route> 
         
         <Route path="/signin">
+          <Login/>
         </Route> 
 
         <Route path="/signup">
@@ -117,6 +121,10 @@ function App() {
         <Route path="/AboutUs">
           <AboutUsUi />
         </Route> 
+
+        <Route path="/auth/activate/:token">
+          <AccountActivation/>
+        </Route>
 
     </Switch>
 
