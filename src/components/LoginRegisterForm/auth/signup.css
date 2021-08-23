@@ -12,12 +12,17 @@ body {
     height: 90vh;
 }
 
+.secondary{
+    display: flex;
+    padding: 2vw;
+    margin-left: 14vw;
+}
+
 .form-styling {
     width: 35vw;
     height: 50vh;
     padding: 1.8vw;
     margin-top: 5vw;
-    margin-left: 4vw;
     border-radius: .5rem;
     box-shadow: 0 10px 30px black;
 }
@@ -41,11 +46,9 @@ h3 {
 }
 
 .headers {
-    width: 27vw;
-    color: whitesmoke;
-    margin-top: 7vw;
-    margin-left: -5vw;
+    margin-top: 5vw;
     padding: 3vw;
+    color: whitesmoke;
 }
 
 .label-text {
@@ -56,12 +59,6 @@ h3 {
 
 .form-group {
     padding: 0.5vw;
-}
-
-.secondary {
-    display: inline-flex;
-    margin-left: 23vw;
-    margin-top: 5vw;
 }
 
 .btn-pass {
@@ -92,23 +89,60 @@ h3 {
 
 @media (max-width: 770px) {
     .mainDiv{
-        height: 71vh;
+        height: 41vh;
+    }
+    .secondary{
+        display: block;
     }
     body{
         background-size: cover;
     }
     .form-styling{
-        width: 35vh;
+        width: 50vh;
         height: 40vh;
-        margin-top: 22vw;
     }
     .headers{
-        margin-top: 30vw;
-        margin-left: -14vw;
-        padding: 2vw;
+        margin: auto;
+        margin-top: 15vw;
+        margin-left: 10vw;
+        font-size: larger;
     }
     .input-box{
-        width: 35vw;
+        width: 50vw;
+    }
+    .sub-btn{
+        margin-left: 22vw;
+    }
+    
+    .form-group {
+        margin-top: 3vw;
+        margin-left: 3vw;
+
+    }
+    .btn-pass{
+        margin-left: 27vw;
+    }
+
+}
+
+@media (max-width: 377px) {
+    .mainDiv{
+        height: 40vh;
+    }
+    .secondary{
+        display: block;
+    }
+    body{
+        background-size: cover;
+    }
+    .form-styling{
+        width: 80vw;
+        height: 40vh;
+        margin-top: 15vw;
+        margin-left: -6.5vw;
+    }
+    .input-box{
+        width: 60vw;
         margin-left: 4vw;
     }
     .label-text{
@@ -116,45 +150,18 @@ h3 {
         margin-left: 4vw;
     }
     .sub-btn{
-        margin-left: 16vw;
-    }
-    
-.form-group {
-    margin-top: 3vw;
-}
-
-}
-
-@media (max-width: 377px) {
-    .mainDiv{
-        height: 72.3vh; 
-
-    }
-    body{
-        background-size: cover;
-    }
-    .form-styling{
-        width: vh;
-        height: 40vh;
-        margin-top: 40vw;
-        margin-left: -10vw;
-    }
-    .headers{
-        display: none;
-    }
-    input{
-        width: 63vw;
-        margin-left: 4vw;
-    }
-    label{
-        display: block;
-        margin-left: 4vw;
-    }
-    .sub-btn{
         margin-left: 25vw;
     }
     
-.form-group {
-    margin-top: 5vw;
+    .form-group {
+        margin-top: 5vw;
 }
+    .btn-pass{
+        margin-left: 16vw;
+    }
+    .headers{
+        margin: auto;
+        margin-top: 20vw;
+        margin-left: -5vw;
+    }
 }
