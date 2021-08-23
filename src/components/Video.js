@@ -1,14 +1,15 @@
-import herovideo from '../assets/herovideo.mp4';
+import herovid from '../assets/herovid.mp4';
 import styled from "styled-components";
 import { motion } from 'framer-motion'
 import { titleAnimation, fade, pageAnimation } from '../animations'
+import {Link } from "react-router-dom";
 //import {  Button } from '@material-ui/core';
 
 const Video = () => {
     return (
-        <>
+        <div style = {{backgroundColor: 'black'}}>
             <Div>
-                <Video2 src= {herovideo} autoPlay muted loop/>
+                <Video2 src= {herovid} autoPlay muted loop/>
             </Div>
                 <motion.div variants = {pageAnimation} 
                 initial = "hidden" 
@@ -23,29 +24,35 @@ const Video = () => {
                 animate = "show" style ={{display:'flex',
     alignItems:'left',
     justifyContent:'space-between'}}>
-                    
+                    <Link to ="/Plantpedia" >
                         <ButtonPurple variants = {fade} type='button' size="large" >Find plant
                         </ButtonPurple>
+                        </Link>
+                        <Link to ="/Subscription" >
                         <ButtonGreen variants = {fade} type='button' size="large" >Shop
                         </ButtonGreen>
+                        </Link>
                 </motion.div>
 
-            </>
+            </div>
     )
 }
 
 const Div = styled.div`
-    width: 100vw; 
+    width: 75%; 
     height: 100vh; 
-    z-index: -1;
+    z-index: -2;
     background-color:black;
-@media (max-width: 767px) {
-    width: 100vw; 
-    height: 40vh;
+@media (max-width: 768px) {
+    width: 50%;
+    height:55vh;
+    background-color:transparent;
 }
-@media (max-width: 400px) {
-    width: 100%; 
-    height: 40vh;
+
+@media (max-width: 480px) {
+    height:70vh;
+    background-color:transparent;
+    
 }
 `
 const Video2 = styled.video`
@@ -53,7 +60,13 @@ const Video2 = styled.video`
     height:100%;
     object-fit: cover;
     position: relative;
-    left: 20%;
+    left: 45%;
+@media (max-width: 768px) {
+    left: 100%;
+}
+@media (max-width: 480px) {
+    
+}
 `
 const H1 = styled(motion.h1)`
     position: absolute;
@@ -68,15 +81,13 @@ const H1 = styled(motion.h1)`
     font-family: 'Montserrat', sans-serif !important;
     text-shadow: 0  15px 7px black; 
 @media (max-width: 768px) {
-    padding-top: 3rem;
-    text-align: center;
+    font-size: 2.7rem;
+    padding: 15rem 25rem 15rem 5rem;
 }
 
 @media (max-width: 480px) {
-    padding-top: 1.5rem;
-    font-size: 4rem;
-    margin: 1rem;
-    text-align: center;
+    font-size: 2rem;
+    padding: 14rem 20rem 15rem 2rem;
 }
 `
 
@@ -93,13 +104,13 @@ const P = styled(motion.p)`
     font-family: 'Montserrat', sans-serif !important;
     text-shadow: 0 5px 5px black;
 @media (max-width: 768px) {
-    margin: 1.5rem 6rem;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
+    padding: 20rem 35rem 15rem 5rem;
 }
 
 @media (max-width: 480px) {
-    margin: 1rem 2rem;
-    font-size: 1.6rem;
+    font-size: 1rem;
+    padding: 21rem 16rem 15rem 2rem;
 }
 `
 
@@ -123,6 +134,21 @@ const ButtonPurple = styled(motion.button)`
         background-color:whitesmoke;
         color: black;
     }
+
+    @media (max-width: 768px) {
+        bottom: 63%;
+        font-size: 1rem;
+        width: 15%;
+        left: 10%;
+}
+
+@media (max-width: 480px) {
+    font-size: .6rem;
+    width: 18%;
+    left: 7%;
+    padding: .8rem;
+    bottom: 55%;
+}
 `
 const ButtonGreen = styled(motion.button)`
     background-color:#83a46f;
@@ -145,6 +171,21 @@ const ButtonGreen = styled(motion.button)`
         background-color:whitesmoke;
         color: black;
     }
+
+    @media (max-width: 768px) {
+        bottom: 63%;
+        font-size: 1rem;
+        width: 15%;
+        left: 28%;
+}
+
+@media (max-width: 480px) {
+    font-size: .6rem;
+    width: 18%;
+    left: 30%;
+    padding: .8rem;
+    bottom: 55%;
+}
 `
 export default Video;
 

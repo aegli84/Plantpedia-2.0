@@ -11,16 +11,15 @@ import {makeStyles} from "@material-ui/styles";
 
 const Nav = styled.nav`
     background: black;
-    height: 62,5px;
+    height: 75px;
     width: 100vw;
     top: 0;
     display: flex;
     justify-content: space-between;
-    padding: 0.2rem calc((70vw - 1000px) / 2);
+    /* padding: 0.2rem calc((70vw - 1000px) / 2); */
     z-index: 12;
     padding-right: 50px;
     position: fixed;
-    padding-top: .3rem;
 `;
 const NavLogo = styled(Link)`
     cursor: pointer;
@@ -31,7 +30,7 @@ const ImgLogo = styled.img`
     height: 65px;
     border-radius: 50%;
     margin-left: 50px;
-    
+    margin-top: 5px;
 @media screen and (max-width: 768px) { 
     display: none;
     }

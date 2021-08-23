@@ -18,7 +18,7 @@ const SideNav = (props) => {
             </NavLogo>
         
                 <IconButton component={Link} to='/Cart' onClick={() => setOpen(!open)} aria-label='Show cart items' color='inherit' >
-                            <Badge badgeContent={1} color='secondary' >
+                            <Badge badgeContent={0} color='secondary' >
                                 <ShoppingCart style={{ color: 'whitesmoke', fontSize: '4rem', marginLeft: '10rem' }}/>
                             </Badge>
                         </IconButton>
