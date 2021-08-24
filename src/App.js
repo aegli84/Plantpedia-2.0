@@ -25,6 +25,7 @@ import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import Contact from './pages/Contact'
 import Activate from '../src/components/LoginRegisterForm/auth/Activate';
+import Forgot from '../src/components/LoginRegisterForm/auth/Forgot';
 
 
 
@@ -124,6 +125,10 @@ function App() {
 
         <Route path="/auth/activate/:token">
           <Activate/>
+        </Route>
+
+        <Route path="/auth/password/forgot">
+          <Forgot/>
         </Route>
 
     </Switch>

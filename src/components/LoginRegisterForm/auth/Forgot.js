@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Layout from '../core/Layout';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
+import './forgot.css';
 
 const Forgot = ({ history }) => {
     const [values, setValues] = useState({
@@ -39,13 +39,13 @@ const Forgot = ({ history }) => {
 
     const passwordForgotForm = () => (
         <form>
-            <div className="form-group">
-                <label className="text-muted">Email</label>
-                <input onChange={handleChange('email')} value={email} type="email" className="form-control" />
+            <div className="form">
+                <label className="email">Email</label>
+                <input onChange={handleChange('email')} value={email} type="email" className="type-box" />
             </div>
 
             <div>
-                <button className="btn btn-primary" onClick={clickSubmit}>
+                <button className="btn-request" onClick={clickSubmit}>
                     {buttonText}
                 </button>
             </div>
@@ -53,13 +53,13 @@ const Forgot = ({ history }) => {
     );
 
     return (
-        <Layout>
-            <div className="col-md-6 offset-md-3">
+        <div className="main-box-1">
+            <div className="main-con">
                 <ToastContainer />
-                <h1 className="p-5 text-center">Forgot password</h1>
+                <h1 className="header-title">Forgot password</h1>
                 {passwordForgotForm()}
             </div>
-        </Layout>
+        </div>
     );
 };
 
