@@ -28,9 +28,11 @@ import Activate from '../src/components/LoginRegisterForm/auth/Activate';
 import Forgot from '../src/components/LoginRegisterForm/auth/Forgot';
 
 
+
+import ScrollToTop from "./components/ScrollToTop";
 import Faqs from './pages/Faq';
 import Privacy from './pages/Privacy';
-import ScrollToTop from './components/ScrollToTop'
+
 
 
 
@@ -141,7 +143,6 @@ function App() {
         <Route path="/Privacy">
           <Privacy />
         </Route> 
-
 
 
     </Switch>
