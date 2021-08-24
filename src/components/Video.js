@@ -64,6 +64,7 @@ const Video2 = styled.video`
 @media (max-width: 768px) {
     left: 100%;
 }
+
 `
 const H1 = styled(motion.h1)`
     position: absolute;

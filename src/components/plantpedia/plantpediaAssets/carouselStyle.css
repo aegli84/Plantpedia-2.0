@@ -18,11 +18,4 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    @media (max-width: 770px) {
-    
-    
-    }
-    @media (max-width: 377px) {
-        display: nome;
-    }
 }

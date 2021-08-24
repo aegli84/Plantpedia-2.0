@@ -75,13 +75,16 @@ const Section2=styled.div`
     justify-items: center;
 `
 
-const ImageChat = styled.img`
+const ImageChat = styled.iframe`
     width:80px;
     margin-left: 9px;
     margin-top: 9px;
     height: 9vh;
     background-color: white;
     border-radius: 50%;
+    border-style:none;
+    pointer-events: none;
+
 @media (max-width: 770px) {
     width:13vw;
     
@@ -97,10 +100,7 @@ const ChatButton = () => {
         <ChatCard>
             <Section1>
             <Thumbnail>
-            <ImageChat src={ChatIcon}>
-
-            </ImageChat>
-
+            <ImageChat src="https://giphy.com/embed/26FPJGjhefSJuaRhu"></ImageChat>
             </Thumbnail>
             </Section1>
 
