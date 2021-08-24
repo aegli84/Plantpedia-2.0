@@ -105,7 +105,7 @@ const Footer = (props) => {
                     <FooterLink to="/Impressum" activeStyle>
                         Impressum
                     </FooterLink>
-                    <FooterLink to="/Faq" activeStyle>
+                    <FooterLink to="/Faqs" activeStyle>
                         FAQ
                     </FooterLink>
                     <FooterLink to="/Privacy" activeStyle>

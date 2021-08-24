@@ -23,7 +23,9 @@ import TC from './pages/TC';
 import AboutPage from './components/About';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
-import Contact from './pages/Contact'
+import Contact from './pages/Contact';
+import Faqs from './pages/Faq';
+import Privacy from './pages/Privacy';
 
 
 
@@ -118,6 +120,15 @@ function App() {
         <Route path="/AboutUs">
           <AboutPage />
         </Route> 
+
+        <Route path="/Faqs">
+          <Faqs />
+        </Route> 
+
+        <Route path="/Privacy">
+          <Privacy />
+        </Route> 
+
 
     </Switch>
     <Footer/>
