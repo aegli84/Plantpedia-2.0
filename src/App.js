@@ -113,6 +113,7 @@ function App() {
         <Route path="/signup">
           <Register/>
         </Route> 
+        
         <Route path="/Contact">
           <Contact />
         </Route> 

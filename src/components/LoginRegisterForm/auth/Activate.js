@@ -4,6 +4,7 @@ import axios from 'axios';
 import jwt from 'jsonwebtoken';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
+import  "./activate.css";
 
 const Activate = ({ match }) => {
     const [values, setValues] = useState({
@@ -12,14 +13,14 @@ const Activate = ({ match }) => {
         show: true
     });
 
-    useEffect(() => {
+  /*   useEffect(() => {
         let token = match.params.token;
         let { name } = jwt.decode(token);
         // console.log(token);
         if (token) {
             setValues({ ...values, name, token });
         }
-    }, []);
+    }, []); */
 
     const { name, token, show } = values;
 
@@ -42,17 +43,17 @@ const Activate = ({ match }) => {
     };
 
     const activationLink = () => (
-        <div className="text-center">
-            <h1 className="p-5">Hey {name}, Ready to activate your account?</h1>
-            <button className="btn btn-outline-primary" onClick={clickSubmit}>
+        <div className="box">
+            <h1 className="header-one">Hey {name}, Ready to activate your account?</h1>
+            <button className="btn-act" onClick={clickSubmit}>
                 Activate Account
             </button>
         </div>
     );
 
     return (
-        <div>
-            <div className="col-md-6 offset-md-3">
+        <div className="container">
+            <div className="">
                 <ToastContainer />
                 {activationLink()}
             </div>
