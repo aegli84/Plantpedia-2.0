@@ -16,7 +16,7 @@ const Video = () => {
                 animate = "show">
                     <H1 variants = {titleAnimation}>We are Plantpedia</H1>
                     <div>
-                        <P variants = {fade}>An all-in-one solution for all levels of plant parents, where knowledge can be found and shared easely. </P>
+                        <P variants = {fade}>An all-in-one solution for all levels of plant parents, where knowledge can be found and shared easily. </P>
                     </div>
                     </motion.div>
                     <motion.div variants = {pageAnimation} 
@@ -39,10 +39,10 @@ const Video = () => {
 }
 
 const Div = styled.div`
-    width: 75%; 
+    width: 65%; 
     height: 100vh; 
     z-index: -2;
-    background-color:black;
+    /* background-color:grey; */
 @media (max-width: 768px) {
     width: 50%;
     height:55vh;
@@ -60,7 +60,7 @@ const Video2 = styled.video`
     height:100%;
     object-fit: cover;
     position: relative;
-    left: 45%;
+    left: 60%;
 @media (max-width: 768px) {
     left: 100%;
 }
