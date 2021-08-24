@@ -6,9 +6,6 @@ import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 import {makeStyles} from "@material-ui/styles";
 
-// import { useState } from 'react';
-
-
 const Nav = styled.nav`
     background: black;
     height: 75px;
@@ -134,17 +131,12 @@ const Navbar = () => {
                     <NavBtnLink to="/sign-up">Login or Register</NavBtnLink>                
                 </NavBtn>
                         <IconButton component={Link} to='/Cart' aria-label='Show cart items' color='inherit' >
-                        
                             <Badge badgeContent={0}  classes={{badge: classes.badge}}>
                                 <ShoppingCart style={{ color: 'whitesmoke' }}/>
-                            
                             </Badge>
-                        
                         </IconButton>
-                    
             </NavMenu> 
             </Nav> 
-        
         </>
     );
 };

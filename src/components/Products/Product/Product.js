@@ -4,7 +4,6 @@ import { AddShoppingCart } from '@material-ui/icons'
 import useStyles from './styles'
 import { motion } from 'framer-motion'
 import { titleAnimation } from '../../../animations'
-// import {createContext} from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Bounce } from 'react-toastify';

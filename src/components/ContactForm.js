@@ -246,7 +246,6 @@ const P = styled.p`
     box-shadow: 0 10px 30px black;
     height: 50vh;
     font-family: 'Montserrat', sans-serif !important;
-    /* background: #392357a6; */
     backdrop-filter: blur( 5px );
     -webkit-backdrop-filter: blur( 5px );
 

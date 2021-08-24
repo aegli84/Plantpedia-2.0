@@ -5,8 +5,6 @@ import { motion } from 'framer-motion'
 import { titleAnimation, fade, pageAnimation } from '../animations'
 
 const Contact = () => {
-    // window.scrollTo( x: 0, y:0);
-    // window.onunload = function(){ window.scrollTo(0,0); }
     
     return (
         <>
@@ -71,7 +69,6 @@ const H1 = styled(motion.h1)`
 }
 `
 const P = styled(motion.p)`
-    /* text-align: center; */
     color: whitesmoke;
     margin: 0 5rem;
     padding-top: 2rem;

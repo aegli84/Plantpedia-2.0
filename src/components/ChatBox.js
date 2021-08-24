@@ -1,4 +1,3 @@
-//import styled from "styled-components";
 import { useState, useEffect } from 'react';
 import { ChatEngine } from 'react-chat-engine';
 import './Chat.css';
@@ -13,7 +12,6 @@ import { pageAnimation } from '../animations'
 
 const ChatBox = () => {
     
-    //const didMountRef = useRef(false)
     const history = useHistory()
     const { user } = useAuth()
     const [loading, setLoading] =useState(true)
@@ -30,15 +28,12 @@ const ChatBox = () => {
         return new File([data], 'userPhoto.jpeg', {type: 'image/jpeg'})
     }
     useEffect (() => {
-        // if (!didMountRef.current) {
-        //     didMountRef.current = true
-    
+        
             if (!user || user === null) {
                 history.push("/")
                 return
             }
         
-                //trying to get the exisiting user
                 axios.get(
                     'https://api.chatengine.io/users/me/',
                     { headers: { 
@@ -69,7 +64,7 @@ const ChatBox = () => {
                         .catch(e => console.log('e', e.response))
                     })
                 })
-                  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                
             
                 
                 }, [user, history])

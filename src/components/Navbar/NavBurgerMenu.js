@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import { useState } from "react"
 import SideNav from './SideNav';
-//import { NavLink as Link } from "react-router-dom";
 
 const BurgerMenu = () => {
 

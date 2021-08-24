@@ -26,16 +26,11 @@ import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   
-  
-
   return (
     <>
-  
     <div className="App">
-
     <GlobalStyles/>
-    
-    <Navbar />
+    <Navbar/>
     <NavBurgerMenu/> 
     <ScrollToTop/>
       <Switch>
@@ -110,12 +105,8 @@ function App() {
         <Route path="/AboutUs">
           <AboutPage />
         </Route> 
-
     </Switch>
-
-
     <Footer/>
-
     </div>
     </>
   );

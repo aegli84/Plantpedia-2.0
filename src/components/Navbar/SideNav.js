@@ -67,7 +67,6 @@ const Ul = styled.ul`
     }
 @media (max-width: 768px) {
     background-color: black;
-    /* opacity: .95; */
     position: fixed; 
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;

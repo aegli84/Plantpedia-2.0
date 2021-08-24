@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { motion } from 'framer-motion'
 import { titleAnimation, fade, pageAnimation } from '../animations'
 import {Link } from "react-router-dom";
-//import {  Button } from '@material-ui/core';
+
 
 const Video = () => {
     return (
@@ -11,29 +11,31 @@ const Video = () => {
             <Div>
                 <Video2 src= {herovid} autoPlay muted loop/>
             </Div>
-                <motion.div variants = {pageAnimation} 
-                initial = "hidden" 
-                animate = "show">
+                <motion.div 
+                    variants = {pageAnimation} 
+                    initial = "hidden" 
+                    animate = "show">
                     <H1 variants = {titleAnimation}>We are Plantpedia</H1>
                     <div>
                         <P variants = {fade}>An all-in-one solution for all levels of plant parents, where knowledge can be found and shared easily. </P>
                     </div>
                     </motion.div>
-                    <motion.div variants = {pageAnimation} 
-                initial = "hidden" 
-                animate = "show" style ={{display:'flex',
-    alignItems:'left',
-    justifyContent:'space-between'}}>
+                    <motion.div 
+                        variants = {pageAnimation} 
+                        initial = "hidden" 
+                        animate = "show" 
+                        style ={{display:'flex',
+                        alignItems:'left',
+                        justifyContent:'space-between'}}>
                     <Link to ="/Plantpedia" >
                         <ButtonPurple variants = {fade} type='button' size="large" >Find plant
                         </ButtonPurple>
-                        </Link>
-                        <Link to ="/Subscription" >
+                    </Link>
+                    <Link to ="/Subscription">
                         <ButtonGreen variants = {fade} type='button' size="large" >Shop
                         </ButtonGreen>
-                        </Link>
+                    </Link>
                 </motion.div>
-
             </div>
     )
 }
@@ -42,7 +44,6 @@ const Div = styled.div`
     width: 65%; 
     height: 100vh; 
     z-index: -2;
-    /* background-color:grey; */
 @media (max-width: 768px) {
     width: 50%;
     height:55vh;
@@ -52,7 +53,6 @@ const Div = styled.div`
 @media (max-width: 480px) {
     height:70vh;
     background-color:transparent;
-    
 }
 `
 const Video2 = styled.video`
@@ -63,9 +63,6 @@ const Video2 = styled.video`
     left: 60%;
 @media (max-width: 768px) {
     left: 100%;
-}
-@media (max-width: 480px) {
-    
 }
 `
 const H1 = styled(motion.h1)`
