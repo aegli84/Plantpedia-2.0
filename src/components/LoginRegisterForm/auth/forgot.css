@@ -1,0 +1,55 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-request{
+    width: 30%;
+    height: 5vh;
+    margin-left: 14vw;
+    margin-top: 1.5vw;
+    color: whitesmoke;
+    background-color: #83a46f;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: .5rem;
+}
+
+.btn-request:hover {
+    background-color: #8978a3;
+    transition: all 0.4s;
+    opacity: .9;
+}
+
+.main-con{
+    width: 51.8vw;
+    height: 50vh;
+    padding: 5vw;
+    margin-top: 5vw;
+    margin-left: 25vw;
+    border-radius: .5rem;
+    box-shadow: 0 10px 30px black;
+}
+.header-title{
+    color: whitesmoke;
+    margin-left: 11vw;
+    margin-bottom: 2vw;
+}
+
+.main-box-1{
+    height: 60vh;
+}
+.type-box{
+    width: 20vw;
+    height: 5vh;
+    padding: 1vw;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #8978a3;
+    color: whitesmoke;
+}
+.email{
+    margin-left: 6.7vw;
+    padding: 0.5vw;
+    font-weight: 650;
+    color: whitesmoke;
+}

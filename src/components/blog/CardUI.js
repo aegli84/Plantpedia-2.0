@@ -10,13 +10,13 @@ const ContainerBox = styled.div `
         width: 30vw;
     }
     @media (max-width: 377px) {
-        width: 32vw;
-        padding: 1vw;
+
+        background-color: yellow;
+        height: 48vh;
     }
 `
 const CardBox = styled.div `
-
-    width:100%;
+    width: 100%;
     height: 71vh;
     border : 1px solid black;
     border-radius : 17px 17px 17px 17px ;
@@ -30,7 +30,6 @@ const CardBox = styled.div `
     @media (max-width: 377px) {
         width: 30vw;
         height: 30vh;
-        margin-top: 170px;
         }
 `
 const ImgBlog = styled.img `
@@ -110,6 +109,7 @@ const ButtonStyle = styled.div `
         width: 24vw;
         height: 4.2vh;
         padding: 2vw;
+        margin-left: -20px;
         font-size: small;
         &:hover {
             background-color: #9c6c6c;

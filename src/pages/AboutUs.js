@@ -1,10 +1,10 @@
 import React from "react";
-import AboutPage from './../components/About';
+import AboutUsUi from '../components/AboutUs/AboutInfo';
 
 
 const AboutUs = () => {
     return(
-        <AboutPage/>
+        <AboutUsUi/>
     )
 } ;
 export default AboutUs;

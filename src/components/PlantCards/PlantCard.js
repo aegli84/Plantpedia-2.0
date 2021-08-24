@@ -16,12 +16,12 @@ justify-content: space-between;
 }
 @media (max-width: 377px) {
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 
 `
 const PlantName = styled.div`
-width: 100%;;
+width: 100%;
 height:15%;
 color: white;
 text-align: center;

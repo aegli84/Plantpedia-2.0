@@ -45,8 +45,8 @@ const SideNav = (props) => {
                 </motion.li>
                 
                 <motion.li whileTap={{scale: 1.1}} >
-                    <Link to="/Login">Login</Link>   
-                    <Link to="/Register"> / Register</Link>   
+                    <Link to="/signin">Login</Link>   
+                    <Link to="/signup"> / Register</Link>   
                 </motion.li>             
                 
             </Ul>

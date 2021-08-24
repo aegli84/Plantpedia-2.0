@@ -1,0 +1,167 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: url(../../../assets/bgimg/plantpediapage.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.mainDiv {
+    height: 90vh;
+}
+
+.secondary{
+    display: flex;
+    padding: 2vw;
+    margin-left: 14vw;
+}
+
+.form-styling {
+    width: 35vw;
+    height: 50vh;
+    padding: 1.8vw;
+    margin-top: 5vw;
+    border-radius: .5rem;
+    box-shadow: 0 10px 30px black;
+}
+
+
+.input-box {
+    display: block;
+    width: 25vw;
+    height: 5vh;
+    margin-left: 3vw;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #8978a3;
+    color: whitesmoke;
+}
+
+h1,
+h2,
+h3 {
+    padding: 0.5vw;
+}
+
+.headers {
+    margin-top: 5vw;
+    padding: 3vw;
+    color: whitesmoke;
+}
+
+.label-text {
+    padding: 0.5vw;
+    color: whitesmoke;
+    margin-left: 3vw;
+}
+
+.form-group {
+    padding: 0.5vw;
+}
+
+.btn-pass {
+    width: 10vw;
+    height: 5vh;
+    margin-top: 26vw;
+    margin-left: -22vw;
+    color: whitesmoke;
+}
+
+.sub-btn {
+    width: 30%;
+    height: 5vh;
+    margin-left: 11vw;
+    margin-top: 1.5vw;
+    color: whitesmoke;
+    background-color: #83a46f;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: .5rem;
+}
+
+.sub-btn:hover {
+    background-color: #8978a3;
+    transition: all 0.4s;
+    opacity: .9;
+}
+
+@media (max-width: 770px) {
+    .mainDiv{
+        height: 41vh;
+    }
+    .secondary{
+        display: block;
+    }
+    body{
+        background-size: cover;
+    }
+    .form-styling{
+        width: 50vh;
+        height: 40vh;
+    }
+    .headers{
+        margin: auto;
+        margin-top: 15vw;
+        margin-left: 10vw;
+        font-size: larger;
+    }
+    .input-box{
+        width: 50vw;
+    }
+    .sub-btn{
+        margin-left: 22vw;
+    }
+    
+    .form-group {
+        margin-top: 3vw;
+        margin-left: 3vw;
+
+    }
+    .btn-pass{
+        margin-left: 27vw;
+    }
+
+}
+
+@media (max-width: 377px) {
+    .mainDiv{
+        height: 40vh;
+    }
+    .secondary{
+        display: block;
+    }
+    body{
+        background-size: cover;
+    }
+    .form-styling{
+        width: 80vw;
+        height: 40vh;
+        margin-top: 15vw;
+        margin-left: -6.5vw;
+    }
+    .input-box{
+        width: 60vw;
+        margin-left: 4vw;
+    }
+    .label-text{
+        display: block;
+        margin-left: 4vw;
+    }
+    .sub-btn{
+        margin-left: 25vw;
+    }
+    
+    .form-group {
+        margin-top: 5vw;
+}
+    .btn-pass{
+        margin-left: 16vw;
+    }
+    .headers{
+        margin: auto;
+        margin-top: 20vw;
+        margin-left: -5vw;
+    }
+}

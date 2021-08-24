@@ -128,7 +128,7 @@ const Navbar = () => {
                     Blog
                 </NavLink>
                 <NavBtn>
-                    <NavBtnLink to="/sign-up">Login or Register</NavBtnLink>                
+                    <NavBtnLink to="/signup">Login or Register</NavBtnLink>                
                 </NavBtn>
                         <IconButton component={Link} to='/Cart' aria-label='Show cart items' color='inherit' >
                             <Badge badgeContent={0}  classes={{badge: classes.badge}}>
