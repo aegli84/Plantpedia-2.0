@@ -21,11 +21,10 @@ import Register from './pages/Register';
 import Login from './pages/Login';
 import Impressum from './pages/Impressum';
 import TC from './pages/TC';
-//import AboutPage from './components/About';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import Contact from './pages/Contact'
-import AccountActivation from './pages/Activate';
+import Activate from '../src/components/LoginRegisterForm/auth/Activate';
 
 
 
@@ -123,7 +122,7 @@ function App() {
         </Route> 
 
         <Route path="/auth/activate/:token">
-          <AccountActivation/>
+          <Activate/>
         </Route>
 
     </Switch>

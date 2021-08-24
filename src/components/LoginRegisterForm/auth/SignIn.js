@@ -41,7 +41,7 @@ const Signin = ({ history }) => {
                 // save the response (user, token) localstorage/cookie
                 authenticate(response, () => {
                     setValues({ ...values, name: '', email: '', password: '', buttonText: 'Submitted' });
-                    // toast.success(`Hey ${response.data.user.name}, Welcome back!`);
+                    toast.success(`Hey ${response.data.user.name}, Welcome back!`);
                     isAuth() && isAuth().role === 'admin' ? history.push('/admin') : history.push('/private');
                 });
             })
