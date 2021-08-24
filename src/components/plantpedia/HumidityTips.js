@@ -53,6 +53,7 @@ const Thumbnail = styled.div`
     border-radius: 50%;
     margin-top: 2vh;
     margin-left: 51px;
+    overflow:hidden;
 @media (max-width: 770px) {
     width:14vw;
     height: 10vh;
@@ -74,11 +75,13 @@ const Section2=styled.div`
     justify-items: center;
 `
 
-const ImageHumidity= styled.img`
+const ImageHumidity= styled.iframe`
     width:100px;
     height: 11vh;
     background-color: white;
     border-radius: 50%;
+    border-style:none;
+    pointer-events: none;
 @media (max-width: 770px) {
     width:14vw;
     
@@ -94,8 +97,7 @@ const HumidityButton = () => {
         <HumidityCard>
             <Section1>
             <Thumbnail>
-                <ImageHumidity src={HumidityIcon}>
-
+                <ImageHumidity src="https://giphy.com/embed/mmv4ATlqgLC81TvAyg">
                 </ImageHumidity>
             </Thumbnail>
             </Section1>

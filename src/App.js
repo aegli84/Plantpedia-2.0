@@ -18,11 +18,18 @@ import Pest from './pages/Pest';
 import Humidity from './pages/Humidity';
 import Chat from './pages/Chat';
 import Soil from "./pages/Soil";
+import Impressum from './pages/Impressum';
+import TC from './pages/TC';
 import AboutPage from './components/About';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
+
 import Contact from './pages/Contact'
 import ScrollToTop from "./components/ScrollToTop";
+import Faqs from './pages/Faq';
+import Privacy from './pages/Privacy';
+
+
 
 function App() {
   
@@ -90,6 +97,15 @@ function App() {
           <Humidity />
         </Route> 
 
+
+        <Route path="/Impressum">
+          <Impressum />
+        </Route> 
+
+        <Route path="/TC">
+          <TC />
+        </Route> 
+
         <Route path="/Chat">
           <Chat />
         </Route> 
@@ -105,6 +121,17 @@ function App() {
         <Route path="/AboutUs">
           <AboutPage />
         </Route> 
+
+
+        <Route path="/Faqs">
+          <Faqs />
+        </Route> 
+
+        <Route path="/Privacy">
+          <Privacy />
+        </Route> 
+
+
     </Switch>
     <Footer/>
     </div>

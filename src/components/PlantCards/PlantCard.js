@@ -32,7 +32,7 @@ margin-top: 2vh;
 const PlantDescription=styled.div`
 color: white;
 margin: 2vw;
-font-size: 1.3rem;
+font-size: 1.1rem;
 @media (max-width: 770px) {
     font-size:1.4rem;
     

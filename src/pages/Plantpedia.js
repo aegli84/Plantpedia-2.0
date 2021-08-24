@@ -49,7 +49,7 @@ display: flex;
     height: 70vh;
 
 }
-@media (max-width: 375px) {
+@media (max-width: 377px) {
     grid-template-columns: auto;
     height: 1100px;
 
