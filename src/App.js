@@ -28,6 +28,10 @@ import Activate from '../src/components/LoginRegisterForm/auth/Activate';
 import Forgot from '../src/components/LoginRegisterForm/auth/Forgot';
 
 
+import Faqs from './pages/Faq';
+import Privacy from './pages/Privacy';
+
+
 
 
 function App() {
@@ -123,6 +127,7 @@ function App() {
           <AboutUsUi />
         </Route> 
 
+
         <Route path="/auth/activate/:token">
           <Activate/>
         </Route>
@@ -130,6 +135,16 @@ function App() {
         <Route path="/auth/password/forgot">
           <Forgot/>
         </Route>
+
+        <Route path="/Faqs">
+          <Faqs />
+        </Route> 
+
+        <Route path="/Privacy">
+          <Privacy />
+        </Route> 
+
+
 
     </Switch>
 
