@@ -1,0 +1,38 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-act{
+    width: 30%;
+    height: 5vh;
+    margin-left: 14vw;
+    margin-top: 1.5vw;
+    color: whitesmoke;
+    background-color: #83a46f;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: .5rem;
+}
+
+.btn-act:hover {
+    background-color: #8978a3;
+    transition: all 0.4s;
+    opacity: .9;
+}
+
+.box{
+    width: 51.8vw;
+    height: 50vh;
+    padding: 5vw;
+    margin-top: 5vw;
+    margin-left: 25vw;
+    border-radius: .5rem;
+    box-shadow: 0 10px 30px black;
+}
+.header-one{
+    color: whitesmoke;
+}
+
+.container{
+    height: 60vh;
+}
