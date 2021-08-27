@@ -3,10 +3,9 @@ import styled from "styled-components";
 import bg from "../assets/bgimg/plantpediapage.png";
 import plants from "../components/plantpedia/plantpediaAssets/plantpediaData";
 import PlantCard from "../components/PlantCards/PlantCard";
-import { Dropdown, Selection } from 'react-dropdown-now';
+import { Dropdown } from 'react-dropdown-now';
 import "../components/plantpedia/plantpediaAssets/style.css";
 import { useState } from "react";
-import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import CarouselPics from "../components/plantpedia/plantpediaAssets/carousel";
 
