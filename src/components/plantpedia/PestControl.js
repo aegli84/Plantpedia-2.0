@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import PestIcon from "../plantpedia/icons/pests.png";
 import {Link } from "react-router-dom";
 
 const PestCard=styled.div`

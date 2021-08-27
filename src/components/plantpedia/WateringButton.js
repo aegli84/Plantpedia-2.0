@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import WateringIcon from "../plantpedia/icons/watering.png";
 import {Link } from "react-router-dom";
+
 const WateringCard=styled.div`
     width:200px;
     height:22vh;
