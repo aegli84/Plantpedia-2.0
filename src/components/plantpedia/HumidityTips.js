@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import HumidityIcon from "../plantpedia/icons/humidity.png";
 import {Link } from "react-router-dom";
 
 const HumidityCard=styled.div`

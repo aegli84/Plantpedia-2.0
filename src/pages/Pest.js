@@ -10,14 +10,10 @@ import {FaArrowRight} from "react-icons/fa";
 import { NavLink as Link } from "react-router-dom";
 
 
-
-
-
-
 const ExternalFrame = styled.div`
 width:100vw;
-height: 80vh;
-padding-top: 7vh;
+height: 95vh;
+padding-top: 20vh;
 padding-bottom: 7vh;
 background-image:url(${bg});
 background-size: cover;

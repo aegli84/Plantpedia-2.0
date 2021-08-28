@@ -7,8 +7,6 @@ import Guides from './pages/Guides';
 import BoutiqueShops from './pages/BoutiqueShops';
 import Subscription from './pages/Subscription';
 import Blog from './pages/Blog';
-import Login from './pages/Login';
-import Register from './pages/Register';
 import GlobalStyles from './GlobalStyles';
 import Footer from './components/Footer';
 import NavBurgerMenu from './components/Navbar/NavBurgerMenu';
@@ -18,27 +16,33 @@ import Pest from './pages/Pest';
 import Humidity from './pages/Humidity';
 import Chat from './pages/Chat';
 import Soil from "./pages/Soil";
+import AboutUsUi from '../src/components/AboutUs/AboutInfo';
+import Register from './pages/Register';
+import Login from './pages/Login';
 import Impressum from './pages/Impressum';
 import TC from './pages/TC';
-import AboutPage from './components/About';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import Contact from './pages/Contact'
+import Activate from '../src/components/LoginRegisterForm/auth/Activate';
+import Forgot from '../src/components/LoginRegisterForm/auth/Forgot';
+
+
+
 import ScrollToTop from "./components/ScrollToTop";
+import Faqs from './pages/Faq';
+import Privacy from './pages/Privacy';
+
+
 
 
 function App() {
   
-  
-
   return (
     <>
-  
     <div className="App">
-
     <GlobalStyles/>
-    
-    <Navbar />
+    <Navbar/>
     <NavBurgerMenu/> 
     <ScrollToTop/>
       <Switch>
@@ -74,10 +78,6 @@ function App() {
           <Blog />
         </Route> 
 
-        <Route path="/Login">
-          <Login />
-        </Route> 
-
         <Route path="/Soil">
           <Soil />
         </Route>
@@ -111,23 +111,43 @@ function App() {
           <Chat />
         </Route> 
         
-        <Route path="/Register">
-          <Register />
+        <Route path="/signin">
+          <Login/>
         </Route> 
-        <Route path="/Contact" >
+
+        <Route path="/signup">
+          <Register/>
+        </Route> 
         
+        <Route path="/Contact">
           <Contact />
         </Route> 
       
         <Route path="/AboutUs">
-          <AboutPage />
+          <AboutUsUi />
         </Route> 
+
+
+        <Route path="/auth/activate/:token">
+          <Activate/>
+        </Route>
+
+        <Route path="/auth/password/forgot">
+          <Forgot/>
+        </Route>
+
+        <Route path="/Faqs">
+          <Faqs />
+        </Route> 
+
+        <Route path="/Privacy">
+          <Privacy />
+        </Route> 
+
 
     </Switch>
 
-
     <Footer/>
-
     </div>
     </>
   );

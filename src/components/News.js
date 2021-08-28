@@ -99,15 +99,12 @@ const Div = styled.div`
     height:40vh;
     width: 100%;
     background-color: #83a46f;
-    /* opacity: 0.9; */
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     text-align: center;
     padding: 4rem;
-    /* margin-top: 2rem; */
-    
     
     .swiper-button-next{
         color: #323144;
@@ -132,7 +129,6 @@ const Div = styled.div`
     height: 35vh;
     padding: 0;
 }
-
 `
 
 const H2 = styled.h2 `

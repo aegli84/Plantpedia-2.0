@@ -2,7 +2,7 @@ import { FaFacebook, FaGoogle } from "react-icons/fa"
 import 'firebase/app'
 import { auth } from './firebase'
 import firebase from 'firebase/app'
-import './Chat.css'; //styiling for form will be done with styled-components
+import './Chat.css'; 
 import { motion } from 'framer-motion'
 import { titleAnimation } from '../animations'
 

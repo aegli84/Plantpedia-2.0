@@ -36,7 +36,6 @@ const Subscription = () => {
     return (
         <>
         <Div >
-        {/* <Navbar totalItems={cart.total_items}/> */}
         <motion.div variants = {pageAnimation} 
                 initial = "hidden" 
                 animate = "show">

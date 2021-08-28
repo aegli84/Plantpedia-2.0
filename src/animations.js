@@ -27,13 +27,7 @@ export const pageAnimation = {
             staggerChildren: 0.5
         },
     },
-    // exit: {
-    //     opacity: 0,
-    //     y: 200, 
-    //     transition: {
-    //         duration: 1, 
-    //     },
-    // },
+    
 };
 
 export const photoAnimation = {

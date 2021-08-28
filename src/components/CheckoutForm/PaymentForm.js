@@ -87,7 +87,6 @@ const Select = styled.select `
     margin-top: .5rem;
     border: none;
     outline: none;
-    /* background-color: whitesmoke; */
     width: 100%;
     font-family: 'Montserrat', sans-serif !important;
     border: 2px solid #83a46f;

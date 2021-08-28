@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import WateringIcon from "../plantpedia/icons/watering.png";
 import {Link } from "react-router-dom";
 
 const WateringCard=styled.div`
@@ -18,7 +17,6 @@ const WateringCard=styled.div`
     grid-template-columns: auto auto ;
     width:30vw;
     height:14vh;
-    
 }
 `
 const Button=styled.button`
@@ -29,24 +27,21 @@ const Button=styled.button`
     border-radius: 0 0 2rem 2rem;
     color: white;
     font-size: 1.5rem;
-
 &:hover {
-        background-color: #83a46f;
+        background-color: #83A46F;
     }
 @media (max-width: 770px) {
     grid-template-columns: auto auto;
     width:22vw;
-	font-size: 1.3rem;
-
+    font-size: 1.3rem;
 }
 @media (max-width: 377px) {
     grid-template-columns: auto auto;
     width:30vw;
     height:5vh;
-	font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 `
-
 const Thumbnail = styled.div`
     width:100px;
     height: 11vh;
@@ -59,7 +54,6 @@ const Thumbnail = styled.div`
     width:14vw;
     height: 10vh;
     margin-left: 4vw;
-    
 }
 @media (max-width: 377px) {
     width:15vw;
@@ -68,11 +62,9 @@ const Thumbnail = styled.div`
     margin-top: 2vh;
 }
 `
-
 const Section1=styled.div`
     display: flex;
 `
-
 const Section2=styled.div`
     margin: auto;
     justify-items: center;
@@ -89,14 +81,12 @@ const ImageWatering = styled.iframe`
 @media (max-width: 770px) {
     width:14vw;
     height: 10vh;
-    
 }
 @media (max-width: 377px) {
     width:15vw;
     height: 7vh;
 }
 `
-
 const WateringButton = () => {
     return (
         <WateringCard>

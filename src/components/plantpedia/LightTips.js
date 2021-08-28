@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import LightIcon from "../plantpedia/icons/sun.png";
 import {Link } from "react-router-dom";
 
 const LightCard=styled.div`
