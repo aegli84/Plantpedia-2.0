@@ -25,7 +25,7 @@ app.use(morgan('dev'));
 app.use(bodyParser.json());
 
 //app.use(cors());//allows all origins
-if(process.env.NODE_ENV = 'development') {
+if(process.env.NODE_ENV === 'production') {
     app.use(cors({origin: `http://localhost:3000`}));
 }
 
