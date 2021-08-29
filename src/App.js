@@ -26,9 +26,6 @@ import Checkout from './pages/Checkout';
 import Contact from './pages/Contact'
 import Activate from '../src/components/LoginRegisterForm/auth/Activate';
 import Forgot from '../src/components/LoginRegisterForm/auth/Forgot';
-
-
-
 import ScrollToTop from "./components/ScrollToTop";
 import Faqs from './pages/Faq';
 import Privacy from './pages/Privacy';
