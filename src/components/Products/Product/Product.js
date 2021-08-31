@@ -12,7 +12,7 @@ const Product = ({ product, onAddToCart }) => {
     const classes = useStyles();
     const [show, setShow] = useState(false);
     
-    const notify = () => toast(`Box added to cart! 🪴 👉`, {
+    const notify = () => toast(`Box added to cart! 👉`, {
         position: "top-right",
         autoClose: 1700,
         hideProgressBar: true,

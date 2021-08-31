@@ -96,7 +96,7 @@ const P = styled(motion.p)`
     left: 0;
     right: 0;
     color: whitesmoke;
-    padding: 22rem 55rem 15rem 5rem;
+    padding: 22rem 61rem 15rem 5rem;
     font-size: 1.6rem;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif !important;
