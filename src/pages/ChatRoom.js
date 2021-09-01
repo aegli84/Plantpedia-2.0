@@ -6,7 +6,7 @@ import { AuthProvider } from '../context/AuthContext'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
 
-const Chat = () => {
+const ChatRoom = () => {
     return (
         <>
         <Div >
@@ -39,4 +39,4 @@ const Div = styled.div `
     height: 85vh;
 }
 `
-export default Chat;
+export default ChatRoom;

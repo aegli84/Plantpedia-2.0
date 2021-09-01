@@ -115,14 +115,14 @@ const Navbar = () => {
                     Guides
                 </NavLink>
 
-                <NavLink to="/BoutiqueShops" activeStyle={activeStyle}>
-                    Boutique Shops
+                <NavLink to="/OurPartners" activeStyle={activeStyle}>
+                    Our Partners
                 </NavLink>
-                <NavLink to="/Subscription" activeStyle={activeStyle}>
-                    Subscription
+                <NavLink to="/Shop" activeStyle={activeStyle}>
+                    Shop
                 </NavLink>
-                <NavLink to="/Chat" activeStyle={activeStyle}>
-                    Chat
+                <NavLink to="/ChatRoom" activeStyle={activeStyle}>
+                    Chat Room
                 </NavLink>
                 <NavLink to="/Blog" activeStyle={activeStyle}>
                     Blog

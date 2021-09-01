@@ -73,7 +73,7 @@ font-size:2.5rem;
 
 
 
-const BoutiqueShops = () => {
+const OurPartners = () => {
 
     return(
         <ExternalFrame>
@@ -86,4 +86,4 @@ const BoutiqueShops = () => {
 
 }
 
-export default BoutiqueShops;
+export default OurPartners;

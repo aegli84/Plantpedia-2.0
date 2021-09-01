@@ -8,7 +8,7 @@ import { titleAnimation, fade, pageAnimation } from '../animations'
 import contactpage from '../assets/bgimg/contactpage.png'
 
 
-const Subscription = () => {
+const Shop = () => {
     const [products, setProducts] = useState([])
     const [cart, setCart] = useState({ })
 
@@ -111,4 +111,4 @@ const P = styled(motion.p)`
     font-size: 1.6rem;
 }
 `
-export default Subscription;
+export default Shop;

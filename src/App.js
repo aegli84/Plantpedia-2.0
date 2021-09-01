@@ -4,8 +4,8 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home';
 import Plantpedia from './pages/Plantpedia';
 import Guides from './pages/Guides';
-import BoutiqueShops from './pages/BoutiqueShops';
-import Subscription from './pages/Subscription';
+import OurPartners from './pages/OurPartners';
+import Shop from './pages/Shop';
 import Blog from './pages/Blog';
 import GlobalStyles from './GlobalStyles';
 import Footer from './components/Footer';
@@ -14,7 +14,7 @@ import Watering from './pages/Watering';
 import Light from './pages/Light';
 import Pest from './pages/Pest';
 import Humidity from './pages/Humidity';
-import Chat from './pages/Chat';
+import ChatRoom from './pages/ChatRoom';
 import Soil from "./pages/Soil";
 import AboutUsUi from '../src/components/AboutUs/AboutInfo';
 import Register from './pages/Register';
@@ -55,12 +55,12 @@ function App() {
           <Guides />
         </Route>
 
-        <Route path="/BoutiqueShops">
-          <BoutiqueShops />
+        <Route path="/OurPartners">
+          <OurPartners />
         </Route>
 
-        <Route path="/Subscription">
-          <Subscription />
+        <Route path="/Shop">
+          <Shop />
         </Route>
 
         <Route path="/Cart">
@@ -104,8 +104,8 @@ function App() {
           <TC />
         </Route> 
 
-        <Route path="/Chat">
-          <Chat />
+        <Route path="/ChatRoom">
+          <ChatRoom />
         </Route> 
         
         <Route path="/signin">
