@@ -31,7 +31,7 @@ const Video = () => {
                         <ButtonPurple variants = {fade} type='button' size="large" >Find plant
                         </ButtonPurple>
                     </Link>
-                    <Link to ="/Subscription">
+                    <Link to ="/Shop">
                         <ButtonGreen variants = {fade} type='button' size="large" >Shop
                         </ButtonGreen>
                     </Link>

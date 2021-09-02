@@ -121,7 +121,7 @@ const Navbar = () => {
                 <NavLink to="/Shop" activeStyle={activeStyle}>
                     Shop
                 </NavLink>
-                <NavLink to="/ChatRoom" activeStyle={activeStyle}>
+                <NavLink to="/Chat" activeStyle={activeStyle}>
                     Chat Room
                 </NavLink>
                 <NavLink to="/Blog" activeStyle={activeStyle}>

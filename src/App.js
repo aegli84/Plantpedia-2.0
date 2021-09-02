@@ -14,7 +14,7 @@ import Watering from './pages/Watering';
 import Light from './pages/Light';
 import Pest from './pages/Pest';
 import Humidity from './pages/Humidity';
-import ChatRoom from './pages/ChatRoom';
+import Chat from './pages/Chat';
 import Soil from "./pages/Soil";
 import AboutUsUi from '../src/components/AboutUs/AboutInfo';
 import Register from './pages/Register';
@@ -104,8 +104,8 @@ function App() {
           <TC />
         </Route> 
 
-        <Route path="/ChatRoom">
-          <ChatRoom />
+        <Route path="/Chat">
+          <Chat />
         </Route> 
         
         <Route path="/signin">
