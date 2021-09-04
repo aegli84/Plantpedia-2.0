@@ -4,8 +4,8 @@ import { NavLink as Link } from "react-router-dom";
 import bg from "../assets/bgimg/guidepage.png";
 import watering1 from "../assets/guidesImages/watering1.jpg";
 import watering2 from "../assets/guidesImages/watering2.jpg";
-import {FaArrowLeft} from "react-icons/fa";
-import {FaArrowRight} from "react-icons/fa";
+import {FiArrowLeft} from "react-icons/fi";
+import {FiArrowRight} from "react-icons/fi";
 import { motion } from 'framer-motion'
 import { pageAnimation } from '../animations'
 
@@ -165,10 +165,10 @@ const Watering = () => {
                     </Div1>
                     <Div2>
                       <NavLink to="/Guides">
-                      <FaArrowLeft size="2rem" color="white"/>
+                      <FiArrowLeft size="2.2rem" color="whitesmoke"/>
                       </NavLink>
                       <NavLink to="/Light">
-                      <FaArrowRight size="2rem" color="white"/>
+                      <FiArrowRight size="2.2rem" color="whitesmoke"/>
                       </NavLink>
 
                     </Div2>

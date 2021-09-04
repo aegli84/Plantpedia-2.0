@@ -3,10 +3,11 @@ import styled from "styled-components";
 import bg from "../assets/bgimg/guidepage.png";
 import soil1 from "../assets/guidesImages/soil1.jpg";
 import soil2 from "../assets/guidesImages/soil2.jpg";
-import {FaArrowLeft} from "react-icons/fa";
-import {FaArrowRight} from "react-icons/fa";
+import {FiArrowLeft} from "react-icons/fi";
+import {FiArrowRight} from "react-icons/fi";
 import { NavLink as Link } from "react-router-dom";
-
+import { motion } from 'framer-motion'
+import { pageAnimation } from '../animations'
 
 const ExternalFrame = styled.div`
 width:100vw;
@@ -24,7 +25,7 @@ background-repeat:no-repeat;
 }
 `
 
-const InternalFrame = styled.div`
+const InternalFrame = styled(motion.div)`
 width:80vw;
 padding-top:3rem;
 padding-bottom:3rem;
@@ -143,11 +144,13 @@ const Soil = () => {
     return(
         <div>
             <ExternalFrame>
-                <InternalFrame>
+                <InternalFrame variants = {pageAnimation}
+                initial = "hidden" 
+                animate = "show">
                     <Div1>
                     <H2Parag>The Right Soil</H2Parag>
                     <Img src={soil1}/>
-                    <P>If possible, your potting soil should be tailored to the particular type of plant you are growing. Cactus, succulents and rosemary, for example, prefer a coarse, well-drained soil that is about one-third sand. Seedlings should be grown in a light, moisture-retentive, soilless mix. African violets and ferns prefer soil with a high humus content, which can be achieved by adding leaf mold or shredded bark. Many kinds of orchids are happiest growing in nothing but fir bark or sphagnum moss.</P>
+                    <P>If possible, your potting soil should be tailored to the particular type of plant you are growing. Cactus, succulents and rosemary, for example, prefer a coarse, well-drained soil that is about one-third sand. Seedlings should be grown in a light, moisture-retentive, soilless mix.</P> <P>African violets and ferns prefer soil with a high humus content, which can be achieved by adding leaf mold or shredded bark. Many kinds of orchids are happiest growing in nothing but fir bark or sphagnum moss.</P>
 
                     <P>A good indoor potting mix is usually composed of peat moss, vermiculite and perlite. These soilless mixes absorb moisture very well and resist compaction, but they tend to dry out very quickly. Since they do not contain any nutrients, you must provide your plants with a consistent supply of fertilizer. One advantage to a soilless mix is that it is sterile, so there is no chance of introducing pest or disease problems.</P>
 
@@ -176,10 +179,10 @@ const Soil = () => {
                     </Div1>
                     <Div2>
                       <NavLink to="/Pest">
-                      <FaArrowLeft size="2rem" color="white"/>
+                      <FiArrowLeft size="2.2rem" color="whitesmoke"/>
                       </NavLink>
                       <NavLink to="/Humidity">
-                      <FaArrowRight size="2rem" color="white"/>
+                      <FiArrowRight size="2.2rem" color="whitesmoke"/>
                       </NavLink>
 
                     </Div2>
