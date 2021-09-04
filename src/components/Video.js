@@ -72,7 +72,7 @@ const H1 = styled(motion.h1)`
     bottom: 0;
     left: 0;
     right: 0;
-    padding-top: 15rem;
+    padding-top: 17rem;
     padding-left: 5rem;
     color: whitesmoke;
     font-size: 3.5rem;
@@ -96,7 +96,7 @@ const P = styled(motion.p)`
     left: 0;
     right: 0;
     color: whitesmoke;
-    padding: 22rem 61rem 15rem 5rem;
+    padding: 25rem 68rem 15rem 6rem;
     font-size: 1.6rem;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif !important;

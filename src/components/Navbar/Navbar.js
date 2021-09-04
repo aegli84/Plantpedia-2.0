@@ -23,11 +23,11 @@ const NavLogo = styled(Link)`
 `;
 
 const ImgLogo = styled.img`
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
-    margin-left: 50px;
-    margin-top: 5px;
+    margin-left: 60px;
+    margin-top: 9px;
 @media screen and (max-width: 768px) { 
     display: none;
     }

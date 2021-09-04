@@ -6,7 +6,8 @@ import watering1 from "../assets/guidesImages/watering1.jpg";
 import watering2 from "../assets/guidesImages/watering2.jpg";
 import {FaArrowLeft} from "react-icons/fa";
 import {FaArrowRight} from "react-icons/fa";
-
+import { motion } from 'framer-motion'
+import { pageAnimation } from '../animations'
 
 const ExternalFrame = styled.div`
 width:100vw;
@@ -24,7 +25,7 @@ background-repeat:no-repeat;
 }
 `
 
-const InternalFrame = styled.div`
+const InternalFrame = styled(motion.div)`
 width:80vw;
 padding-top:3rem;
 padding-bottom:3rem;
@@ -56,8 +57,8 @@ font-size: 2.7rem;
 `
 const P= styled.p`
 color: whitesmoke;
-margin-top: 1.5rem;
-padding: .5rem 4rem 4rem 8rem;
+margin-top: 2.5rem;
+padding: 0 4rem 4rem 8rem;
 font-size: 1.5rem;
 `
 const Div1 = styled.div`
@@ -66,8 +67,6 @@ height: 60vh;
 overflow-x: hidden;
 overflow-y: auto;
 
-overflow-x: hidden;
-overflow-y: auto;
 ::-webkit-scrollbar {
       width: 12px;
       z-index: -1;
@@ -126,7 +125,7 @@ justify-content: space-around;
 `
 
 const Img = styled.img`
-width:30%;
+width:35%;
 margin-left: 8rem;
 margin-top:2.5rem;
 border-radius: 2rem;
@@ -138,7 +137,6 @@ const NavLink = styled(Link)`
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     cursor: pointer;
-
 `;
 
 
@@ -149,7 +147,9 @@ const Watering = () => {
     return(
         <div>
             <ExternalFrame>
-                <InternalFrame>
+                <InternalFrame variants = {pageAnimation}
+                initial = "hidden" 
+                animate = "show">
                     <Div1>
                     <H2Parag>When should I water my plant?</H2Parag>
                     <Img src={watering2}/>

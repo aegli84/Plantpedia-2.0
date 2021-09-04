@@ -7,6 +7,8 @@ import PestControl from "../components/plantpedia/PestControl";
 import LiveChat from "../components/plantpedia/LiveChat";
 import LightTips from "../components/plantpedia/LightTips";
 import HumidityTips from "../components/plantpedia/HumidityTips";
+import { motion } from 'framer-motion'
+import { titleAnimation, pageAnimation } from '../animations'
 
 const ExternalFrame = styled.div`
 width:100vw;
@@ -23,7 +25,7 @@ background-repeat:no-repeat;
     height: 80vh;
 }
 `
-const InternalFrame = styled.div`
+const InternalFrame = styled(motion.div)`
 width:80vw;
 height: 70vh;
 margin: auto ;
@@ -53,7 +55,10 @@ const Guides = () => {
 
     return(
         <ExternalFrame>
-            <InternalFrame>
+        <motion.div variants = {pageAnimation} 
+                initial = "hidden" 
+                animate = "show">
+            <InternalFrame variants = {titleAnimation} >
                 <WateringButton/>
                 <LightTips/>
                 <PestControl/>
@@ -61,6 +66,7 @@ const Guides = () => {
                 <HumidityTips/>
                 <LiveChat/>
             </InternalFrame>
+            </motion.div>
         </ExternalFrame>
     )
 
