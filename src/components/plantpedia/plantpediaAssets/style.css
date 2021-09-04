@@ -2,7 +2,7 @@
     --clear-button-icon-pad: 2px;
     --clear-button-icon-width: 10px;
 
-    --icon-color: #999;
+    --icon-color: #7e66a3;
 }
 
 .rdn {
@@ -12,21 +12,18 @@
 .rdn-control {
     position: relative;
     overflow: hidden;
-    background-color: #ccc;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    box-sizing: border-box;
-    color: #333;
-    cursor: default;
+    width: 60%;
+    border: 6px solid #83a46f;
+    border-radius: 3vh;
     outline: none;
-    padding: 8px 52px 8px 10px;
-    transition: all 200ms ease;
-    width:50vw;
-    margin:auto;
+    padding: 12px;
+    background-color: whitesmoke;
+    cursor: default;
+    margin: 0 15rem 0 20em;
 }
 
 .rdn-control:hover {
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 5px 20px black;
 }
 
 .rdn-control-icon {
@@ -111,8 +108,8 @@
 
 .rdn-drop,
 .rdn-selection {
-    background-color: white;
-    border: 1px solid #ccc;
+    background-color: whitesmoke;
+    border: 1px solid #7e66a3;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
     box-sizing: border-box;
     margin-top: -1px;
@@ -137,6 +134,7 @@
     padding: 8px 10px;
     color: rgba(51, 51, 51, 1);
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif !important;
     text-transform: capitalize;
 }
 
@@ -170,7 +168,7 @@
 .rdn-drop-menu-group-option:hover,
 .rdn-selection-menu-option:hover,
 .rdn-selection-menu-group-option:hover {
-    background-color: #f2f9fc;
+    background-color: #7e66a3;
     color: #333;
 }
 

@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
-
 const ContainerBox = styled.div`
 width:100%;
 height:100%;
@@ -18,21 +16,21 @@ justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
 }
-
 `
 const PlantName = styled.div`
 width: 100%;
 height:15%;
 color: white;
 text-align: center;
-font-size: 2rem;
+font-size: 2.5rem;
+font-weight: 600;
 margin-top: 2vh;
-
 `
 const PlantDescription=styled.div`
 color: white;
 margin: 2vw;
-font-size: 1.1rem;
+font-size: 1.2rem;
+font-family: 'Montserrat', sans-serif !important;
 @media (max-width: 770px) {
     font-size:1.4rem;
     
@@ -41,8 +39,6 @@ font-size: 1.1rem;
     margin-left:-30px;
     margin-right:-30px;
 }
-
-
 `
 const PlantHumidity=styled.div`
 color: black;
@@ -65,9 +61,6 @@ border-radius: 5rem;
     width:150%;
     height:70px;
 }
-
-
-
 `
 const PlantWatering=styled.div`
 color: black;
@@ -82,13 +75,10 @@ border-radius: 5rem;
 
 @media (max-width: 770px) {
     height:5vh;
-
-    
 }
 @media (max-width: 377px) {
     width:150%;
     height:70px;
-
 }
 
 `
@@ -105,16 +95,11 @@ border-radius: 5rem;
 
 @media (max-width: 770px) {
     height:5vh;
-
-    
 }
 @media (max-width: 377px) {
     width:150%;
     height:70px;
-
 }
-
-
 `
 const PlantSoil = styled.div`
 color: black;
@@ -128,15 +113,11 @@ border-radius: 5rem;
 
 @media (max-width: 770px) {
     height:5vh;
-
-    
 }
 @media (max-width: 377px) {
     width:150%;
     height:70px;
-
 }
-
 
 `
 const LeftCol = styled.div`
@@ -186,9 +167,6 @@ margin-bottom:10vh;
     margin-right:30px;
 }
 `
-
-
-
 
 const PlantCard = (props) =>{
 

@@ -27,7 +27,7 @@ const InternalFrame = styled.div`
 width:80vw;
 height: 70vh;
 margin: auto ;
-border-radius: 5rem;
+border-radius: 2rem;
 box-shadow: 0 0 20px black;
 justify-content: space-around; 
 display: grid;

@@ -1,10 +1,6 @@
-import { Carousel } from "react-bootstrap";
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import "../plantpediaAssets/carouselStyle.css";
-import styled from 'styled-components';
-
-
 
 
 const CarouselPics = (props) => {

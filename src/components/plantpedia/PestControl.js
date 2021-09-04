@@ -28,8 +28,13 @@ const Button=styled.button`
     border-radius: 0 0 2rem 2rem;
     color: white;
     font-size: 1.5rem;
+    outline:none;
+    cursor: pointer;
+    border: none;
 &:hover {
         background-color: #83a46f;
+        transition: all 0.4s;
+        opacity: .9;
     }
 @media (max-width: 770px) {
     grid-template-columns: auto auto;

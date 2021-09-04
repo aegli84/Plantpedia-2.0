@@ -8,8 +8,8 @@ import "../components/plantpedia/plantpediaAssets/style.css";
 import { useState } from "react";
 import 'react-slideshow-image/dist/styles.css';
 import CarouselPics from "../components/plantpedia/plantpediaAssets/carousel";
-
-
+import { motion } from 'framer-motion'
+import { titleAnimation } from '../animations'
 
 const ExternalFrame = styled.div`
 width:100vw;
@@ -29,19 +29,17 @@ text-align: center;
 }
 `
 
-const InternalFrame = styled.div`
+const InternalFrame = styled(motion.div)`
 width:80vw;
 height: 70vh;
 margin: auto ;
-border-radius: 5rem;
+border-radius: 2rem;
 box-shadow: 0 0 20px black;
-
 background-color: #918EA4;
+backdrop-filter: blur( 55px );
+    -webkit-backdrop-filter: blur( 25px );
 padding: 10px;
 display: flex;
-
-
-
 
 @media (max-width: 770px) {
     grid-template-columns: auto auto;
@@ -51,26 +49,19 @@ display: flex;
 @media (max-width: 377px) {
     grid-template-columns: auto;
     height: 1100px;
-
-
 }
 `
-
 
 const LeftDiv = styled.div`
 width: 50%;
 height: 100%;
-border-radius: 5rem 0 0 5rem;
+border-radius: 2rem ;
 overflow:hidden;
 @media (max-width: 770px) {
-    
-    
 }
 @media (max-width: 377px) {
     display: none;
 }
-
-
 `
 
 const RightDiv = styled.div`
@@ -79,23 +70,12 @@ height: 100%;
 border-radius: 0 5rem 5rem 0rem;
 
 @media (max-width: 770px) {
-    
-    
 }
 @media (max-width: 377px) {
 margin:auto;
 height: 90%;
-
 }
-
 `
-
-
-
-
-
-
-
 
 
 const Plantpedia = () => {
@@ -114,7 +94,9 @@ const Plantpedia = () => {
                     onOpen={() => console.log('open!')}
                     />;
 
-            <InternalFrame>
+            <InternalFrame variants = {titleAnimation} 
+                initial = "hidden" 
+                animate = "show">
 
                 <LeftDiv>
                     <CarouselPics data={plants[selectedPlant -1]} />

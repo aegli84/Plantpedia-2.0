@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import aloZebrina1 from "./Alocasia zebrina/aloZebrina1.jpeg";
 import aloZebrina2 from "./Alocasia zebrina/aloZebrina2.jpeg";
 import aloZebrina3 from "./Alocasia zebrina/aloZebrina3.jpeg";
@@ -134,7 +133,7 @@ const plants = [
         picture2:{strelitzia2},
         picture3:{strelitzia3},
         plantName:"Strelitzia Nicolai",
-        description:"Strelitzia nicolai, commonly known as the giant white bird of paradise or wild banana, is a species of banana-like plants with erect woody stems reaching a height of 6 m, and the clumps formed can spread as far as 3.5 m. The 1.8 m-long leaves are grey-green and arranged like a fan at the top of the stems, similar to Ravenala madagascariensis. The inflorescence is composed of a dark blue bract, white sepals and a bluish-purple tongue. Flowers are followed by triangular seed capsules. All parts of the plant are highly toxic, with the flower being the most poisonous. Toxic to: Humans, cats and dogs.",
+        description:"Strelitzia nicolai, commonly known as the giant white bird of paradise or wild banana, is a species of banana-like plants with erect woody stems reaching a height of 6 m, and the clumps formed can spread as far as 3.5 m. The 1.8 m-long leaves are grey-green and arranged like a fan at the top of the stems, similar to Ravenala madagascariensis. Flowers are followed by triangular seed capsules. All parts of the plant are highly toxic, with the flower being the most poisonous. Toxic to: Humans, cats and dogs.",
         humidity:"45%-60%",
         watering: "Moist but not soggy",
         light: "Bright indirect light",
@@ -150,7 +149,7 @@ const plants = [
         humidity:"30%-50%",
         watering: "Once every 2 weeks",
         light: "Any light condition",
-        soil:"Fast-draining medium"
+        soil:"Fast-draining"
     },
 ];
 
