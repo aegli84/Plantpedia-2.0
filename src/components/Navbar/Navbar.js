@@ -124,9 +124,6 @@ const Navbar = () => {
                 <NavLink to="/Chat" activeStyle={activeStyle}>
                     Chat Room
                 </NavLink>
-                <NavLink to="/Blog" activeStyle={activeStyle}>
-                    Blog
-                </NavLink>
                 <NavBtn>
                     <NavBtnLink to="/signup">Login or Register</NavBtnLink>                
                 </NavBtn>

@@ -6,7 +6,6 @@ import Plantpedia from './pages/Plantpedia';
 import Guides from './pages/Guides';
 import OurPartners from './pages/OurPartners';
 import Shop from './pages/Shop';
-import Blog from './pages/Blog';
 import GlobalStyles from './GlobalStyles';
 import Footer from './components/Footer';
 import NavBurgerMenu from './components/Navbar/NavBurgerMenu';
@@ -71,9 +70,6 @@ function App() {
           <Checkout 
                     />
         </Route>
-        <Route path="/Blog">
-          <Blog />
-        </Route> 
 
         <Route path="/Soil">
           <Soil />
