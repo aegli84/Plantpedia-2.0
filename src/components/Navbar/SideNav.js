@@ -32,10 +32,10 @@ const SideNav = (props) => {
                     <Link to="/Guides" onClick={() => setOpen(!open)}>Guides</Link>
                 </motion.li>
                 <motion.li whileTap={{scale: 1.1}} >
-                    <Link to="/BoutiqueShops" onClick={() => setOpen(!open)}>Boutique Shops</Link>
+                    <Link to="/OurPartners" onClick={() => setOpen(!open)}>Our Partners</Link>
                 </motion.li>
                 <motion.li whileTap={{scale: 1.1}} >
-                    <Link to="/Subscription" onClick={() => setOpen(!open)}>Subscription</Link>
+                    <Link to="/Shop" onClick={() => setOpen(!open)}>Shop</Link>
                 </motion.li>
                 <motion.li whileTap={{scale: 1.1}} >
                     <Link to="/Chat" onClick={() => setOpen(!open)}>Chat</Link>

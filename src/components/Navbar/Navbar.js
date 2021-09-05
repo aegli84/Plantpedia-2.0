@@ -17,6 +17,9 @@ const Nav = styled.nav`
     z-index: 12;
     padding-right: 50px;
     position: fixed;
+    @media (max-width: 480px) {
+        display: none;
+    }
 `;
 const NavLogo = styled(Link)`
     cursor: pointer;
@@ -57,6 +60,9 @@ const NavMenu = styled.div`
     @media screen and (max-width: 768px) {
     display: none;
     }
+    @media (max-width: 480px) {
+        display: none;
+    }
 `;
 
 const NavBtn = styled.nav`
@@ -64,6 +70,9 @@ const NavBtn = styled.nav`
     align-items: center;
     margin-right: 24px;
     @media screen and (max-width: 768px) {
+        display: none;
+    }
+    @media (max-width: 480px) {
         display: none;
     }
 `;
