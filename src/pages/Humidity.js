@@ -37,17 +37,12 @@ align-items: center;
 justify-content: center;
 text-align:justify;
 
-
-
-
 @media (max-width: 770px) {
     height: 72vh;
 
 }
 @media (max-width: 377px) {
     height: 72vh;
-
-
 
 }
 `

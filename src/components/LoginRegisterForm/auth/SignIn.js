@@ -3,8 +3,7 @@ import { Link, Redirect } from 'react-router-dom';
 import axios from 'axios';
 import { authenticate, isAuth } from './helpers';
 import { ToastContainer, toast } from 'react-toastify';
-//import Google from './Google';
-//import Facebook from './Facebook';
+
 import 'react-toastify/dist/ReactToastify.min.css';
 import '../auth/signin.css'; 
 
@@ -22,11 +21,11 @@ const Signin = ({ history }) => {
         setValues({ ...values, [name]: event.target.value });
     };
 
-    const informParent = response => {
-        authenticate(response, () => {
-            isAuth() && isAuth().role === 'admin' ? history.push('/admin') : history.push('/private');
-        });
-    };
+    // const informParent = response => {
+    //     authenticate(response, () => {
+    //         isAuth() && isAuth().role === 'admin' ? history.push('/admin') : history.push('/private');
+    //     });
+    // };
 
     const clickSubmit = event => {
         event.preventDefault();

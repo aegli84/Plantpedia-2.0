@@ -60,8 +60,6 @@ padding-top: 7vh;
 padding-bottom: 7vh;
 padding-left: 100px;
 padding-right: 100px;
-
-
 `
 
 const Faqs = () => {

@@ -26,6 +26,7 @@ const CardsContainer = styled.div `
         height: 50vh;
         background-color:red;
         }
+    }
 `
 const TagsContainer = styled.div `
         width: 25vw;
@@ -38,6 +39,7 @@ const TagsContainer = styled.div `
         margin-top: 500px;
         margin-left: 15px;
         } 
+    }
 `
 const TagsList = styled.div `
 `
@@ -91,76 +93,76 @@ function Cards() {
             <TagsContainer>
                 <TagsStyle>Tags</TagsStyle>
             <TagsList>
-                <a href="https://balconygardenweb.com/best-types-of-monstera-varieties/" target="_blank">
+                <a href="https://balconygardenweb.com/best-types-of-monstera-varieties/" target="_blank" rel="noreferrer">
                     <BtnOne>Monstera</BtnOne>
                 </a>
-                <a href="https://www.springer.com/journal/11104" target="_blank">
+                <a href="https://www.springer.com/journal/11104" target="_blank" rel="noreferrer">
                     <BtnOne>Soil</BtnOne>
                 </a>
-                <a href="https://www.masterclass.com/articles/ron-finleys-tips-for-watering-your-plants" target="_blank">
+                <a href="https://www.masterclass.com/articles/ron-finleys-tips-for-watering-your-plants" target="_blank" rel="noreferrer">
                     <BtnOne>Watering</BtnOne>
                 </a>
-                <a href="https://www.bhg.com/gardening/yard/garden-care/gardening-tips-for-every-gardener/" target="_blank">
+                <a href="https://www.bhg.com/gardening/yard/garden-care/gardening-tips-for-every-gardener/" target="_blank" rel="noreferrer">
                     <BtnOne>Tips</BtnOne>
                 </a>
-                <a href="https://www.wikihow.com/Care-for-Flowers" target="_blank">
+                <a href="https://www.wikihow.com/Care-for-Flowers" target="_blank" rel="noreferrer">
                     <BtnOne>Flowers</BtnOne>
                 </a>
-                <a href="https://cordis.europa.eu/article/id/413320-plant-health-protecting-plants-to-safeguard-our-future" target="_blank">
+                <a href="https://cordis.europa.eu/article/id/413320-plant-health-protecting-plants-to-safeguard-our-future" target="_blank" rel="noreferrer">
                     <BtnOne>Plants</BtnOne>
                 </a>
-                <a href="http://www.emmitsburg.net/gardens/articles.htm" target="_blank">
+                <a href="http://www.emmitsburg.net/gardens/articles.htm" target="_blank" rel="noreferrer">
                     <BtnOne>Healthy Plants</BtnOne>
                 </a>
-                <a href="https://www.masterclass.com/articles/how-to-care-for-indoor-plants" target="_blank">
+                <a href="https://www.masterclass.com/articles/how-to-care-for-indoor-plants" target="_blank" rel="noreferrer">
                     <BtnOne>Houseplants</BtnOne>
                 </a>
-                <a href="https://www.thespruce.com/best-patio-plants-4588544" target="_blank">
+                <a href="https://www.thespruce.com/best-patio-plants-4588544" target="_blank" rel="noreferrer">
                     <BtnOne>Outdoor Plants</BtnOne>
                 </a>
-                <a href="https://www.plantura.garden/gartentipps/zierpflanzen/syngonium" target="_blank">
+                <a href="https://www.plantura.garden/gartentipps/zierpflanzen/syngonium" target="_blank" rel="noreferrer">
                     <BtnOne>Syngonium</BtnOne>
                 </a>
-                <a href="https://www.earthmagazine.org/article/mineral-resource-month-perlite" target="_blank">
+                <a href="https://www.earthmagazine.org/article/mineral-resource-month-perlite" target="_blank" rel="noreferrer">
                     <BtnOne>Perlite</BtnOne>
                 </a>
-                <a href="https://www.pestworld.org/news-hub/pest-articles/" target="_blank">
+                <a href="https://www.pestworld.org/news-hub/pest-articles/" target="_blank" rel="noreferrer">
                     <BtnOne>Pests</BtnOne>
                 </a>
-                <a href="https://www.longdom.org/scholarly/fertilizers-journals-articles-ppts-list-1493.html" target="_blank">
+                <a href="https://www.longdom.org/scholarly/fertilizers-journals-articles-ppts-list-1493.html" target="_blank" rel="noreferrer">
                     <BtnOne>Fertilizer</BtnOne>
                 </a>
-                <a href="https://www.thespruce.com/how-to-repot-houseplants-1902928" target="_blank">
+                <a href="https://www.thespruce.com/how-to-repot-houseplants-1902928" target="_blank" rel="noreferrer">
                     <BtnOne>Repotting</BtnOne>
                 </a>
-                <a href="https://www.succulentsandsunshine.com/choosing-the-right-pot-for-your-succulents/" target="_blank">
+                <a href="https://www.succulentsandsunshine.com/choosing-the-right-pot-for-your-succulents/" target="_blank" rel="noreferrer">
                     <BtnOne>Succulents</BtnOne>
                 </a>
-                <a href="https://blog.gardeningknowhow.com/gkh-musings/caring-for-houseplants-that-arent-yours/" target="_blank">
+                <a href="https://blog.gardeningknowhow.com/gkh-musings/caring-for-houseplants-that-arent-yours/" target="_blank" rel="noreferrer">
                     <BtnOne>Plant Sitting</BtnOne>
                 </a>
-                <a href="https://www.marksandspencer.com/l/flowers-and-plants/all-flowers-and-plants/offers" target="_blank">
+                <a href="https://www.marksandspencer.com/l/flowers-and-plants/all-flowers-and-plants/offers" target="_blank" rel="noreferrer">
                     <BtnOne>Plant Offers</BtnOne>
                 </a>
-                <a href="https://en.wikipedia.org/wiki/Plant" target="_blank">
+                <a href="https://en.wikipedia.org/wiki/Plant" target="_blank" rel="noreferrer">
                     <BtnOne>Plantwiki</BtnOne>
                 </a>
-                <a href="https://www.provenwinners.com/learn/articles/656" target="_blank">
+                <a href="https://www.provenwinners.com/learn/articles/656" target="_blank" rel="noreferrer">
                     <BtnOne>Pruning</BtnOne>
                 </a>
-                <a href="https://www.bhg.com/gardening/yard/garden-care/planting-tips-for-new-gardeners/" target="_blank">
+                <a href="https://www.bhg.com/gardening/yard/garden-care/planting-tips-for-new-gardeners/" target="_blank" rel="noreferrer">
                     <BtnOne>Planting</BtnOne>
                 </a>
-                <a href="https://plant-theatre.uk/downloads/sowing-and-growing-tips/funky-veg-kit-Eng.pdf" target="_blank">
+                <a href="https://plant-theatre.uk/downloads/sowing-and-growing-tips/funky-veg-kit-Eng.pdf" target="_blank" rel="noreferrer">
                     <BtnOne>Sowing</BtnOne>
                 </a>
-                <a href="https://www.express.co.uk/life-style/garden/1460797/how-to-plant-wildflower-seeds-easy-tips-mini-meadow-evg" target="_blank">
+                <a href="https://www.express.co.uk/life-style/garden/1460797/how-to-plant-wildflower-seeds-easy-tips-mini-meadow-evg" target="_blank" rel="noreferrer">
                     <BtnOne>Seed Plants</BtnOne>
                 </a>
-                <a href="https://science.sciencemag.org/content/54/1383/15" target="_blank">
+                <a href="https://science.sciencemag.org/content/54/1383/15" target="_blank" rel="noreferrer">
                     <BtnOne>Vascular Plants</BtnOne>
                 </a>
-                <a href="https://link.springer.com/book/10.1007/978-3-662-07257-8" target="_blank">
+                <a href="https://link.springer.com/book/10.1007/978-3-662-07257-8" target="_blank" rel="noreferrer">
                     <BtnOne>Dicotyledons</BtnOne>
                 </a>
             </TagsList>

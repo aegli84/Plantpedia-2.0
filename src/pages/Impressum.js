@@ -2,10 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import bg from "../assets/bgimg/guidepage.png";
 
-
-
-
-
 const ExternalFrame = styled.div`
 width:100vw;
 height: 80vh;

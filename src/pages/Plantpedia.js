@@ -36,8 +36,8 @@ margin: auto ;
 border-radius: 2rem;
 box-shadow: 0 0 20px black;
 background-color: #918EA4;
-backdrop-filter: blur( 55px );
-    -webkit-backdrop-filter: blur( 25px );
+/* backdrop-filter: blur( 55px );
+    -webkit-backdrop-filter: blur( 25px ); */
 padding: 10px;
 display: flex;
 
