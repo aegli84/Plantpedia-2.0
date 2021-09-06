@@ -105,8 +105,8 @@ const H1 = styled(motion.h1)`
 }
 
 @media (max-width: 480px) {
-    font-size: 2.8rem;
-    padding: 12rem 2rem 15rem 2rem;
+    font-size: 4rem;
+    padding: 8rem 2rem 15rem 2rem;
 }
 `
 
@@ -129,7 +129,7 @@ const P = styled(motion.p)`
 
 @media (max-width: 480px) {
     font-size: 1.5rem;
-    padding: 19rem 3rem 15rem 3rem;
+    padding: 20rem 3rem 15rem 3rem;
 }
 `
 
@@ -166,7 +166,7 @@ const ButtonPurple = styled(motion.button)`
     width: 25%;
     left: 20%;
     padding: 1.2rem;
-    bottom: 50%;
+    bottom: 33rem;
     box-shadow: 0 4px 10px 0 black;
 }
 `
@@ -204,7 +204,7 @@ const ButtonGreen = styled(motion.button)`
     width: 25%;
     left: 56%;
     padding: 1.2rem;
-    bottom: 50%;
+    bottom: 33rem;
     box-shadow: 0 4px 10px 0 black;
 }
 `
