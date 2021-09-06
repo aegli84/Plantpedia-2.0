@@ -164,7 +164,7 @@ const ButtonPurple = styled(motion.button)`
     width: 25%;
     left: 20%;
     padding: 1.2rem;
-    bottom: 35vh;
+    bottom: 28vh;
     box-shadow: 0 4px 10px 0 black;
 }
 `
@@ -202,7 +202,7 @@ const ButtonGreen = styled(motion.button)`
     width: 25%;
     left: 56%;
     padding: 1.2rem;
-    bottom: 35vh;
+    bottom: 28vh;
     box-shadow: 0 4px 10px 0 black;
 }
 `
