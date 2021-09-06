@@ -7,7 +7,7 @@ import {Link } from "react-router-dom";
 
 const Video = () => {
     return (
-        <div style = {{backgroundColor: 'black'}}>
+        <Container >
             <Div>
                 <Video2 src= {herovid} autoPlay muted loop/>
             </Div>
@@ -36,9 +36,27 @@ const Video = () => {
                         </ButtonGreen>
                     </Link>
                 </motion.div>
-            </div>
+            </Container>
     )
 }
+
+const Container = styled.div`
+    background-color: black;
+@media (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+
+@media (max-width: 480px) {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    
+}
+`
 
 const Div = styled.div`
     width: 65%; 
@@ -51,8 +69,8 @@ const Div = styled.div`
 }
 
 @media (max-width: 480px) {
-    height:70vh;
-    background-color:transparent;
+    height:60vh;
+    width: 100%;
 }
 `
 const Video2 = styled.video`
@@ -63,6 +81,9 @@ const Video2 = styled.video`
     left: 60%;
 @media (max-width: 768px) {
     left: 100%;
+}
+@media (max-width: 480px) {
+    display: none;
 }
 
 `
@@ -84,8 +105,8 @@ const H1 = styled(motion.h1)`
 }
 
 @media (max-width: 480px) {
-    font-size: 2rem;
-    padding: 14rem 20rem 15rem 2rem;
+    font-size: 2.8rem;
+    padding: 12rem 2rem 15rem 2rem;
 }
 `
 
@@ -107,8 +128,8 @@ const P = styled(motion.p)`
 }
 
 @media (max-width: 480px) {
-    font-size: 1rem;
-    padding: 21rem 16rem 15rem 2rem;
+    font-size: 1.5rem;
+    padding: 19rem 3rem 15rem 3rem;
 }
 `
 
@@ -141,11 +162,12 @@ const ButtonPurple = styled(motion.button)`
 }
 
 @media (max-width: 480px) {
-    font-size: .6rem;
-    width: 18%;
-    left: 7%;
-    padding: .8rem;
-    bottom: 55%;
+    font-size: .8rem;
+    width: 25%;
+    left: 20%;
+    padding: 1.2rem;
+    bottom: 50%;
+    box-shadow: 0 4px 10px 0 black;
 }
 `
 const ButtonGreen = styled(motion.button)`
@@ -178,11 +200,12 @@ const ButtonGreen = styled(motion.button)`
 }
 
 @media (max-width: 480px) {
-    font-size: .6rem;
-    width: 18%;
-    left: 30%;
-    padding: .8rem;
-    bottom: 55%;
+    font-size: .8rem;
+    width: 25%;
+    left: 56%;
+    padding: 1.2rem;
+    bottom: 50%;
+    box-shadow: 0 4px 10px 0 black;
 }
 `
 export default Video;

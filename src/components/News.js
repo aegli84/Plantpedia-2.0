@@ -126,8 +126,8 @@ const Div = styled.div`
     padding: 2rem;
     }
 @media (max-width: 480px) {
-    height: 35vh;
-    padding: 0;
+    height: 36vh;
+    padding: 2rem 1rem;
 }
 `
 
