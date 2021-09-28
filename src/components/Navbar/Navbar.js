@@ -121,7 +121,7 @@ const Navbar = () => {
                     Plantpedia
                 </NavLink>
                 <NavLink to="/Guides" activeStyle={activeStyle}>
-                    Guides
+                    Care Guides
                 </NavLink>
 
                 <NavLink to="/OurPartners" activeStyle={activeStyle}>

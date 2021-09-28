@@ -29,7 +29,7 @@ const SideNav = (props) => {
                     <Link to="/Plantpedia" onClick={() => setOpen(!open)}>Plantpedia</Link>
                 </motion.li>
                 <motion.li whileTap={{scale: 1.1}} >
-                    <Link to="/Guides" onClick={() => setOpen(!open)}>Guides</Link>
+                    <Link to="/Guides" onClick={() => setOpen(!open)}>Care Guides</Link>
                 </motion.li>
                 <motion.li whileTap={{scale: 1.1}} >
                     <Link to="/OurPartners" onClick={() => setOpen(!open)}>Our Partners</Link>
@@ -42,8 +42,8 @@ const SideNav = (props) => {
                 </motion.li>
                 
                 <motion.li whileTap={{scale: 1.1}} >
-                    <Link to="/signin">Login</Link>   
-                    <Link to="/signup"> / Register</Link>   
+                    <Link to="/signin" onClick={() => setOpen(!open)}>Login</Link>   
+                    <Link to="/signup" onClick={() => setOpen(!open)}> / Register</Link>   
                 </motion.li>             
                 
             </Ul>

@@ -51,7 +51,7 @@ const Container = styled.div`
     display: inline-block;
     align-items: center;
     text-align: center;
-    background-color: transparent;
+    /* background-color: transparent; */
     
 }
 `
@@ -67,8 +67,8 @@ const Div = styled.div`
 }
 
 @media (max-width: 480px) {
-    height:60vh;
     width: 100%;
+    
 }
 `
 const Video2 = styled.video`
@@ -160,11 +160,11 @@ const ButtonPurple = styled(motion.button)`
 }
 
 @media (max-width: 480px) {
-    font-size: .8rem;
-    width: 25%;
     left: 20%;
-    padding: 1.2rem;
-    bottom: 28vh;
+    font-size: .9em;
+    width: 27%;
+    padding: 1.5em;
+    bottom: 35%;
     box-shadow: 0 4px 10px 0 black;
 }
 `
@@ -198,11 +198,11 @@ const ButtonGreen = styled(motion.button)`
 }
 
 @media (max-width: 480px) {
-    font-size: .8rem;
-    width: 25%;
+    font-size: .9em;
+    width: 27%;
     left: 56%;
-    padding: 1.2rem;
-    bottom: 28vh;
+    padding: 1.5em;
+    bottom: 35%;
     box-shadow: 0 4px 10px 0 black;
 }
 `

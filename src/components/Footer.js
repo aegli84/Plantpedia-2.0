@@ -12,7 +12,7 @@ background-color: black;
 }
 
 @media (max-width: 480px) {
-    height:20vh; 
+    height:22vh; 
 }
 `
 
