@@ -4,6 +4,8 @@ This was my end of web development course capstone project on which I worked on 
 
 The Project idea started with a plant database and grew into a full on ecosystem geared towards educating new plant parents, providing them with a plant shop option and chat feature. 
 
+#### Preview of the landing page 
+
 ![Landing page](https://res.cloudinary.com/di32yybrd/image/upload/v1632903677/plantpedia/plant_iaazho.png)
 
 ### Built With
@@ -17,3 +19,6 @@ The Project idea started with a plant database and grew into a full on ecosystem
 #### APIs
 * [Chat Engine](https://chatengine.io/)
 * [Commerce.js](https://commercejs.com/)
+
+### View Demo here
+* [](https://plantpedia-2-0.vercel.app/)
