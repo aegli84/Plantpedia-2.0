@@ -1,8 +1,10 @@
+<br /> <br /> 
 ## About The Project
 
 This was my end of web development course capstone project on which I worked on in a team of three. 
 
 The Project idea started with a plant database and grew into a full on ecosystem geared towards educating new plant parents, providing them with a plant shop option and chat feature. 
+<br /> 
 
 * Preview of the landing page 👇
 
