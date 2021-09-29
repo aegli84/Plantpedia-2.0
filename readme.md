@@ -1,6 +1,6 @@
 ## About The Project
 
-[![Landing page][product-screenshot]](https://res.cloudinary.com/di32yybrd/image/upload/v1632825218/plantpedia/plantfour_gnhbld.png)
+![Landing page](https://res.cloudinary.com/di32yybrd/image/upload/v1632903677/plantpedia/plant_iaazho.png)
 
 ### Built With
 
