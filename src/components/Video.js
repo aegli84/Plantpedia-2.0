@@ -11,6 +11,7 @@ const Video = () => {
             <Div>
                 <Video2 src= {herovid} autoPlay muted loop/>
             </Div>
+            <WeDiv>
                 <motion.div 
                     variants = {pageAnimation} 
                     initial = "hidden" 
@@ -20,22 +21,22 @@ const Video = () => {
                         <P variants = {fade}>An all-in-one solution for all levels of plant parents, where knowledge can be found and shared easily. </P>
                     </div>
                     </motion.div>
-                    <motion.div 
+                    
+                    <ButtonDiv 
                         variants = {pageAnimation} 
                         initial = "hidden" 
                         animate = "show" 
-                        style ={{display:'flex',
-                        alignItems:'left',
-                        justifyContent:'space-between'}}>
+                        >
                     <Link to ="/Plantpedia" >
-                        <ButtonPurple variants = {fade} type='button' size="large" >Find plant
+                        <ButtonPurple variants = {fade} type='button' >Find plant
                         </ButtonPurple>
                     </Link>
                     <Link to ="/Shop">
-                        <ButtonGreen variants = {fade} type='button' size="large" >Shop
+                        <ButtonGreen variants = {fade} type='button' >Shop
                         </ButtonGreen>
                     </Link>
-                </motion.div>
+                </ButtonDiv>
+                </WeDiv>
             </Container>
     )
 }
@@ -43,8 +44,6 @@ const Video = () => {
 const Container = styled.div`
     background-color: black;
 @media (max-width: 768px) {
-    
-    
 }
 
 @media (max-width: 480px) {
@@ -55,20 +54,21 @@ const Container = styled.div`
     
 }
 `
-
+const WeDiv = styled.div`
+    display: flex;
+    flex-direction: row;
+    
+`
 const Div = styled.div`
     width: 65%; 
-    height: 100vh; 
     z-index: -2;
 @media (max-width: 768px) {
     width: 50%;
-    height:55vh;
     background-color:transparent;
 }
 
 @media (max-width: 480px) {
     width: 100%;
-    
 }
 `
 const Video2 = styled.video`
@@ -83,7 +83,6 @@ const Video2 = styled.video`
 @media (max-width: 480px) {
     display: none;
 }
-
 `
 const H1 = styled(motion.h1)`
     position: absolute;
@@ -91,20 +90,19 @@ const H1 = styled(motion.h1)`
     bottom: 0;
     left: 0;
     right: 0;
-    padding-top: 17rem;
-    padding-left: 5rem;
+    margin: 9rem 3rem;
     color: whitesmoke;
     font-size: 3.5rem;
     font-family: 'Montserrat', sans-serif !important;
     text-shadow: 0  15px 7px black; 
 @media (max-width: 768px) {
     font-size: 2.7rem;
-    padding: 15rem 25rem 15rem 5rem;
+    
 }
 
 @media (max-width: 480px) {
     font-size: 4rem;
-    padding: 8rem 2rem 15rem 2rem;
+    
 }
 `
 
@@ -115,31 +113,32 @@ const P = styled(motion.p)`
     left: 0;
     right: 0;
     color: whitesmoke;
-    padding: 25rem 68rem 15rem 6rem;
+    margin: 17rem 62rem 0 7rem;
     font-size: 1.6rem;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif !important;
     text-shadow: 0 5px 5px black;
 @media (max-width: 768px) {
     font-size: 1.3rem;
-    padding: 20rem 35rem 15rem 5rem;
+    
 }
 
 @media (max-width: 480px) {
     font-size: 1.5rem;
-    padding: 20rem 3rem 15rem 3rem;
 }
+`
+
+const ButtonDiv = styled.div`
+    display: flex;
+    align-items: left;
+    margin: 2rem;
 `
 
 const ButtonPurple = styled(motion.button)`
     background-color:#7e66a3;
     color: whitesmoke; 
-    position: absolute;
-    left: 7%;
-    bottom: 30%;
-    right: 0;
-    width: 10%;
-    padding: 1rem;
+    width: 10em;
+    padding: 1em;
     border-radius: .5rem;
     border: none;
     cursor: pointer;
@@ -153,30 +152,22 @@ const ButtonPurple = styled(motion.button)`
     }
 
     @media (max-width: 768px) {
-        bottom: 63%;
         font-size: 1rem;
         width: 15%;
-        left: 10%;
+    
 }
 
 @media (max-width: 480px) {
-    left: 20%;
     font-size: .9em;
     width: 27%;
     padding: 1.5em;
-    bottom: 35%;
     box-shadow: 0 4px 10px 0 black;
 }
 `
 const ButtonGreen = styled(motion.button)`
     background-color:#83a46f;
-    position: absolute;
-    left: 19%;
-    bottom: 30%;
-    right: 0;
     color: whitesmoke; 
-    width: 10%;
-    padding-bottom: 20rem;
+    width: 10em;
     padding: 1rem;
     border-radius: .5rem;
     border: none;
@@ -191,18 +182,13 @@ const ButtonGreen = styled(motion.button)`
     }
 
     @media (max-width: 768px) {
-        bottom: 63%;
         font-size: 1rem;
-        width: 15%;
-        left: 28%;
+        
 }
 
 @media (max-width: 480px) {
     font-size: .9em;
-    width: 27%;
-    left: 56%;
     padding: 1.5em;
-    bottom: 35%;
     box-shadow: 0 4px 10px 0 black;
 }
 `
